@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+.css-19z1ozs-MuiPaper-root-MuiAppBar-root {
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  box-shadow: none;
+}
+.css-1191obr-MuiPaper-root-MuiAppBar-root {
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  box-shadow: none;
+}
