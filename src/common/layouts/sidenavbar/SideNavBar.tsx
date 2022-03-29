@@ -15,6 +15,7 @@ import GridViewOutlinedIcon from "@mui/icons-material/GridViewOutlined";
 import EqualizerOutlinedIcon from "@mui/icons-material/EqualizerOutlined";
 import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
+import Image from "next/image";
 function SideNavBar() {
   const [open, setOpen] = React.useState(true);
   return (
@@ -24,7 +25,11 @@ function SideNavBar() {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <AccessTimeIcon />
+                <Image
+                  src="/image/timetrackericon.svg"
+                  height={22}
+                  width={28}
+                />
               </ListItemIcon>
               <ListItemText primary="TIMETRACKER" />
             </ListItemButton>
@@ -39,7 +44,7 @@ function SideNavBar() {
             > */}
             <ListItemButton>
               <ListItemIcon>
-                <CalendarMonthOutlinedIcon />
+                <Image src="/image/calendar.svg" height={21} width={27} />
               </ListItemIcon>
               <ListItemText primary="CALENDAR" />
             </ListItemButton>
@@ -55,7 +60,7 @@ function SideNavBar() {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <GridViewOutlinedIcon />
+                <Image src="/image/dashboard.svg" height={21} width={27} />
               </ListItemIcon>
               <ListItemText primary="DASHBOARD" />
             </ListItemButton>
@@ -63,7 +68,7 @@ function SideNavBar() {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#simple-list">
               <ListItemIcon>
-                <EqualizerOutlinedIcon />
+                <Image src="/image/reports.svg" height={21} width={27} />
               </ListItemIcon>
               <ListItemText primary="REPORTS" />
             </ListItemButton>
@@ -71,13 +76,13 @@ function SideNavBar() {
         </List>
       </nav>
       <Divider />
-      <nav aria-label="secondary mailbox folders">
+      <nav aria-label="third mailbox folders">
         {/* <div>Manage</div> */}
 
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <DescriptionOutlinedIcon />
+              <Image src="/image/projects.svg" height={21} width={27} />
             </ListItemIcon>
             <ListItemText primary="PROJECTS" />
           </ListItemButton>
@@ -85,7 +90,7 @@ function SideNavBar() {
         <ListItem disablePadding>
           <ListItemButton component="a" href="#simple-list">
             <ListItemIcon>
-              <GroupsOutlinedIcon />
+              <Image src="/image/teams.svg" height={21} width={27} />
             </ListItemIcon>
             <ListItemText primary="TEAM" />
           </ListItemButton>

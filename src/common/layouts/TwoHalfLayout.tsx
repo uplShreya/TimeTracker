@@ -114,7 +114,7 @@ function TwoHalfLayout(props: any) {
             onClick={handleDrawerOpen}
             edge="start"
             sx={{
-              marginRight: 5,
+              marginRight: 2,
               ...(open && { display: "none" }),
             }}
           >
@@ -123,8 +123,8 @@ function TwoHalfLayout(props: any) {
           <Image
             src="/image/clockifylogo.svg"
             alt="logo"
-            width={100}
-            height={60}
+            width={99}
+            height={50}
           />
         </Toolbar>
       </AppBar>
@@ -139,53 +139,6 @@ function TwoHalfLayout(props: any) {
           </IconButton>
         </DrawerHeader>
         <Divider />
-        {/* <List>
-          {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-            <ListItemButton
-              key={text}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? "initial" : "center",
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : "auto",
-                  justifyContent: "center",
-                }}
-              >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          ))}
-        </List>
-        <Divider />
-        <List>
-          {["All mail", "Trash", "Spam"].map((text, index) => (
-            <ListItemButton
-              key={text}
-              sx={{
-                minHeight: 48,
-                justifyContent: open ? "initial" : "center",
-                px: 2.5,
-              }}
-            >
-              <ListItemIcon
-                sx={{
-                  minWidth: 0,
-                  mr: open ? 3 : "auto",
-                  justifyContent: "center",
-                }}
-              >
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
-            </ListItemButton>
-          ))}
-        </List> */}
         {props.sideView}
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
