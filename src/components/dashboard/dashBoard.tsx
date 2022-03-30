@@ -79,9 +79,9 @@ const DashBoard = () => {
                 </div>
                 <div className={styles.dashboard_pi_component_first}>
                     <div className={styles.dashboard_first_component}>
-                        <div className={styles.dashboard_first_component_first_totaltime}><p>Total time</p></div>
-                        <div className={styles.dashboard_first_component_first_topproject}><p>Top project</p></div>
-                        <div className={styles.dashboard_first_component_first_topclient}><p>Top client</p></div>
+                        <div className={styles.dashboard_first_component_first_totaltime}><p>Total time</p><h1>482:25:05</h1></div>
+                        <div className={styles.dashboard_first_component_first_topproject}><p>Top project</p><h1>PictPlay</h1></div>
+                        <div className={styles.dashboard_first_component_first_topclient}><p>Top client</p><h1>Steve Dollens</h1></div>
                     </div>
                     <div className={styles.dashboard_secound_component_first}></div>
                     <div className={styles.dashboard_third_component_first}></div>
@@ -113,10 +113,10 @@ const DashBoard = () => {
                                     <h1>TimeTracker -</h1> <p>Misc (Internal)</p></h2>
                             </div>
                             <div className={styles.timeinprogress}>
-                                <div>00:00:00</div>
+                                <div className={styles.timeinprogress1}>00:00:00</div>
                                 {/* <RadioButtonCheckedIcon /> */}
                                 <Image src='/image/record.png' width={12} height={12} />
-                                <div>In progress</div>
+                                <div className={styles.timeinprogress2}>In progress</div>
                             </div>
 
                         </div>

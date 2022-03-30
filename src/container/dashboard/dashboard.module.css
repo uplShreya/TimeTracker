@@ -9,20 +9,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 97%;
+    width: 100%;
 }
 
 .dropdown_Date_Button {
     display: flex;
     border: 1px;
     border-color: rgb(82, 81, 81);
-    /* padding: 0 8px; */
-    /* margin-right: 2px; */
 }
 
 .Date_button {
     display: flex;
     margin-left: 1rem;
+    border: 1px solid rgb(82, 81, 81);
+}
+
+.Date {
+    border-right: 1px solid rgb(82, 81, 81);
+}
+
+.button_ArrowBackward {
+    border-right: 1px solid rgb(82, 81, 81);
 }
 
 .dashboard_text {
@@ -39,7 +46,7 @@
 }
 
 .dashboard_pi_component_first {
-    width: 97%;
+    width: 100%;
     background-color: #e4eaee;
     border: 1px solid #C6D2D9;
     border-bottom: 2px solid #C6D2D9;
@@ -59,6 +66,21 @@
     border-bottom: none;
     border-right: 1px solid #C6D2D9;
     width: 100%;
+    color: #90a4ae;
+    font-size: 1rem;
+}
+
+.dashboard_first_component_first_totaltime p {
+    margin: 0;
+}
+
+.dashboard_first_component_first_totaltime h1 {
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.714rem;
+    margin: 0;
 }
 
 .dashboard_first_component_first_topproject {
@@ -67,17 +89,47 @@
     border-bottom: none;
     border-right: 1px solid #C6D2D9;
     width: 100%;
+    color: #90a4ae;
+    font-size: 1rem;
+}
+
+.dashboard_first_component_first_topproject p {
+    margin: 0;
+}
+
+.dashboard_first_component_first_topproject h1 {
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.714rem;
+    margin: 0;
 }
 
 .dashboard_first_component_first_topclient {
     padding: 1.4286rem;
     text-align: center;
     width: 100%;
+    color: #90a4ae;
+    font-size: 1rem;
+}
+
+.dashboard_first_component_first_topclient p {
+    margin: 0;
+}
+
+.dashboard_first_component_first_topclient h1 {
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.714rem;
+    margin: 0;
 }
 
 .dashboard_pi_component_secound {
     margin-top: 40px;
-    width: 97%;
+    width: 100%;
     background-color: #e4eaee;
     border: 1px solid #C6D2D9;
     border-bottom: 2px solid #C6D2D9;
@@ -161,10 +213,13 @@
     width: 45px;
     height: 45px;
     border-radius: 50px;
+    text-align: center;
     margin-right: 10px;
     margin-left: 10px;
-    padding: 11.25px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .latestActivity {
@@ -172,7 +227,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .latestActivityfirst h1 {
@@ -217,13 +272,16 @@
     color: #7e7e7e;
 }
 
-.timeinprogress div {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .divide {
     border-right: 1px solid #C6D2D9;
     height: 50px;
     margin-right: 20px;
+}
+
+.timeinprogress1 {
+    padding-right: 10px;
+}
+
+.timeinprogress2 {
+    padding-left: 10px;
 }
