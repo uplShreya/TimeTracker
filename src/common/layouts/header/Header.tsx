@@ -1,5 +1,8 @@
+import { Avatar } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import { deepPurple } from "@mui/material/colors";
+import Dropdownheader from "../../uiComponents/Dropdownheader";
 
 function Header() {
   return (
@@ -14,16 +17,45 @@ function Header() {
           }}
         >
           <div>
-            <p style={{ color: "red" }}>Header</p>
+            <Dropdownheader value1="Project Workspace" />
           </div>
+          <div
+            style={{
+              borderRight: "1px dotted gray",
+              marginTop: "5px",
+              height: "3em",
+            }}
+          ></div>
           <div>
-            <p style={{ color: "red" }}>Header</p>
+            <Image src="/image/help.svg" height={60} width={20} />
           </div>
+          <div
+            style={{
+              borderRight: "1px dotted gray",
+              marginTop: "5px",
+              height: "3em",
+            }}
+          ></div>
           <div>
-            <p style={{ color: "red" }}>Header</p>
+            <Image src="/image/notification.svg" height={60} width={18} />
           </div>
-          <div>
-            <p style={{ color: "red" }}>Header</p>
+          <div
+            style={{
+              borderRight: "1px dotted gray",
+              marginTop: "5px",
+              height: "3em",
+            }}
+          ></div>
+
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <Avatar sx={{ bgcolor: deepPurple[500], width: 38, height: 38 }}>
+              SS
+            </Avatar>
           </div>
         </div>
       </div>

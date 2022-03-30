@@ -1,0 +1,6 @@
+.projectheaderleft {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
