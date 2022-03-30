@@ -5,8 +5,10 @@ import TextFieldInput from '../../common/formFields/TextFieldInput'
 // import styled from "styled-components";
 import style from "../timeTracker/TimeTracker.module.css"
 // import TimePicker from 'react-time-picker';
-import Plusicon from "../../../public/image/plus-blue.svg";
+// import Plusicon from "../../../public/image/plus-blue.svg";
 import text from "../../common/en_US.json";
+import TimeTrackerDropDown from '../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown';
+// import { blue } from '@mui/material/colors';
 function TimeTrackerHeader() {
 
   const [value, onChange] = useState('10:00');
@@ -33,10 +35,13 @@ function TimeTrackerHeader() {
       </div>
       <div className={style.topheaderright}>
       <div className='dialogbox'>
-        <Dialogbox
-        // icon={Plusicon}
-        name={text.project}
-        />
+        
+      <TimeTrackerDropDown
+      // icon={'/image/plus-blue.svg'}
+      // width={"20"}
+      // height={"20"}
+      name={"Project Name"}
+      value={"project"}/>
       </div>
       
       

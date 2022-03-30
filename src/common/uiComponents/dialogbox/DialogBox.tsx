@@ -10,7 +10,6 @@ import TextFieldInput from "../../formFields/TextFieldInput";
 import PropTypes from "prop-types";
 import Image from "next/image";
 import style from "../dialogbox/DialogBox.module.css"
-import { Select } from "@mui/material";
 function Dialogbox(props: any) {
   const [open, setOpen] = React.useState(false);
 
@@ -31,8 +30,8 @@ function Dialogbox(props: any) {
         </p>
         </div>
       </p>
-      <Select open={open} onClose={handleClose}>
-        <Select>
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle>
           <TextFieldInput
             // label="text"
             type={"search"}
@@ -41,19 +40,19 @@ function Dialogbox(props: any) {
             placeholder="Find project or Search project"
             // textnewclass={``}
           />
-        </Select>
-        <Select>
+        </DialogTitle>
+        <DialogContent>
           {/* <DialogContentText>
           </DialogContentText> */}
           <ul>
             <li>project</li>
           </ul>
-        </Select>
+        </DialogContent>
         {/* <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
           <Button onClick={handleClose}>Subscribe</Button>
         </DialogActions> */}
-      </Select>
+      </Dialog>
     </div>
   );
 }
