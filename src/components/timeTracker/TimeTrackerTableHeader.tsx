@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import style from "../timeTrackerTableHeader/TimeTrackerTableHeader.module.css";
+import style from "../timeTracker/TimeTracker.module.css";
 import text from "../../common/en_US.json";
 
 function TimeTrackerTable() {

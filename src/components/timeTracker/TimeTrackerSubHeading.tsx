@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "../timeTrackerSubHeading/TimeTrackerSubHeading.module.css";
+import style from "../timeTracker/TimeTracker.module.css";
 import text from "../../common/en_US.json";
 import Image from 'next/image';
 
@@ -8,7 +8,7 @@ function TimeTrackerSubHeading() {
     <div style={{
         marginTop:"2em"
     }}>
-        <div className={style.header}>
+        <div className={style.subheadingheader}>
           <div className={style.weektext}>
             <p>{text.thisweek}</p>
           </div>

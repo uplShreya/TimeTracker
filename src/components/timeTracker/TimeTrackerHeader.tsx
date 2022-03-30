@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Dialogbox from '../../common/uiComponents/dialogbox/DialogBox'
 import TextFieldInput from '../../common/formFields/TextFieldInput'
 // import styled from "styled-components";
-import style from "../timeTrackerHeader/TimeTrackerHeader.module.css"
+import style from "../timeTracker/TimeTracker.module.css"
 // import TimePicker from 'react-time-picker';
 import Plusicon from "../../../public/image/plus-blue.svg";
 import text from "../../common/en_US.json";
@@ -21,12 +21,12 @@ function TimeTrackerHeader() {
       className={style.textfeild}>
       <TextFieldInput
         // label="text"
-        type="search"
+        type="text"
         id=""
         // name="Project Name"
         textinputname=""
         placeholder="What are you working on?"
-        textnewclass={style.input}
+        textnewclass={style.headerinput}
         // textnewclass={``}
       />
       </div>

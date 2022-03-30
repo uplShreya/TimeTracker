@@ -2,8 +2,8 @@ import { fontSize } from "@mui/system";
 import Image from "next/image";
 import React from "react";
 import TextFieldInput from "../../common/formFields/TextFieldInput";
-import style from "../timeTrackerTablePart/TimeTrackerTablePart.module.css";
-function TimeTrackerTablePart() {
+import style from "../timeTracker/TimeTracker.module.css";
+function TimeTrackerTablePart(props:any) {
   return (
     <div>
       <div className={style.partheader}>
@@ -23,8 +23,8 @@ function TimeTrackerTablePart() {
                 }}>
                 <p style={{
                   color: " teal",
-                  fontSize: "20px"
-                }}>Project Name</p>
+                  fontSize: "16px"
+                }}>{props.name}</p>
               </li>
             </ul>
           </div>
@@ -64,7 +64,7 @@ function TimeTrackerTablePart() {
           </div>
           <div className={style.border}></div>
           <div className={style.img}>
-          <Image src="/image/play.svg" alt="icon" width={28} height={28} />
+          <Image src="/image/play.svg" alt="icon" width={25} height={25} />
           </div>
           <div className={style.border}></div>
           <div className={style.img}>
