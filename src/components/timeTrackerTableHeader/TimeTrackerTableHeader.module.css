@@ -1,0 +1,27 @@
+.tableheader{
+    border: 1px solid lightgray;
+    margin: 0px 20px 0px 20px;
+    background-color: lavender;
+    height: 2.3em;
+    display: flex;
+    padding: 0 10px 0 10px;
+}
+.headingtop{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.numberandimg{
+    display: flex;
+    width: 14%;
+    align-items: center;
+    justify-content: space-between;
+}
+.image1{
+    margin-top: 2px;
+}
+.text{
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -28,3 +28,6 @@ a {
 .css-zxdg2z {
   padding: 0;
 }
+.MuiOutlinedInput-input {
+  height: 0.4375em;
+}

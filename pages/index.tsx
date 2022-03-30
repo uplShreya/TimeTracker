@@ -9,6 +9,7 @@ import Header from "../src/common/layouts/header/Header";
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
+      <div></div>
       {/* <TwoHalfLayout /> */}
       {/* <SideNavBar /> */}
       <Header />

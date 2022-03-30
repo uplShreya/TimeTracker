@@ -3,8 +3,8 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import TwoHalfLayout from "../src/common/layouts/TwoHalfLayout";
 import SideNavBar from "../src/common/layouts/sidenavbar/SideNavBar";
-import Header from "../src/common/layouts/header/Header";
 import ProjectPage from "../src/container/projectscontainer/ProjectPage";
+import Header from "../src/common/layouts/header/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
