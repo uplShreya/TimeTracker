@@ -1,5 +1,7 @@
+import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import TextFieldInput from "../../common/formFields/TextFieldInput";
 import style from "../../components/projects/Project.module.css";
 
 function ProjectHeader() {
@@ -12,7 +14,7 @@ function ProjectHeader() {
         <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "space-around",
           }}
         >
           <div className={style.projectheaderleft}>
@@ -70,7 +72,7 @@ function ProjectHeader() {
           <div
             style={{
               display: "flex",
-              width: "70%",
+              width: "60%",
               justifyContent: "space-between",
             }}
           >
@@ -78,11 +80,17 @@ function ProjectHeader() {
               {/* <p>hi</p> */}
               <Image src="/image/search.svg" height={55} width={20} />
             </div>
-            <div>
-              <p>hi</p>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              {/* <p>hi</p> */}
+              <TextFieldInput
+                type="search"
+                placeholder="Project name"
+                textnewclass={style.input}
+              />
             </div>
-            <div>
-              <p>hi</p>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              {/* <p>hi</p> */}
+              <Button variant="contained">Apply Filter</Button>{" "}
             </div>
           </div>
         </div>

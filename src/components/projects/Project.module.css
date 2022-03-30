@@ -2,10 +2,13 @@
   width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .projectheaderleftright {
-  width: 85em;
+  width: 100%;
   border: 1px solid gray;
   background-color: white;
+}
+.input {
+  width: 25em;
 }
