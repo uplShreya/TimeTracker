@@ -108,14 +108,6 @@ function TwoHalfLayout(props: any) {
       {/* <CssBaseline /> */}
       <AppBar position="fixed" open={open}>
         <Toolbar>
-          {/* <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-            }}
-          >
-            <div style={{ display: "flex" }}> */}
           <IconButton
             // color="inherit"
             aria-label="open drawer"
@@ -128,33 +120,21 @@ function TwoHalfLayout(props: any) {
           >
             <MenuIcon />
           </IconButton>
-          <Image
-            src="/image/clockifylogo.svg"
-            alt="logo"
-            height={60}
-            width={60}
-          />
-          {/* </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-between",
-                paddingLeft: "70em",
-              }}
-            >
-              <p style={{ color: "red" }}>hi</p>
-              <div>
-                <p style={{ color: "red", paddingLeft: "5em" }}>hi</p>
-              </div>
-              <div>
-                <p style={{ color: "red", paddingLeft: "5em" }}>hi</p>
-              </div>
-              <div>
-                <p style={{ color: "red", paddingLeft: "5em" }}>hi</p>
-              </div>
-            </div>
-          </div> */}
+          <div
+            style={{
+              display: "flex ",
+              justifyContent: "space-between",
+              width: "100%",
+            }}
+          >
+            <Image
+              src="/image/clockifylogo.svg"
+              alt="logo"
+              height={40}
+              width={100}
+            />
+            {props.headerView}
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
@@ -182,5 +162,6 @@ function TwoHalfLayout(props: any) {
 TwoHalfLayout.protoType = {
   sideView: PropTypes.elementType,
   renderView: PropTypes.elementType,
+  headerView: PropTypes.elementType,
 };
 export default TwoHalfLayout;
