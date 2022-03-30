@@ -4,3 +4,8 @@
   flex-direction: row;
   justify-content: space-around;
 }
+.projectheaderleftright {
+  width: 85em;
+  border: 1px solid gray;
+  background-color: white;
+}

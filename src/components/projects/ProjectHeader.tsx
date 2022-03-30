@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import style from "../../components/projects/Project.module.css";
 
@@ -7,13 +8,7 @@ function ProjectHeader() {
       <div style={{ fontSize: "20px", fontFamily: "sans-serif" }}>
         <p>Projects</p>
       </div>
-      <div
-        style={{
-          width: "85em",
-          border: "1px solid gray",
-          backgroundColor: "white",
-        }}
-      >
+      <div className={style.projectheaderleftright}>
         <div
           style={{
             display: "flex",
@@ -80,7 +75,8 @@ function ProjectHeader() {
             }}
           >
             <div>
-              <p>hi</p>
+              {/* <p>hi</p> */}
+              <Image src="/image/search.svg" height={55} width={20} />
             </div>
             <div>
               <p>hi</p>
