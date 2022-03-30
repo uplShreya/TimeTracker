@@ -24,3 +24,6 @@ a {
   border-bottom: 1px solid lightgray;
   box-shadow: none;
 }
+.MuiOutlinedInput-input{
+  height: 0.4375em;
+}
