@@ -19,6 +19,7 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import Dashboard from "../../../pages/dashBoard";
 
 const drawerWidth = 240;
 
@@ -172,8 +173,9 @@ function TwoHalfLayout(props: any) {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <div>hi</div>
+        <div><Dashboard /></div>
       </Box>
+      
     </Box>
   );
 }

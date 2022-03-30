@@ -1,0 +1,29 @@
+.dropDown {
+    width: 90px;
+    height: 42px;
+    padding: 5px;
+}
+
+.dropDown option {
+    border: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    height: 42px;
+    border-radius: 0 !important;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.date2 {
+    /* border-radius: 0; */
+    height: 42px;
+    /* padding: 9px; */
+    width: 200px;
+    border: none;
+    /* border-style: none; */
+    outline: none;
+}
