@@ -173,6 +173,7 @@ function TwoHalfLayout(props: any) {
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
         <div>hi</div>
+        {props.renderView}s
       </Box>
     </Box>
   );
@@ -180,5 +181,6 @@ function TwoHalfLayout(props: any) {
 
 TwoHalfLayout.protoType = {
   sideView: PropTypes.elementType,
+  renderView: PropTypes.elementType,
 };
 export default TwoHalfLayout;
