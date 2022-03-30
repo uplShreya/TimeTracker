@@ -17,7 +17,6 @@ import GroupsOutlinedIcon from "@mui/icons-material/GroupsOutlined";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import Image from "next/image";
 function SideNavBar() {
-  const [open, setOpen] = React.useState(true);
   return (
     <Box>
       <nav aria-label="main mailbox folders">
@@ -31,7 +30,7 @@ function SideNavBar() {
                   width={28}
                 />
               </ListItemIcon>
-              <ListItemText primary="TIMETRACKER" />
+              <p style={{ fontSize: "16px", fontWeight: "400" }}>TIMETRACKER</p>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -46,7 +45,14 @@ function SideNavBar() {
               <ListItemIcon>
                 <Image src="/image/calendar.svg" height={21} width={27} />
               </ListItemIcon>
-              <ListItemText primary="CALENDAR" />
+              <p
+                style={{
+                  fontSize: "16px",
+                  fontWeight: "400",
+                }}
+              >
+                CALENDAR
+              </p>
             </ListItemButton>
             {/* <div style={{ paddingLeft: "3em", color: "gray" }}>Analyze</div>
             </div> */}
@@ -62,7 +68,7 @@ function SideNavBar() {
               <ListItemIcon>
                 <Image src="/image/dashboard.svg" height={21} width={27} />
               </ListItemIcon>
-              <ListItemText primary="DASHBOARD" />
+              <p style={{ fontSize: "16px", fontWeight: "400" }}>DASHBOARD</p>
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
@@ -70,7 +76,7 @@ function SideNavBar() {
               <ListItemIcon>
                 <Image src="/image/reports.svg" height={21} width={27} />
               </ListItemIcon>
-              <ListItemText primary="REPORTS" />
+              <p style={{ fontSize: "16px", fontWeight: "400" }}>REPORTS</p>
             </ListItemButton>
           </ListItem>
         </List>
@@ -84,7 +90,7 @@ function SideNavBar() {
             <ListItemIcon>
               <Image src="/image/projects.svg" height={21} width={27} />
             </ListItemIcon>
-            <ListItemText primary="PROJECTS" />
+            <p style={{ fontSize: "16px", fontWeight: "400" }}>PROJECTS</p>
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -92,7 +98,7 @@ function SideNavBar() {
             <ListItemIcon>
               <Image src="/image/teams.svg" height={21} width={27} />
             </ListItemIcon>
-            <ListItemText primary="TEAM" />
+            <p style={{ fontSize: "16px", fontWeight: "400" }}>TEAM</p>
           </ListItemButton>
         </ListItem>
       </nav>

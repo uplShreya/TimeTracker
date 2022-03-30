@@ -105,9 +105,17 @@ function TwoHalfLayout(props: any) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <CssBaseline />
+      {/* <CssBaseline /> */}
       <AppBar position="fixed" open={open}>
         <Toolbar>
+          {/* <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between",
+            }}
+          >
+            <div style={{ display: "flex" }}> */}
           <IconButton
             // color="inherit"
             aria-label="open drawer"
@@ -123,9 +131,30 @@ function TwoHalfLayout(props: any) {
           <Image
             src="/image/clockifylogo.svg"
             alt="logo"
-            width={99}
-            height={50}
+            height={60}
+            width={60}
           />
+          {/* </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "space-between",
+                paddingLeft: "70em",
+              }}
+            >
+              <p style={{ color: "red" }}>hi</p>
+              <div>
+                <p style={{ color: "red", paddingLeft: "5em" }}>hi</p>
+              </div>
+              <div>
+                <p style={{ color: "red", paddingLeft: "5em" }}>hi</p>
+              </div>
+              <div>
+                <p style={{ color: "red", paddingLeft: "5em" }}>hi</p>
+              </div>
+            </div>
+          </div> */}
         </Toolbar>
       </AppBar>
       <Drawer variant="permanent" open={open}>
