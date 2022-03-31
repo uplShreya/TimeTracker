@@ -26,13 +26,13 @@
   width: 57%;
 }
 .textfieldstyle {
-  width: 22em;
+  width: 24em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .textfieldinputstyle {
-  width: 20em;
+  width: 22em;
 }
 .dropdownmenuflex {
   display: flex;
@@ -40,4 +40,8 @@
   justify-content: space-between;
   width: 90%;
   padding-left: 9%;
+}
+.listnamefontsize {
+  font-size: 14px;
+  color: #666;
 }

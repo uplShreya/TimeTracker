@@ -31,7 +31,7 @@ function ProjectHeader() {
                 {/* <p style={{ color: "#595959" }}>Active</p> */}
                 <Dropdownheader
                   defaultvalue="Active"
-                  value1="Active"
+                  // value1="Active"
                   value2="Archived"
                   value3="All"
                 />
@@ -46,6 +46,8 @@ function ProjectHeader() {
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* <p style={{ color: "#595959" }}>Client</p> */}
                 <Dropdownheader
+                  checkboxselect={true}
+                  showactive={true}
                   defaultvalue="Client"
                   input={true}
                   border={true}
