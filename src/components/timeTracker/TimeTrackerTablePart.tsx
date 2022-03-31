@@ -2,6 +2,7 @@ import { fontSize } from "@mui/system";
 import Image from "next/image";
 import React from "react";
 import TextFieldInput from "../../common/formFields/TextFieldInput";
+import TimeTrackerDropDown from "../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown";
 import style from "../timeTracker/TimeTracker.module.css";
 function TimeTrackerTablePart(props:any) {
   return (
@@ -17,13 +18,13 @@ function TimeTrackerTablePart(props:any) {
             />
           </div>
           <div>
-            <ul>
-              <li style={{
-                  color: " teal"
+            <ul style={{
+                  color: " orange"
                 }}>
+              <li >
                 <p style={{
-                  color: " teal",
-                  fontSize: "16px"
+                  color: " orange",
+                  fontSize: "15px"
                 }}>{props.name}</p>
               </li>
             </ul>
@@ -32,7 +33,13 @@ function TimeTrackerTablePart(props:any) {
         <div className={style.right}>
           <div className={style.border}></div>
           <div className={style.img}>
-            <Image src="/image/tag.svg" alt="icon" width={25} height={25} />
+          <TimeTrackerDropDown
+      icon2={true}
+      input={true}
+      placeholder="Add/Find Tag"
+      text={false}
+      // textnewclass={style.dropdowninput}
+      value={"project"}/>
           </div>
           <div className={style.border}></div>
           <div className={style.img2}>
@@ -47,6 +54,7 @@ function TimeTrackerTablePart(props:any) {
               textnewclass={style.input}
             />
           </div>
+          <div>-</div>
           <div>
           <TextFieldInput
               type="number"
@@ -56,19 +64,25 @@ function TimeTrackerTablePart(props:any) {
             />
           </div>
           <div>
-          <Image src="/image/calendar.svg" alt="icon" width={20} height={30} />
+          <Image src="/image/calendar.svg" alt="icon" width={20} height={30} 
+          />
           </div>
           <div className={style.border}></div>
-          <div className={style.text}>
+          <div className={style.Parttext}>
             <p>00:00:00</p>
           </div>
           <div className={style.border}></div>
           <div className={style.img}>
-          <Image src="/image/play.svg" alt="icon" width={25} height={25} />
+          <Image src="/image/play.svg" alt="icon" width={20} height={20} />
           </div>
           <div className={style.border}></div>
-          <div className={style.img}>
-          <Image src="/image/menu-dots-vertical.svg" alt="icon" width={20} height={20} />
+          <div className={style.dropdownimg}>
+          <TimeTrackerDropDown
+          icon1={true}
+          input={false}
+          border={false}
+          value={"Duplicate"}
+          />
           </div>
           </div>
         </div>

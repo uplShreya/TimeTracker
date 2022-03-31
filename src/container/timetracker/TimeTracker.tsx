@@ -18,9 +18,7 @@ function TimeTracker() {
       name={'Break'}/>
       <TimeTrackerTablePart
       name={'Project Name'}/>
-      <TimeTrackerDropDown
-      name={"Project Name"}
-      value={"project"}/>
+
     </div>
   )
 }

@@ -8,13 +8,15 @@ import style from "../timeTracker/TimeTracker.module.css"
 // import Plusicon from "../../../public/image/plus-blue.svg";
 import text from "../../common/en_US.json";
 import TimeTrackerDropDown from '../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown';
+import { height } from '@mui/system';
 // import { blue } from '@mui/material/colors';
 function TimeTrackerHeader() {
 
   const [value, onChange] = useState('10:00');
   return (
     <div style={{
-      marginTop:"2em"
+      marginTop:"2em",
+      height:"8em"
     }}>
     <div className={style.header}>
       <div className={style.topheader}>
@@ -37,10 +39,13 @@ function TimeTrackerHeader() {
       <div className='dialogbox'>
         
       <TimeTrackerDropDown
-      // icon={'/image/plus-blue.svg'}
-      // width={"20"}
-      // height={"20"}
+      icon={true}
       name={"Project Name"}
+      text={true}
+      input={true}
+      placeholder="Find Project or Client"
+      border={true}
+      // textnewclass={style.dropdowninput}
       value={"project"}/>
       </div>
       
@@ -48,7 +53,15 @@ function TimeTrackerHeader() {
       <div className={style.border}>
       </div>
       <div className={style.img}>
-      <Image src="/image/tag.svg" alt="icon" width={25} height={25} />
+      <TimeTrackerDropDown
+      icon2={true}
+      input={true}
+      placeholder="Add/Find Tag"
+      border={true}
+      text={false}
+      // textnewclass={style.dropdowninput}
+      value={"project"}/>
+      
       </div>
       <div className={style.border}>
       </div>

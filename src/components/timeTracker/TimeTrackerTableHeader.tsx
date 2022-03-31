@@ -5,17 +5,17 @@ import text from "../../common/en_US.json";
 
 function TimeTrackerTable() {
   return (
-    <div style={{ marginTop: "2em" }}>
+    <div>
       <div className={style.tableheader}>
         <div className={style.headingtop}>
-          <div>
+          <div className={style.tableheadtext}>
             <p>{text.yesterday}</p>
           </div>
           <div className={style.numberandimg}>
-            <div>
+            <div className={style.tableheadtext}>
               <p>{text.total} : </p>
               </div>
-              <div className={style.text}>
+              <div className={style.tabletext}>
               <p >00:00:00</p>
               </div>
             

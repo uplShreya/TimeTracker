@@ -1,9 +1,9 @@
 .header{
     
-    border: 1px solid lightgray;
+    border: 1px solid rgb(194, 206, 231);
     margin: 0px 20px 0px 20px;
     background-color: white;
-    height: 4.5em;
+    height: 4em;
     display: flex;
     padding: 0 10px 0 10px;
     box-shadow: 1px 1px 3px 3px #ebeaea;
@@ -12,6 +12,10 @@
     /* display: flex; */
     width: 54%;
 }
+/* .imgdesign{
+    /* padding-top: 50px; 
+} */
+
 .topheaderright{
     display: flex;
     width: 44%;
@@ -35,26 +39,23 @@
 .headerinput{
     width: 100%;
 }
-.border{
-    margin-top: 5px;
-    border-right: 1px dotted gray;
-    height: 3em;
-}
+
 .body{
     padding: 10px;
     background-color: rgb(245, 248, 250);
     height: 38em;
 }
 .timer{
-    font-size: 22px;
-    line-height: 10px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Arial;
 }
 .img{
-    padding-top: 10px;
+    padding-top: 4px;
+    cursor: pointer;
 }
 .img2{
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 100;
     color: #999;
 }
@@ -77,21 +78,30 @@
     padding-right:  10px ;
 }
 .totalnumber{
-    width: 16%;
-    display: flex;
-    font-size: 16px;
+    width: 14%;
+    display: flex;  
     align-items: center;
     justify-content: space-between;
 }
-.text{
-    font-size: 22px;
+.weektotaltext{
+    font-size: 14px;
+    color: rgb(148, 147, 147);
+    font-family: Arial;
+
+}
+.subheadingtext{
+    font-family: Arial;
+    font-size: 20px;
+    /* line-height: 10px; */
+    font-weight: 400;
 }
 .weektext{
-    font-size: 20px;
+    font-size: 14px;
+    font-family: Arial;
 }
 /* TimeTracker Table Header Css*/
 .tableheader{
-    border: 1px solid lightgray;
+    border: 1px solid rgb(194, 206, 231);
     margin: 0px 20px 0px 20px;
     background-color: lavender;
     height: 2.3em;
@@ -113,36 +123,43 @@
 .image1{
     margin-top: 2px;
 }
-.text{
+.tabletext{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tableheadtext{
+    font-size: 14px;
+    font-family: Arial;
+    color: rgb(148, 147, 147);
+    padding: 5px;
 }
 /*TimeTracker Table Part Css*/
 
 .partheader{
-    border: 1px solid lightgray;
+    border: 1px solid rgb(194, 206, 231);
     margin: 0px 20px 0px 20px;
     background-color: white;
-    height: 4.5em;
+    height: 4.4em;
     display: flex;
     align-items: center;
-    padding: 0 10px 0 10px;
+    justify-content: center;
 }
 .left{
     display: flex;
-    width: 50%;
+    width: 47%;
     align-items: center;
 }
 .right{
     display: flex;
-    width: 50%;
+    width: 52%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .border{
-    margin-top: 5px;
-    border-right: 1px dotted gray;
-    height: 3em;
+    /* margin-top: 5px; */
+    border-right: 1px dotted rgb(194, 192, 192);
+    height: 2.5em;
 }
 .input{
     width: 5em;
@@ -151,17 +168,19 @@
 .input1{
     width: 20em;
 }
-.text{
+.Parttext{
     font-size: 18px;
-    font-weight: 600;
+    font-family: Arial;
+    font-weight: 400;
 }
-.img2{
-    font-size: 30px;
-    font-weight: 100;
-    color: #999;
+.dropdownimg{
+    /* padding-left: 10px; */
     cursor: pointer;
 }
-.img{
-    padding-top: 10px;
-    cursor: pointer;
+.dropdownwidth{
+    width: 10em;
+}
+/*Main Page*/
+.color1{
+    color: orange;
 }
