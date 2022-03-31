@@ -31,3 +31,15 @@ a {
 .MuiOutlinedInput-input {
   height: 0.4375em;
 }
+.MuiInputBase-root-MuiInput-root-MuiSelect-root {
+  width: 95% !important;
+}
+/* .MuiInputBase-root-MuiInput-root-MuiSelect-root {
+  min-width: 150px !important;
+} */
+.css-1869usk-MuiFormControl-root {
+  min-width: 68px !important;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  width: 103.5%;
+}

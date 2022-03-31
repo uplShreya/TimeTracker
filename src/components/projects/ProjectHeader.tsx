@@ -2,13 +2,14 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import TextFieldInput from "../../common/formFields/TextFieldInput";
+import Dropdownheader from "../../common/uiComponents/Dropdownheader";
 import style from "../../components/projects/Project.module.css";
 
 function ProjectHeader() {
   return (
     <div style={{ padding: "2em" }}>
       <div
-        style={{ fontSize: "25px", fontFamily: "sans-serif", height: "4em" }}
+        style={{ fontSize: "25px", fontFamily: "sans-serif", height: "3em" }}
       >
         <p>Projects</p>
       </div>
@@ -26,8 +27,14 @@ function ProjectHeader() {
                   height: "3em",
                 }}
               ></div>
-              <div>
-                <p style={{ color: "#595959" }}>Active</p>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {/* <p style={{ color: "#595959" }}>Active</p> */}
+                <Dropdownheader
+                  defaultvalue="Active"
+                  value1="Active"
+                  value2="Archived"
+                  value3="All"
+                />
               </div>
               <div
                 style={{
@@ -36,8 +43,30 @@ function ProjectHeader() {
                   height: "3em",
                 }}
               ></div>
-              <div>
-                <p style={{ color: "#595959" }}>Client</p>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {/* <p style={{ color: "#595959" }}>Client</p> */}
+                <Dropdownheader
+                  defaultvalue="Client"
+                  input={true}
+                  border={true}
+                  dropdownplaceholder="Search Client"
+                  dropdowntextfieldstyle={style.textfieldstyle}
+                  dropdowntextfieldinputstyle={style.textfieldinputstyle}
+                  f1="Show"
+                  f2="Active"
+                />
+              </div>
+
+              <div
+                style={{
+                  borderRight: "1px dotted gray",
+                  marginTop: "5px",
+                  height: "3em",
+                }}
+              ></div>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {/* <p style={{ color: "#595959" }}>Access</p> */}
+                <Dropdownheader defaultvalue="Access" />
               </div>
               <div
                 style={{
@@ -46,18 +75,9 @@ function ProjectHeader() {
                   height: "3em",
                 }}
               ></div>
-              <div>
-                <p style={{ color: "#595959" }}>Access</p>
-              </div>
-              <div
-                style={{
-                  borderRight: "1px dotted gray",
-                  marginTop: "5px",
-                  height: "3em",
-                }}
-              ></div>
-              <div>
-                <p style={{ color: "#595959" }}>Billing</p>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                {/* <p style={{ color: "#595959" }}>Billing</p> */}
+                <Dropdownheader defaultvalue="Billing" />
               </div>
               <div
                 style={{

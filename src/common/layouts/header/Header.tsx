@@ -16,8 +16,11 @@ function Header() {
             float: "right",
           }}
         >
-          <div>
-            <Dropdownheader value1="Project Workspace" />
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <Dropdownheader
+              value1="Project Workspace"
+              defaulvalue="WORKSPACES"
+            />
           </div>
           <div
             style={{
