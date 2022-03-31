@@ -21,15 +21,15 @@
 .Date_button {
     display: flex;
     margin-left: 1rem;
-    border: 1px solid rgb(82, 81, 81);
+    border: 1px solid #999;
 }
 
 .Date {
-    border-right: 1px solid rgb(82, 81, 81);
+    border-right: 1px solid #999;
 }
 
 .button_ArrowBackward {
-    border-right: 1px solid rgb(82, 81, 81);
+    border-right: 1px solid #999;
 }
 
 .dashboard_text {
@@ -79,7 +79,7 @@
     font-family: inherit;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 1.714rem;
+    font-size: 1.514rem;
     margin: 0;
 }
 
@@ -102,7 +102,7 @@
     font-family: inherit;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 1.714rem;
+    font-size: 1.514rem;
     margin: 0;
 }
 
@@ -123,7 +123,7 @@
     font-family: inherit;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 1.714rem;
+    font-size: 1.514rem;
     margin: 0;
 }
 
@@ -285,3 +285,29 @@
 .timeinprogress2 {
     padding-left: 10px;
 }
+
+.dashboard_third_component_first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.BarChartNoPadding {
+    /* transform: rotate(90deg); */
+}
+
+.dashboard_secound_component_first {
+    background-color: #ffffff;
+    border-bottom: 1px solid #C6D2D9;
+}
+
+.dashboard_secound_component_first MixBarChart {}
+
+
+/* .dashboard_secound_component_first p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

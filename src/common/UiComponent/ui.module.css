@@ -2,13 +2,12 @@
     width: 90px;
     height: 42px;
     padding: 5px;
+    border: 1px solid #999;
+    cursor: pointer;
+    background-color: #ffffff;
 }
 
-.dropDown option {
-    border: none;
-    border: none;
-    cursor: pointer;
-}
+.dropDown option {}
 
 .button {
     height: 42px;
@@ -26,4 +25,24 @@
     border: none;
     /* border-style: none; */
     outline: none;
+}
+
+.date2 input {
+    display: none;
+    -webkit-appearance: none
+}
+
+
+/* .pie p {
+    position: absolute;
+    top: 52em;
+    right: 62em;
+}
+
+.pie PieChart {
+    position: relative;
+} */
+
+.deff {
+    width: 100%;
 }

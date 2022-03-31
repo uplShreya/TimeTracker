@@ -1,4 +1,5 @@
 import { Stack, TextField } from '@mui/material'
+import Image from 'next/image'
 import React from 'react'
 import styles from '../ui.module.css'
 const CommonDate = (props: any) => {
@@ -19,7 +20,8 @@ const CommonDate = (props: any) => {
                 </Stack>
             </div>}
             {props.date2 && <div >
-                <input type='week' placeholder='This Week' className={styles.date2}/>
+                <input type='week' placeholder='' className={styles.date2}/>
+                {/* <Image src='/image/calendar.svg' width={20} height={30} /> */}
             </div>}
         </div>
     )
