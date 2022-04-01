@@ -9,8 +9,8 @@
 .projectheaderborder {
   display: flex;
   justify-content: center;
-  width: 95%;
-  border: 1px solid rgb(148, 147, 147);
+  width: 100%;
+  border: 1px solid #c6d2d9;
   background-color: white;
 }
 .projectheaderleft {
@@ -44,4 +44,13 @@
 .listnamefontsize {
   font-size: 14px;
   color: #666;
+}
+.border {
+  display: inline-block;
+  margin-right: 0.7143rem;
+  width: 0.4286rem;
+  height: 0.4286rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  /* background-color: rgb(244, 67, 54); */
 }

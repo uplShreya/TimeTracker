@@ -16,7 +16,7 @@ function Dropdownheader(props: any) {
   };
   const [open, setOpen] = React.useState(true);
   const active = () => {
-    setOpen(false);
+    setOpen(!open);
   };
 
   return (
@@ -41,19 +41,21 @@ function Dropdownheader(props: any) {
               textnewclass={props.dropdowntextfieldinputstyle}
             />
           )}
-          {props.border && (
+          {/* {props.border && (
             <div
               style={{
                 borderBottom: "1px solid #e4eaee",
                 height: "1em",
               }}
             ></div>
-          )}
+          )} */}
           <div>
             {props.showactive && (
               <div className={style.dropdownmenuflex}>
                 <div
                   style={{
+                    fontSize: "14px",
+                    color: "#999",
                     display: "flex",
                     alignItems: "center",
                     height: "2.5em",
@@ -63,6 +65,8 @@ function Dropdownheader(props: any) {
                 </div>
                 <div
                   style={{
+                    fontSize: "14px",
+                    color: "#999",
                     display: "flex",
                     alignItems: "center",
                     height: "2.5em",
@@ -82,6 +86,7 @@ function Dropdownheader(props: any) {
               ></div>
             )}
           </div>
+          {/* forhideunhide */}
           {!open && (
             <div>
               <li
@@ -119,7 +124,7 @@ function Dropdownheader(props: any) {
               </li>
             </div>
           )}
-          {props.checkboxselect && (
+          {props.checkboxselectclient && (
             <div>
               <li style={{ display: "flex", paddingLeft: "7%" }}>
                 <Checkbox />
@@ -154,7 +159,7 @@ function Dropdownheader(props: any) {
               </li>
               <li style={{ display: "flex", paddingLeft: "7%" }}>
                 <Checkbox />
-                <p className={style.listnamefontsize}>March</p>
+                <p className={style.listnamefontsize}>Marc</p>
               </li>
               <li style={{ display: "flex", paddingLeft: "7%" }}>
                 <Checkbox />
@@ -162,10 +167,87 @@ function Dropdownheader(props: any) {
               </li>
             </div>
           )}
-          <MenuItem value="">{props.defaultvalue}</MenuItem>
-          <MenuItem value={1}>{props.value1}</MenuItem>
-          <MenuItem value={2}>{props.value2}</MenuItem>
-          <MenuItem value={3}>{props.value3}</MenuItem>
+          {props.checkboxselectgroups && (
+            <div>
+              <li style={{ display: "flex", paddingLeft: "7%" }}>
+                <Checkbox />
+                <p className={style.listnamefontsize}>Select all</p>
+              </li>
+              {props.border && (
+                <div
+                  style={{
+                    borderBottom: "1px solid #e4eaee",
+                  }}
+                ></div>
+              )}
+              <p
+                style={{
+                  display: "flex",
+                  paddingLeft: "8%",
+                  fontSize: "14px",
+                  color: "#999",
+                }}
+              >
+                GROUPS
+              </p>
+              <li style={{ display: "flex", paddingLeft: "7%" }}>
+                <Checkbox />
+                <p className={style.listnamefontsize}>Backend</p>
+              </li>
+              <li style={{ display: "flex", paddingLeft: "7%" }}>
+                <Checkbox />
+                <p className={style.listnamefontsize}>Device Team</p>
+              </li>
+              <li style={{ display: "flex", paddingLeft: "7%" }}>
+                <Checkbox />
+                <p className={style.listnamefontsize}>Frontend</p>
+              </li>
+              <li style={{ display: "flex", paddingLeft: "7%" }}>
+                <Checkbox />
+                <p className={style.listnamefontsize}>Management</p>
+              </li>
+              <li style={{ display: "flex", paddingLeft: "7%" }}>
+                <Checkbox />
+                <p className={style.listnamefontsize}>Testing</p>
+              </li>
+              <li style={{ display: "flex", paddingLeft: "7%" }}>
+                <Checkbox />
+                <p className={style.listnamefontsize}>UI/UX</p>
+              </li>
+            </div>
+          )}
+          <div>
+            <p
+              style={{
+                display: "flex",
+                paddingLeft: "7%",
+                fontSize: "14px",
+                color: "#999",
+              }}
+            >
+              {props.users}
+            </p>
+
+            {props.selectoptionusers &&
+              props.selectoptionusers.map((item: any) => (
+                <li style={{ display: "flex", paddingLeft: "7%" }}>
+                  <Checkbox />
+                  <p className={style.listnamefontsize}>{item.value}</p>
+                </li>
+              ))}
+          </div>
+          <MenuItem value="">
+            <div style={{ color: "gray" }}>{props.defaultvalue}</div>
+          </MenuItem>
+          <MenuItem value={1}>
+            <div style={{ color: "gray" }}>{props.value1}</div>
+          </MenuItem>
+          <MenuItem value={2}>
+            <div style={{ color: "gray" }}>{props.value2}</div>
+          </MenuItem>
+          <MenuItem value={3}>
+            <div style={{ color: "gray" }}>{props.value3}</div>
+          </MenuItem>
         </Select>
       </FormControl>
     </div>

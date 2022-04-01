@@ -6,6 +6,13 @@ import Dropdownheader from "../../common/uiComponents/Dropdownheader";
 import style from "../../components/projects/Project.module.css";
 
 function ProjectHeader() {
+  const selectusers = [
+    { name: "Abhijit Roy", value: "Abhijit Roy" },
+    { name: "Alolika", value: "Alolika" },
+    { name: "Amartya Chakraborty", value: "Amartya Chakraborty" },
+    { name: "Ankita Kumari", value: "Ankita Kumari" },
+    { name: "Ayan", value: "Sinha" },
+  ];
   return (
     <div style={{ padding: "2em" }}>
       <div
@@ -46,7 +53,7 @@ function ProjectHeader() {
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* <p style={{ color: "#595959" }}>Client</p> */}
                 <Dropdownheader
-                  checkboxselect={true}
+                  checkboxselectclient={true}
                   showactive={true}
                   defaultvalue="Client"
                   input={true}
@@ -54,8 +61,8 @@ function ProjectHeader() {
                   dropdownplaceholder="Search Client"
                   dropdowntextfieldstyle={style.textfieldstyle}
                   dropdowntextfieldinputstyle={style.textfieldinputstyle}
-                  f1="Show"
-                  f2="Active"
+                  f1="SHOW"
+                  f2="ACTIVE"
                 />
               </div>
 
@@ -68,7 +75,20 @@ function ProjectHeader() {
               ></div>
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* <p style={{ color: "#595959" }}>Access</p> */}
-                <Dropdownheader defaultvalue="Access" />
+                <Dropdownheader
+                  defaultvalue="Access"
+                  border={true}
+                  showactive={true}
+                  input={true}
+                  dropdownplaceholder="Find member or group"
+                  users="USERS"
+                  dropdowntextfieldstyle={style.textfieldstyle}
+                  dropdowntextfieldinputstyle={style.textfieldinputstyle}
+                  checkboxselectgroups={true}
+                  selectoptionusers={selectusers}
+                  f1="SHOW"
+                  f2="ACTIVE"
+                />
               </div>
               <div
                 style={{
