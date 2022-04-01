@@ -14,22 +14,37 @@
 
 .dropdown_Date_Button {
     display: flex;
-    border: 1px;
-    border-color: rgb(82, 81, 81);
+    /* width: 29%; */
+    /* border: 1px; */
+    /* border-color: rgb(82, 81, 81); */
 }
 
 .Date_button {
-    display: flex;
     margin-left: 1rem;
-    border: 1px solid #999;
+    /* border: 1px solid #999; */
 }
 
 .Date {
-    border-right: 1px solid #999;
+    border: 1px solid #999;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.Date_button_flex {
+    display: flex;
+    justify-content: center;
 }
 
 .button_ArrowBackward {
     border-right: 1px solid #999;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.button_ArrowForward {
+    border-right: 1px solid #999;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
 }
 
 .dashboard_text {
@@ -262,7 +277,8 @@
 .totalTracked {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
     color: #2e2d2d;
 }
 
@@ -293,16 +309,10 @@
     background-color: #ffffff;
 }
 
-.BarChartNoPadding {
-    /* transform: rotate(90deg); */
-}
-
 .dashboard_secound_component_first {
     background-color: #ffffff;
     border-bottom: 1px solid #C6D2D9;
 }
-
-.dashboard_secound_component_first MixBarChart {}
 
 
 /* .dashboard_secound_component_first p {
@@ -311,3 +321,8 @@
     justify-content: center;
     align-items: center;
 } */
+
+.textbar {
+    transform: rotate(90deg);
+    /* width: 50%; */
+}

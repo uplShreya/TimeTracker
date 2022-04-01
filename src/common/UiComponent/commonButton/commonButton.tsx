@@ -23,8 +23,8 @@ const CommonButton = (props: any) => {
       </div>}
       {props.button2 && <div>
         <button className={styles.button} >
-          {props.arrowForward && <ArrowForwardIosIcon />}
-          {props.ArrowBackward && <ArrowBackIosIcon />}
+          {props.arrowForward && <ArrowForwardIosIcon className={styles.arrowForward}/>}
+          {props.ArrowBackward && <ArrowBackIosIcon className={styles.ArrowBackward}/>}
           </button>
       </div>}
     </div>
