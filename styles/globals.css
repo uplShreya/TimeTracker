@@ -20,10 +20,14 @@ a {
   border-bottom: 1px solid lightgray;
   box-shadow: none;
 }
-.css-1191obr-MuiPaper-root-MuiAppBar-root {
+.MuiAppBar-root {
   background-color: white;
   border-bottom: 1px solid lightgray;
   box-shadow: none;
+}
+.MuiList-root {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 .css-zxdg2z {
   padding: 0;
@@ -40,9 +44,9 @@ a {
 .css-1869usk-MuiFormControl-root {
   min-width: 68px !important;
 }
-.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+/* .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
   width: 108.5% !important;
-}
+} */
 .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
   max-height: 56%;
 }
@@ -50,7 +54,7 @@ a {
   width: 19%;
     padding: 10px 0px 10px 28px;
 } */
-.MuiTableCell-root {
+/* .MuiTableCell-root {
   width: 19%;
   padding: 10px 43px 10px 10px;
-}
+} */

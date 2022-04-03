@@ -8,6 +8,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import style from "../../components/projects/Project.module.css";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import { route } from "next/dist/server/router";
 
 function createData(
   name: string,
@@ -89,25 +90,252 @@ const rows = [
 
 export default function ProjectTable() {
   return (
-    <div style={{ padding: "2em" }}>
+    <div style={{ padding: "2em", width: "108%" }}>
       <div
         style={{
           border: "1px solid #C6D2D9",
-          width: "108.5%",
           borderRadius: "2px",
 
           backgroundColor: "rgb(228, 234, 238)",
           height: "3em",
           display: "flex",
           alignItems: "center",
-          paddingLeft: "11px",
+          paddingLeft: "1.7em",
           color: "#999",
           fontSize: "13px",
         }}
       >
         <p>Projects</p>
       </div>
-      <TableContainer component={Paper}>
+
+      <Table
+        style={{
+          width: "100%",
+          backgroundColor: "white",
+          border: "1px solid #C6D2D9",
+        }}
+      >
+        <thead style={{ border: "1px solid #C6D2D9", height: "3em" }}>
+          <tr>
+            <th style={{ width: "39em" }}>
+              <div
+                style={{
+                  fontSize: "13px",
+                  paddingLeft: "1.6em",
+                  color: "#999",
+                  height: "2em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                NAME
+              </div>
+            </th>
+            <th style={{ width: "33em" }}>
+              <div
+                style={{
+                  fontSize: "13px",
+                  color: "#999",
+                  height: "2em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                CLIENT
+              </div>
+            </th>
+            <th style={{ width: "29em" }}>
+              <div
+                style={{
+                  fontSize: "13px",
+                  color: "#999",
+                  height: "2em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                TRACKED
+              </div>
+            </th>
+            <th style={{ width: "29em" }}>
+              <div
+                style={{
+                  fontSize: "13px",
+                  color: "#999",
+                  height: "2em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                ACCESS
+              </div>
+            </th>
+            <th style={{ width: "36em" }}>
+              <div
+                style={{
+                  fontSize: "13px",
+                  color: "#999",
+                  height: "2em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                FAVORITES
+              </div>
+            </th>
+            <th style={{ width: "7em" }}>
+              <div
+                style={{
+                  fontSize: "13px",
+                  color: "transparent",
+                  height: "2em",
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                none
+              </div>
+            </th>
+          </tr>
+        </thead>
+
+        {rows.map((row) => (
+          <tr style={{ border: "1px solid #C6D2D9", height: "4.5em" }}>
+            <td>
+              <div style={{ paddingLeft: "1.5em" }}>
+                <div
+                  style={{ backgroundColor: `${row.color}` }}
+                  className={style.border}
+                ></div>
+                {row.name}
+              </div>
+            </td>
+            <td>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "39%",
+                }}
+              >
+                <div
+                  style={{
+                    borderLeft: "1px dotted #C6D2D9",
+                    marginTop: "5px",
+                    height: "3em",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  {row.client}
+                </div>
+              </div>
+            </td>
+            <td>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "30%",
+                }}
+              >
+                <div
+                  style={{
+                    borderLeft: "1px dotted #C6D2D9",
+                    marginTop: "5px",
+                    height: "3em",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    textAlign: "left",
+                  }}
+                >
+                  {row.tracked}
+                </div>
+              </div>
+            </td>
+            <td>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "16%",
+                }}
+              >
+                <div
+                  style={{
+                    borderLeft: "1px dotted #C6D2D9",
+                    marginTop: "5px",
+                    height: "3em",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  {row.access}
+                </div>
+              </div>
+            </td>
+            <td>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "26%",
+                }}
+              >
+                <div
+                  style={{
+                    borderLeft: "1px dotted #C6D2D9",
+                    marginTop: "5px",
+                    height: "3em",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  {row.favorites}
+                </div>
+              </div>
+            </td>
+            <td>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  width: "2.5em",
+                }}
+              >
+                <div
+                  style={{
+                    borderLeft: "1px dotted #C6D2D9",
+                    marginTop: "5px",
+                    height: "3em",
+                  }}
+                ></div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <StarBorderOutlinedIcon />
+                </div>
+              </div>
+            </td>
+          </tr>
+        ))}
+      </Table>
+
+      {/* <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
             <TableRow>
@@ -320,7 +548,7 @@ export default function ProjectTable() {
             ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </TableContainer> */}
     </div>
   );
 }
