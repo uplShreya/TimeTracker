@@ -6,6 +6,10 @@ import TimeTrackerTable from '../../components/timeTracker/TimeTrackerTableHeade
 import TimeTrackerTablePart from '../../components/timeTracker/TimeTrackerTablePart'
 import TimeTrackerDropDown from '../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown'
 import plus from "../../../public/image/plus-blue.svg";
+import Calendar from '../../common/calendar/Calendar'
+import TimeTrackerList from '../../components/timeTracker/TimeTrackerList'
+
+
 function TimeTracker() {
   return (
     <div className={style.body}>
@@ -18,6 +22,8 @@ function TimeTracker() {
       name={'Break'}/>
       <TimeTrackerTablePart
       name={'Project Name'}/>
+     {/* <Calendar/> */}
+     <TimeTrackerList/>
 
     </div>
   )

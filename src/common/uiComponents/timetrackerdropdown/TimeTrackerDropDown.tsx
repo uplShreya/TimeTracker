@@ -3,6 +3,7 @@ import TextFieldInput from "../../formFields/TextFieldInput";
 import style from "../timetrackerdropdown/TimeTrackerDropDown.module.css";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import { Checkbox, MenuItem } from "@mui/material";
 
 function TimeTrackerDropDown(props: any) {
   const [open, setopen] = useState(false);
@@ -19,8 +20,8 @@ function TimeTrackerDropDown(props: any) {
               <Image
                 src="/image/plus-blue.svg"
                 alt="icon"
-                width={15}
-                height={15}
+                width={20}
+                height={20}
               />
             )}
           </div>
@@ -42,24 +43,43 @@ function TimeTrackerDropDown(props: any) {
 
           {props.text && <p className={style.droptext}>{props.name}</p>}
         </div>
-        {open && (
+        {open && props.width && (
           <div className={style.dropdowncontent}>
-            <div className={style.textfield}>
-              {props.input && (
-                <TextFieldInput
-                  type="search"
-                  id=""
-                  textinputname=""
-                  extracls={props.textwidth}
-                  placeholder={props.placeholder}
-                  textnewclass={style.headerinput1}
-                />
-              )}
+            <div className={style.textfield1}>
+              {/* <TextFieldInput
+                type="search"
+                id=""
+                textinputname=""
+                extracls={props.textwidth}
+                placeholder={props.placeholder}
+                textnewclass={style.headerinput1}
+              /> */}
+              <input type="search"
+              placeholder={props.placeholder} 
+              className={style.input}/>
             </div>
             {props.border && <div className={style.border}></div>}
             <div>
-              <p>{props.value}</p>
+              {props.selectOption1 &&
+                props.selectOption1.map((item: any) => (
+                  <ul className={props.textcolor}>
+                <li>
+                  {props.checkbox && (<Checkbox/>)}
+                  {item.value}
+                  </li>
+                  </ul>
+                ))}
             </div>
+          </div>
+        )}
+        {open && props.width1 && (
+          <div className={style.dropdowncontent1}>
+            {props.selectOption &&
+              props.selectOption.map((item: any) => (
+                <div>
+                  <p>{item.value}</p>
+                </div>
+              ))}
           </div>
         )}
       </div>

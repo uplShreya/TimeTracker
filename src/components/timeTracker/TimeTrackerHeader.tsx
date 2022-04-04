@@ -9,10 +9,35 @@ import style from "../timeTracker/TimeTracker.module.css"
 import text from "../../common/en_US.json";
 import TimeTrackerDropDown from '../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown';
 import { height } from '@mui/system';
+import TimeTrackerList from './TimeTrackerList';
 // import { blue } from '@mui/material/colors';
 function TimeTrackerHeader() {
+  const selectValue1=[
+    { name: "Automation", value: "Automation" },
+    { name: "Break", value: "Break" },
+    { name: "Learning & Development", value: "Learning & Development" },
+    { name: "Misc", value: "Misc(Internal)" },
+  ];
+  const selectValue2=[
+    { name: "Assistance", value: "Assistance" },
+    { name: "Debugging", value: "Debugging" },
+    { name: "Deployment", value: "Deployment" },
+    { name: "Development", value: "Development" },
+    { name: "Discussion", value: "Discussion" },
+  ];
+  const[click , setclick]= useState(false)
+const select=() =>{
+setclick(!click)
+console.log(setclick ,"Click")
+}
 
-  const [value, onChange] = useState('10:00');
+const[clockclick , setclockclick]=useState(true)
+const selectclock=()=>{
+  setclockclick(!open)
+  console.log(setclockclick , "click is working")
+}
+
+  // const [value, onChange] = useState('10:00');
   return (
     <div style={{
       marginTop:"2em",
@@ -22,16 +47,14 @@ function TimeTrackerHeader() {
       <div className={style.topheader}>
         <div className={style.topheaderleft} >
       <div
-      className={style.textfeild}>
+      className={style.textfield}>
       <TextFieldInput
-        // label="text"
         type="text"
         id=""
-        // name="Project Name"
         textinputname=""
+        textwidth={style.stylewidth}
         placeholder="What are you working on?"
         textnewclass={style.headerinput}
-        // textnewclass={``}
       />
       </div>
       </div>
@@ -40,9 +63,12 @@ function TimeTrackerHeader() {
         
       <TimeTrackerDropDown
       icon={true}
-      name={"Project Name"}
+      name={"Project"}
       text={true}
-      input={true}
+      width={true}
+      checkbox={false}
+      selectOption1={selectValue1}
+      textcolor={style.colorfortext}
       placeholder="Find Project or Client"
       border={true}
       // textnewclass={style.dropdowninput}
@@ -56,6 +82,10 @@ function TimeTrackerHeader() {
       <TimeTrackerDropDown
       icon2={true}
       input={true}
+      width={true}
+      textcolor={style.liststyle}
+      checkbox={true}
+      selectOption1={selectValue2}
       placeholder="Add/Find Tag"
       border={true}
       text={false}
@@ -66,7 +96,9 @@ function TimeTrackerHeader() {
       <div className={style.border}>
       </div>
       <div className={style.img2}>
-      <p>$</p>
+     <Image src="/image/dollar.png" alt="icon" height={30} width={25}/>
+      
+       {/* <p>$</p> */}
       </div>
       <div className={style.border}>
       </div>
@@ -74,19 +106,23 @@ function TimeTrackerHeader() {
       <p>00:00:00</p>
       </div>
       <div>
-        <button>Start</button>
+        <button className={style.btn}>Start</button>
+      </div>
       </div>
       <div>
-        <div>
+      <div
+        onClick={selectclock}>
         <Image src="/image/clock-blue.svg" alt="icon" width={12} height={12} />
         </div>
-        <div>
-        <Image src="/image/list-blue.svg" alt="icon" width={15} height={15} />
+        <div
+        onClick={select}>
+        <Image src="/image/list-blue.svg" alt="icon" width={15} height={15}
+         />{click &&( 
+        <TimeTrackerList
+        />)}
         </div>
       </div>
-      {/* <TimePicker onChange={onChange} value={value} /> */}
       </div>
-    </div>
     </div>
     </div>
   )
