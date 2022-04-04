@@ -90,10 +90,6 @@ const rows = [
 ];
 
 export default function ProjectTable() {
-  const [hover, setHover] = React.useState(true);
-  const hovering = () => {
-    setHover(false);
-  };
   return (
     <div style={{ padding: "2em" }}>
       <div
@@ -331,18 +327,6 @@ export default function ProjectTable() {
                     height: "3em",
                   }}
                 ></div>
-                {/* {hover ? (
-                  <div
-                    style={{ display: "flex", alignItems: "center" }}
-                    onClick={hovering}
-                  >
-                    <Image
-                      src="/image/favoriteshover.svg"
-                      height={25}
-                      width={20}
-                    />
-                  </div>
-                ) : ( */}
                 <div
                   style={{ display: "flex", alignItems: "center" }}
                   className={style.hovereffect}
@@ -353,227 +337,11 @@ export default function ProjectTable() {
                     width={20}
                   />
                 </div>
-                {/* )} */}
               </div>
             </td>
           </tr>
         ))}
       </Table>
-
-      {/* <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>
-                <div
-                  style={{
-                    fontSize: "13px",
-                    paddingLeft: "11px",
-                    color: "#999",
-                    height: "2em",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  <p>NAME</p>
-                </div>
-              </TableCell>
-              <TableCell>
-                <div
-                  style={{
-                    fontSize: "13px",
-                    color: "#999",
-                    height: "2em",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  <p>CLIENT</p>
-                </div>
-              </TableCell>
-              <TableCell>
-                <div
-                  style={{
-                    fontSize: "13px",
-                    color: "#999",
-                    height: "2em",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  <p>TRACKED</p>
-                </div>
-              </TableCell>
-              <TableCell>
-                <div
-                  style={{
-                    fontSize: "13px",
-                    color: "#999",
-                    height: "2em",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  <p>ACCESS</p>
-                </div>
-              </TableCell>
-              <TableCell>
-                <div
-                  style={{
-                    fontSize: "13px",
-                    color: "#999",
-                    height: "2em",
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                >
-                  <p>FAVORITES</p>
-                </div>
-              </TableCell>
-              <TableCell> </TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.name}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  <div>
-                    <div
-                      style={{ backgroundColor: `${row.color}` }}
-                      className={style.border}
-                    ></div>
-                    {row.name}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      width: "49%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderLeft: "1px dotted gray",
-                        marginTop: "5px",
-                        height: "3em",
-                      }}
-                    ></div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      {row.client}
-                    </div>
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      width: "35%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderLeft: "1px dotted gray",
-                        marginTop: "5px",
-                        height: "3em",
-                      }}
-                    ></div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      {row.tracked}
-                    </div>
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      width: "35%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderLeft: "1px dotted gray",
-                        marginTop: "5px",
-                        height: "3em",
-                      }}
-                    ></div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      {row.access}
-                    </div>
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      width: "35%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderLeft: "1px dotted gray",
-                        marginTop: "5px",
-                        height: "3em",
-                      }}
-                    ></div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      {row.favorites}
-                    </div>
-                  </div>
-                </TableCell>
-
-                <TableCell>
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "space-between",
-                      width: "142%",
-                    }}
-                  >
-                    <div
-                      style={{
-                        borderLeft: "1px dotted gray",
-                        marginTop: "5px",
-                        height: "3em",
-                      }}
-                    ></div>
-                    <div style={{ display: "flex", alignItems: "center" }}>
-                      <StarBorderOutlinedIcon />
-                    </div>
-                  </div>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer> */}
     </div>
   );
 }

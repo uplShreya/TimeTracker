@@ -188,32 +188,16 @@ function Dropdownheader(props: any) {
                   color: "#999",
                 }}
               >
-                GROUPS
+                {props.GROUPS}
               </p>
-              <li style={{ display: "flex", paddingLeft: "7%" }}>
-                <Checkbox />
-                <p className={style.listnamefontsize}>Backend</p>
-              </li>
-              <li style={{ display: "flex", paddingLeft: "7%" }}>
-                <Checkbox />
-                <p className={style.listnamefontsize}>Device Team</p>
-              </li>
-              <li style={{ display: "flex", paddingLeft: "7%" }}>
-                <Checkbox />
-                <p className={style.listnamefontsize}>Frontend</p>
-              </li>
-              <li style={{ display: "flex", paddingLeft: "7%" }}>
-                <Checkbox />
-                <p className={style.listnamefontsize}>Management</p>
-              </li>
-              <li style={{ display: "flex", paddingLeft: "7%" }}>
-                <Checkbox />
-                <p className={style.listnamefontsize}>Testing</p>
-              </li>
-              <li style={{ display: "flex", paddingLeft: "7%" }}>
-                <Checkbox />
-                <p className={style.listnamefontsize}>UI/UX</p>
-              </li>
+
+              {props.selectoptionteams &&
+                props.selectoptionteams.map((item: any) => (
+                  <li style={{ display: "flex", paddingLeft: "7%" }}>
+                    <Checkbox />
+                    <p className={style.listnamefontsize}>{item.value}</p>
+                  </li>
+                ))}
             </div>
           )}
           <div>

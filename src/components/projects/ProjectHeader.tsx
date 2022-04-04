@@ -14,6 +14,14 @@ function ProjectHeader() {
     { name: "Ankita Kumari", value: "Ankita Kumari" },
     { name: "Ayan", value: "Sinha" },
   ];
+  const selctteams = [
+    { name: "Backend", value: "Backend" },
+    { name: "Device Team", value: "Device Team" },
+    { name: "Frontend", value: "Frontend" },
+    { name: "Management", value: "Management" },
+    { name: "Testing", value: "Testing" },
+    { name: "UI/UX", value: "UI/UX" },
+  ];
   return (
     <div style={{ padding: "2em" }}>
       <div
@@ -30,8 +38,18 @@ function ProjectHeader() {
         <div>
           <div className={style.projectheaderleftright}>
             <div className={style.projectheaderleft}>
-              <div style={{ display: "flex", width: "10%" }}>
-                <p style={{ color: "#8a8a8a" }}>Filter</p>
+              <div
+                style={{ display: "flex", width: "10%", alignItems: "center" }}
+              >
+                <p
+                  style={{
+                    color: "#8a8a8a",
+                    letterSpacing: "1.1px",
+                    fontSize: "14px",
+                  }}
+                >
+                  FILTER
+                </p>
               </div>
               <div
                 style={{
@@ -91,7 +109,9 @@ function ProjectHeader() {
                   dropdowntextfieldstyle={style.textfieldstyle}
                   dropdowntextfieldinputstyle={style.textfieldinputstyle}
                   checkboxselectgroups={true}
+                  GROUPS="GROUPS"
                   selectoptionusers={selectusers}
+                  selectoptionteams={selctteams}
                   f1="SHOW"
                   f2="ACTIVE"
                 />
@@ -140,12 +160,6 @@ function ProjectHeader() {
                 />
               </div>
               <div style={{ display: "flex", alignItems: "center" }}>
-                {/* <Button
-                  variant="contained"
-                  // style={{ width: "100%", height: "70%" }}
-                >
-                  Apply Filter
-                </Button> */}
                 <button
                   style={{
                     width: "9em",
