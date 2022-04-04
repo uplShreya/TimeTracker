@@ -186,5 +186,6 @@ function TwoHalfLayout(props: any) {
 
 TwoHalfLayout.protoType = {
   sideView: PropTypes.elementType,
+  renderView: PropTypes.elementType,
 };
 export default TwoHalfLayout;
