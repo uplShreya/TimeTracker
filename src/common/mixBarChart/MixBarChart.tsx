@@ -86,7 +86,7 @@ const MixBarChart = () => {
                     left: 20,
                     bottom: 5
                 }}>
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid strokeDasharray="1 1 1 1" />
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />

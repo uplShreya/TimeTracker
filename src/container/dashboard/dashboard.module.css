@@ -326,3 +326,7 @@
     transform: rotate(90deg);
     /* width: 50%; */
 }
+
+.barCNP_cls {
+    margin-bottom: 20px;
+}

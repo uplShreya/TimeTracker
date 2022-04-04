@@ -5,14 +5,7 @@ import styles from '../../container/dashboard/dashboard.module.css'
 const BarchartNewI = () => {
     const data = [
         {
-            name: "Page A",
-            uv: 20,
-            pv: 98,
-            amt: 22,
-            jv: 5,
-            dur: 18,
-            man: 25,
-            uvx: 10
+            name: "Page A", uv: 20, pv: 15, amt: 12, jv: 5, dur: 18, man: 25, uvx: 10
         }
     ];
     return (
@@ -20,18 +13,15 @@ const BarchartNewI = () => {
             <BarChart
                 // className={styles.textbar}
                 width={460}
-                height={100}
+                height={50}
                 data={data}
                 layout="vertical"
                 margin={{ top: 10, right: 35, left: 20, bottom: 5 }}
             >
-                <XAxis type="number" />
-                <YAxis type="category" dataKey="name" />
-                <Tooltip 
-                // labelFormatter={}
-               
-                />
-                <Bar dataKey="pv" stackId="a" fill="#8884d8" background={{ fill: "#eee" }}/>
+                <XAxis type="number" hide={true} />
+                <YAxis type="category" dataKey="name" hide={true} />
+                <Tooltip position = {{ x: 0, y: -200 }} />
+                <Bar dataKey="pv" stackId="a" fill="#8884d8" background={{ fill: "#eee" }} />
                 <Bar dataKey="amt" stackId="a" fill="#82ca9d" />
                 <Bar dataKey="uv" stackId="a" fill="#ffc658" />
                 <Bar dataKey="jv" stackId="a" fill="#307D7E" />
