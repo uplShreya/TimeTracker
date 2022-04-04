@@ -6,7 +6,7 @@ import TimeTracker from "../../src/container/timetracker/TimeTracker";
 function index() {
   return (
     <>
-      <TwoHalfLayout sideView={<SideNavBar />} renderView={<TimeTracker />} />
+      <TimeTracker />
     </>
   );
 }

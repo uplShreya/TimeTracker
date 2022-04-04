@@ -117,9 +117,7 @@ const selectclock=()=>{
         <div
         onClick={select}>
         <Image src="/image/list-blue.svg" alt="icon" width={15} height={15}
-         />{click &&( 
-        <TimeTrackerList
-        />)}
+         />    
         </div>
       </div>
       </div>

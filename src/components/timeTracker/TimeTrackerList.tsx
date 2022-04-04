@@ -31,7 +31,6 @@ const openDatePicker=()=>{
     
   return (
     <div style={{
-        marginTop:"2em",
         height:"8em"
       }}>
        <div className={style.partheader}>
