@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <TwoHalfLayout
         sideView={<SideNavBar />}
         headerView={<Header />}
-        renderView={<ProjectPage />}
+        // renderView={<ProjectPage />}
       />
     </>
   );

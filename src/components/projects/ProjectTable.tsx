@@ -95,7 +95,7 @@ export default function ProjectTable() {
     setHover(false);
   };
   return (
-    <div style={{ padding: "2em", width: "108%" }}>
+    <div style={{ padding: "2em" }}>
       <div
         style={{
           border: "1px solid #C6D2D9",
@@ -331,7 +331,7 @@ export default function ProjectTable() {
                     height: "3em",
                   }}
                 ></div>
-                {hover ? (
+                {/* {hover ? (
                   <div
                     style={{ display: "flex", alignItems: "center" }}
                     onClick={hovering}
@@ -342,15 +342,18 @@ export default function ProjectTable() {
                       width={20}
                     />
                   </div>
-                ) : (
-                  <div style={{ display: "flex", alignItems: "center" }}>
-                    <Image
-                      src="/image/favoritesnormal.svg"
-                      height={25}
-                      width={20}
-                    />
-                  </div>
-                )}
+                ) : ( */}
+                <div
+                  style={{ display: "flex", alignItems: "center" }}
+                  className={style.hovereffect}
+                >
+                  <Image
+                    src="/image/favoritesnormal.svg"
+                    height={25}
+                    width={20}
+                  />
+                </div>
+                {/* )} */}
               </div>
             </td>
           </tr>

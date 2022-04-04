@@ -4,7 +4,7 @@ import ProjectTable from "../../components/projects/ProjectTable";
 
 function ProjectPage() {
   return (
-    <div style={{ width: "100%" }}>
+    <div>
       <div>
         <ProjectHeader />
       </div>
