@@ -20,7 +20,7 @@ function ProjectHeader() {
       >
         <p>Projects</p>
       </div>
-      <div style={{ width: "109%" }}>
+      <div style={{ width: "100%" }}>
         <div className={style.projectheaderborder}>
           <div className={style.projectheaderleftright}>
             <div className={style.projectheaderleft}>

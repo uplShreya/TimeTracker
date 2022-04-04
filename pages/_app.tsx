@@ -15,11 +15,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Component {...pageProps} />
-      <TwoHalfLayout
+      {/* <TwoHalfLayout
         sideView={<SideNavBar />}
         headerView={<Header />}
-        // renderView={<ProjectPage />}
-      />
+        renderView={<ProjectPage />}
+      /> */}
     </>
   );
 }

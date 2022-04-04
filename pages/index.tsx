@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div></div>
       {/* <TwoHalfLayout /> */}
       {/* <SideNavBar /> */}
-      <Header />
+      {/* <Header /> */}
     </div>
   );
 };
