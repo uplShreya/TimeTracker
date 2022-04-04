@@ -15,16 +15,12 @@ a {
 * {
   box-sizing: border-box;
 }
-.css-19z1ozs-MuiPaper-root-MuiAppBar-root {
-  background-color: white;
-  border-bottom: 1px solid lightgray;
-  box-shadow: none;
-}
 .MuiAppBar-root {
   background-color: white;
   border-bottom: 1px solid lightgray;
   box-shadow: none;
 }
+
 .MuiList-root {
   padding-top: 0;
   padding-bottom: 0;
@@ -35,26 +31,26 @@ a {
 .MuiOutlinedInput-input {
   height: 0.4375em;
 }
-.MuiInputBase-root-MuiInput-root-MuiSelect-root {
+.MuiSelect-root {
   width: 95% !important;
 }
 /* .MuiInputBase-root-MuiInput-root-MuiSelect-root {
   min-width: 150px !important;
 } */
-.css-1869usk-MuiFormControl-root {
+.MuiFormControl-root {
   min-width: 68px !important;
 }
 /* .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
   width: 108.5% !important;
 } */
-.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+.MuiPopover-paper {
   max-height: 56%;
 }
-/* .css-1ygcj2i-MuiTableCell-root{
+.css-1ygcj2i-MuiTableCell-root {
   width: 19%;
-    padding: 10px 0px 10px 28px;
-} */
-/* .MuiTableCell-root {
+  padding: 10px 0px 10px 28px;
+}
+.MuiTableCell-root {
   width: 19%;
   padding: 10px 43px 10px 10px;
-} */
+}

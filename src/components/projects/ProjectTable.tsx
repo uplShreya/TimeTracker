@@ -9,6 +9,7 @@ import Paper from "@mui/material/Paper";
 import style from "../../components/projects/Project.module.css";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import { route } from "next/dist/server/router";
+import Image from "next/image";
 
 function createData(
   name: string,
@@ -89,6 +90,10 @@ const rows = [
 ];
 
 export default function ProjectTable() {
+  const [hover, setHover] = React.useState(true);
+  const hovering = () => {
+    setHover(false);
+  };
   return (
     <div style={{ padding: "2em", width: "108%" }}>
       <div
@@ -326,9 +331,26 @@ export default function ProjectTable() {
                     height: "3em",
                   }}
                 ></div>
-                <div style={{ display: "flex", alignItems: "center" }}>
-                  <StarBorderOutlinedIcon />
-                </div>
+                {hover ? (
+                  <div
+                    style={{ display: "flex", alignItems: "center" }}
+                    onClick={hovering}
+                  >
+                    <Image
+                      src="/image/favoriteshover.svg"
+                      height={25}
+                      width={20}
+                    />
+                  </div>
+                ) : (
+                  <div style={{ display: "flex", alignItems: "center" }}>
+                    <Image
+                      src="/image/favoritesnormal.svg"
+                      height={25}
+                      width={20}
+                    />
+                  </div>
+                )}
               </div>
             </td>
           </tr>
