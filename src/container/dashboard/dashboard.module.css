@@ -14,14 +14,10 @@
 
 .dropdown_Date_Button {
     display: flex;
-    /* width: 29%; */
-    /* border: 1px; */
-    /* border-color: rgb(82, 81, 81); */
 }
 
 .Date_button {
     margin-left: 1rem;
-    /* border: 1px solid #999; */
 }
 
 .Date {
@@ -185,9 +181,6 @@
     margin-left: 10px;
 }
 
-
-/* .dashboard_first_component_first_TEAMMEMBER .P {} */
-
 .dashboard_first_component_first_LATESTACTIVITY {
     text-align: left;
     width: 90%;
@@ -196,9 +189,6 @@
     cursor: pointer;
 }
 
-
-/* .dashboard_first_component_first_LATESTACTIVITY .P {} */
-
 .dashboard_first_component_first_TOTALTRACKED {
     text-align: left;
     width: 100%;
@@ -206,9 +196,6 @@
     color: #999999;
     cursor: pointer;
 }
-
-
-/* .dashboard_first_component_first_TOTALTRACKED .P {} */
 
 .dashboard_third_component_secound {
     display: flex;
@@ -278,7 +265,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     color: #2e2d2d;
 }
 
@@ -314,17 +300,8 @@
     border-bottom: 1px solid #C6D2D9;
 }
 
-
-/* .dashboard_secound_component_first p {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .textbar {
     transform: rotate(90deg);
-    /* width: 50%; */
 }
 
 .barCNP_cls {

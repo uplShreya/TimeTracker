@@ -9,7 +9,6 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 import MixBarChart from '../../common/mixBarChart/MixBarChart'
 import PieChart1 from '../../common/pieChart/PieChart'
 import BarChartNoPadding from '../../common/barChartNoPadding/BarChartNoPadding'
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import BarchartNewI from '../../common/barchartNewI/barchartNewI'
 
 const DashBoard = () => {
@@ -33,7 +32,7 @@ const DashBoard = () => {
                                 secoundvalue='Billability'
                             // <FontAwesomeIcon icon="fa-solid fa-dollar-sign" />          
                             />
-                            {/* <ArrowDropDownIcon /> */}
+
                         </div>
                         <div className={styles.dropdown_OnlymeTeam}>
                             <CommonDropdown
@@ -44,7 +43,6 @@ const DashBoard = () => {
                                 secoundvalue='Only me'
                             />
                         </div>
-                        {/* <div className={styles.Date_button}> */}
                         <div className={styles.Date_button_flex}>
                             <div className={styles.Date}>
                                 <CommonDate
@@ -65,7 +63,7 @@ const DashBoard = () => {
                             </div>
                         </div>
 
-                        {/* </div> */}
+                        
                     </div>
 
                 </div>
@@ -107,7 +105,7 @@ const DashBoard = () => {
                             <div className={styles.latestActivityfirst}>
                                 <h1>TimeTracker Design</h1>
                                 <h2>
-                                    {/* <FiberManualRecordIcon /> */}
+                                  
                                     <Image src='/image/Orange.png' width={10} height={10} />
                                     <h1>TimeTracker -</h1> <p>Misc (Internal)</p></h2>
                             </div>
@@ -123,7 +121,6 @@ const DashBoard = () => {
                         <div className={styles.totalTracked}>
                             <div>00:00:00</div>
                             <div>
-                               {/* <BarchartNewI /> */}
                                <BarchartNewI />
                             </div>
                         </div>

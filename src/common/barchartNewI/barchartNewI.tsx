@@ -11,7 +11,6 @@ const BarchartNewI = () => {
     return (
         <div>
             <BarChart
-                // className={styles.textbar}
                 width={460}
                 height={50}
                 data={data}

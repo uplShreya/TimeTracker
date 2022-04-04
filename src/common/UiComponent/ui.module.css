@@ -1,12 +1,11 @@
 .dropDown {
-    width: 90px;
+    width: 9em;
     height: 45px;
     padding: 5px;
     border: 1px solid #999;
     cursor: pointer;
     background-color: #ffffff;
     outline: none;
-    /* appearance: none; */
 }
 
 .dropDown option {
@@ -14,8 +13,6 @@
 }
 
 .dropDown_option {
-    /* padding: 40px; */
-    /* color: blue; */
     padding: 8px;
 }
 
@@ -48,27 +45,6 @@
     border: none;
     outline: none;
 }
-
-
-/* .date2 input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
-    width: 15px;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 10px;
-} */
-
-
-/* .pie p {
-    position: absolute;
-    top: 52em;
-    right: 62em;
-}
-
-.pie PieChart {
-    position: relative;
-} */
 
 .deff {
     width: 100%;

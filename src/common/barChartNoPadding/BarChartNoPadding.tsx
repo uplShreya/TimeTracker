@@ -42,7 +42,6 @@ const BarChartNoPadding = () => {
     return (
         <div>
             <BarChart
-                // className={styles.textbar}
                 width={500}
                 height={330}
                 data={data}
@@ -54,7 +53,6 @@ const BarChartNoPadding = () => {
                 <XAxis type="number" hide={true} />
                 <YAxis type="category" dataKey="name" hide={true}/>
                 <Tooltip
-                // labelFormatter={}
 
                 />
                 <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />
