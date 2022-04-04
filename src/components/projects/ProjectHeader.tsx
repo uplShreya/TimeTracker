@@ -1,3 +1,4 @@
+import { ContactsOutlined } from "@material-ui/icons";
 import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
@@ -16,15 +17,20 @@ function ProjectHeader() {
   return (
     <div style={{ padding: "2em" }}>
       <div
-        style={{ fontSize: "25px", fontFamily: "sans-serif", height: "3em" }}
+        style={{
+          fontSize: "25px",
+          fontFamily: "sans-serif",
+          height: "3em",
+          color: "#666",
+        }}
       >
         <p>Projects</p>
       </div>
       <div style={{ width: "100%" }}>
-        <div className={style.projectheaderborder}>
+        <div>
           <div className={style.projectheaderleftright}>
             <div className={style.projectheaderleft}>
-              <div>
+              <div style={{ display: "flex", width: "10%" }}>
                 <p style={{ color: "#8a8a8a" }}>Filter</p>
               </div>
               <div
@@ -112,10 +118,21 @@ function ProjectHeader() {
             {/* left part end */}
             {/* <div style={{ width: "70%" }}> */}
             <div className={style.projectheaderright}>
-              <div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  paddingLeft: "20px",
+                }}
+              >
                 <Image src="/image/search.svg" height={55} width={20} />
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
                 <TextFieldInput
                   type="search"
                   placeholder="Project name"
@@ -123,7 +140,23 @@ function ProjectHeader() {
                 />
               </div>
               <div style={{ display: "flex", alignItems: "center" }}>
-                <Button variant="contained">Apply Filter</Button>
+                {/* <Button
+                  variant="contained"
+                  // style={{ width: "100%", height: "70%" }}
+                >
+                  Apply Filter
+                </Button> */}
+                <button
+                  style={{
+                    width: "9em",
+                    height: "70%",
+                    color: "#fff",
+                    backgroundColor: "#03a9f4",
+                    border: "1px solid #03a9f4",
+                  }}
+                >
+                  Apply Filter
+                </button>
               </div>
               {/* </div> */}
             </div>
