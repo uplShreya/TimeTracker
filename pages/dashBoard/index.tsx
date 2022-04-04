@@ -5,10 +5,12 @@ import DashBoard from '../../src/container/dashboard/'
 
 const Dashboard = () => {
   return (
-    <div><TwoHalfLayout 
+    <div>
+      <TwoHalfLayout 
     sideView={<SideNavBar />}
     renderView={<DashBoard />} 
-    /></div>
+    />
+    </div>
   )
 }
 

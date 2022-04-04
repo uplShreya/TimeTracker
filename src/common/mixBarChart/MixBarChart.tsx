@@ -77,20 +77,15 @@ const MixBarChart = () => {
     return (
         <div className={styles.deff}>
             <BarChart
-                width={1200}
+                width={1100}
                 height={390}
                 data={data}
-                margin={{
-                    top: 30,
-                    right: 30,
-                    left: 20,
-                    bottom: 5
-                }}>
-                <CartesianGrid strokeDasharray="1 1 1 1" />
+                margin={{ top: 30, right: 15, left: 15, bottom: 30 }}>
+                <CartesianGrid strokeDasharray="1" vertical={false}/>
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip />
-                <Legend />
+                {/* <Legend /> */}
                 <Bar dataKey="pv" stackId="a" fill="#8884d8" />
                 <Bar dataKey="amt" stackId="a" fill="#82ca9d" />
                 <Bar dataKey="uv" stackId="a" fill="#ffc658" />
