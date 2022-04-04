@@ -11,7 +11,7 @@ import TimeTrackerList from "../../components/timeTracker/TimeTrackerList";
 
 function TimeTracker() {
   return (
-    <div className={style.body}>
+    <div>
       <TimeTrackerHeader />
       <TimeTrackerSubHeading />
       <TimeTrackerTable />

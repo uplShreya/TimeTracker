@@ -19,6 +19,10 @@ import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";
 import PropTypes from "prop-types";
 import Image from "next/image";
+import Dashboard from "../../../pages/dashBoard";
+import { DatePicker, DesktopDatePicker, LocalizationProvider } from "@mui/lab";
+import { TextField } from "@mui/material";
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
 
 const drawerWidth = 240;
 
@@ -174,6 +178,7 @@ function TwoHalfLayout(props: any) {
         <DrawerHeader />
         {props.renderView}
       </Box>
+
     </Box>
   );
 }

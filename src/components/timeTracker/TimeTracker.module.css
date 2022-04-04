@@ -51,11 +51,10 @@ border: 0.5px solid #d8d9da;
     width: 100%;
 }
 
-.body{
-    padding: 10px;
+/* .body{
     background-color:  #f5fafa;
     height: 38em;
-}
+} */
 .timer{
     font-size: 18px;
     font-weight: 400;

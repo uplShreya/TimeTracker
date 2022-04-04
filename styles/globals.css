@@ -1,28 +1,30 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #f5fafa;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 .css-19z1ozs-MuiPaper-root-MuiAppBar-root {
-  background-color: white;
-  border-bottom: 1px solid lightgray;
-  box-shadow: none;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    box-shadow: none;
 }
+
 .css-1191obr-MuiPaper-root-MuiAppBar-root {
-  background-color: white;
-  border-bottom: 1px solid lightgray;
-  box-shadow: none;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    box-shadow: none;
 }
 .MuiOutlinedInput-input{
   height: 0.4375em;

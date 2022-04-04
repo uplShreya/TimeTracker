@@ -11,15 +11,21 @@
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.5.1",
     "@mui/lab": "^5.0.0-alpha.75",
     "@mui/material": "^5.5.3",
     "@mui/styled-engine-sc": "^5.5.2",
+    "@mui/x-data-grid": "^5.7.0",
+    "@syncfusion/ej2-charts": "^19.4.54",
+    "@syncfusion/ej2-react-calendars": "^19.4.56",
     "next": "12.1.2",
     "react": "17.0.2",
     "react-datepicker": "^4.7.0",
     "react-dom": "17.0.2",
+    "react-week-picker": "^1.1.4",
+    "recharts": "^2.1.9",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {

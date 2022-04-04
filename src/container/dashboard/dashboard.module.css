@@ -1,0 +1,309 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dropdown_Date_Button {
+    display: flex;
+}
+
+.Date_button {
+    margin-left: 1rem;
+}
+
+.Date {
+    border: 1px solid #999;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.Date_button_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.button_ArrowBackward {
+    border-right: 1px solid #999;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.button_ArrowForward {
+    border-right: 1px solid #999;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.dashboard_text {
+    font-size: 25px;
+    color: #666666;
+    font-size: 1.614rem;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.dropdown_BillabilityProject {
+    margin-right: 1rem;
+}
+
+.dashboard_pi_component_first {
+    width: 100%;
+    background-color: #e4eaee;
+    border: 1px solid #C6D2D9;
+    border-bottom: 2px solid #C6D2D9;
+}
+
+.dashboard_first_component {
+    align-items: center;
+    display: flex;
+    /* justify-content: space-around; */
+    border-bottom: 1px solid #C6D2D9;
+}
+
+.dashboard_first_component_first_totaltime {
+    padding: 1.4286rem;
+    padding-right: 30px;
+    text-align: center;
+    border-bottom: none;
+    border-right: 1px solid #C6D2D9;
+    width: 100%;
+    color: #90a4ae;
+    font-size: 1rem;
+}
+
+.dashboard_first_component_first_totaltime p {
+    margin: 0;
+}
+
+.dashboard_first_component_first_totaltime h1 {
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.514rem;
+    margin: 0;
+}
+
+.dashboard_first_component_first_topproject {
+    padding: 1.4286rem;
+    text-align: center;
+    border-bottom: none;
+    border-right: 1px solid #C6D2D9;
+    width: 100%;
+    color: #90a4ae;
+    font-size: 1rem;
+}
+
+.dashboard_first_component_first_topproject p {
+    margin: 0;
+}
+
+.dashboard_first_component_first_topproject h1 {
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.514rem;
+    margin: 0;
+}
+
+.dashboard_first_component_first_topclient {
+    padding: 1.4286rem;
+    text-align: center;
+    width: 100%;
+    color: #90a4ae;
+    font-size: 1rem;
+}
+
+.dashboard_first_component_first_topclient p {
+    margin: 0;
+}
+
+.dashboard_first_component_first_topclient h1 {
+    color: #333333;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.514rem;
+    margin: 0;
+}
+
+.dashboard_pi_component_secound {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #e4eaee;
+    border: 1px solid #C6D2D9;
+    border-bottom: 2px solid #C6D2D9;
+}
+
+.dashboard_first_component_secound {
+    display: flex;
+    justify-content: space-between;
+    min-height: 35px;
+    padding-left: 1.4286rem;
+    padding-right: 1.4286rem;
+    align-items: center;
+}
+
+.dashboard_first_component_secound_teamactivites {
+    color: #999999;
+    font-size: .8571rem;
+}
+
+.dashboard_first_component_secound_icon {
+    transform: rotate(45deg);
+    color: #b0b3b4;
+    font-size: 12px;
+}
+
+.dashboard_secound_component_secound {
+    background-color: #ffffff;
+    display: flex;
+    border-bottom: 1px solid #C6D2D9;
+}
+
+.dashboard_first_component_first_TEAMMEMBER {
+    text-align: left;
+    width: 40%;
+    font-size: 13px;
+    color: #999999;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.dashboard_first_component_first_LATESTACTIVITY {
+    text-align: left;
+    width: 90%;
+    font-size: 13px;
+    color: #999999;
+    cursor: pointer;
+}
+
+.dashboard_first_component_first_TOTALTRACKED {
+    text-align: left;
+    width: 100%;
+    font-size: 13px;
+    color: #999999;
+    cursor: pointer;
+}
+
+.dashboard_third_component_secound {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.teamMember {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    width: 40%;
+}
+
+.teamMember_image {
+    background-color: #ffa600;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latestActivity {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.latestActivityfirst h1 {
+    color: #131212;
+    font-size: 14px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.latestActivityfirst h2 {
+    display: flex;
+    align-items: center;
+    color: #131212;
+    font-size: 14px;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.latestActivityfirst h2 h1 {
+    margin-left: 10px;
+}
+
+.latestActivityfirst p {
+    padding-left: 8px;
+    color: #7e7e7e;
+    font-size: 13px;
+    font-style: normal;
+}
+
+.totalTracked {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #2e2d2d;
+}
+
+.timeinprogress {
+    display: flex;
+    align-items: center;
+    color: #7e7e7e;
+}
+
+.divide {
+    border-right: 1px solid #C6D2D9;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.timeinprogress1 {
+    padding-right: 10px;
+}
+
+.timeinprogress2 {
+    padding-left: 10px;
+}
+
+.dashboard_third_component_first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.dashboard_secound_component_first {
+    background-color: #ffffff;
+    border-bottom: 1px solid #C6D2D9;
+}
+
+.textbar {
+    transform: rotate(90deg);
+}
+
+.barCNP_cls {
+    margin-bottom: 20px;
+}
