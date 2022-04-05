@@ -12,7 +12,7 @@ import BarChartNoPadding from '../../common/barChartNoPadding/BarChartNoPadding'
 import BarchartNewI from '../../common/barchartNewI/barchartNewI'
 
 const DashBoard = () => {
-    
+
 
     return (
         <>
@@ -63,7 +63,7 @@ const DashBoard = () => {
                             </div>
                         </div>
 
-                        
+
                     </div>
 
                 </div>
@@ -105,9 +105,10 @@ const DashBoard = () => {
                             <div className={styles.latestActivityfirst}>
                                 <h1>TimeTracker Design</h1>
                                 <h2>
-                                  
                                     <Image src='/image/Orange.png' width={10} height={10} />
-                                    <h1>TimeTracker -</h1> <p>Misc (Internal)</p></h2>
+                                    <h1>TimeTracker -</h1>
+                                    <p>Misc (Internal)</p>
+                                </h2>
                             </div>
                             <div className={styles.timeinprogress}>
                                 <div className={styles.timeinprogress1}>00:00:00</div>
@@ -121,7 +122,7 @@ const DashBoard = () => {
                         <div className={styles.totalTracked}>
                             <div>00:00:00</div>
                             <div>
-                               <BarchartNewI />
+                                <BarchartNewI />
                             </div>
                         </div>
                     </div>

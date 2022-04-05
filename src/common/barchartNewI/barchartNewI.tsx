@@ -3,6 +3,10 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 import styles from '../../container/dashboard/dashboard.module.css'
 
 const BarchartNewI = () => {
+    const [open,setOpen]=React.useState(false)
+    const click =()=>{
+        setOpen(!open)
+    }
     const data = [
         {
             name: "Page A", uv: 20, pv: 15, amt: 12, jv: 5, dur: 18, man: 25, uvx: 10
@@ -10,8 +14,9 @@ const BarchartNewI = () => {
     ];
     return (
         <div>
+            <div onClick={click}>Click Me</div>
             <BarChart
-                width={460}
+                width={open ? 280 : 180}
                 height={50}
                 data={data}
                 layout="vertical"

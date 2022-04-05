@@ -1,32 +1,79 @@
 html,
 body {
-    padding: 0;
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #f5fafa;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f5fafa;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+.MuiAppBar-root {
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  box-shadow: none;
 }
 
-.css-19z1ozs-MuiPaper-root-MuiAppBar-root {
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-    box-shadow: none;
+.MuiList-root {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* .css-zxdg2z {
+  padding: 0;
+} */
+
+.MuiSelect-root {
+  width: 95% !important;
+}
+/* .MuiInputBase-root-MuiInput-root-MuiSelect-root {
+  min-width: 150px !important;
+} */
+.MuiFormControl-root {
+  min-width: 68px !important;
+}
+/* .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  width: 108.5% !important;
+} */
+.MuiPopover-paper {
+  max-height: 56%;
+}
+.css-1ygcj2i-MuiTableCell-root {
+  width: 19%;
+  padding: 10px 0px 10px 28px;
+}
+.MuiTableCell-root {
+  width: 19%;
+  padding: 10px 43px 10px 10px;
 }
 
-.css-1191obr-MuiPaper-root-MuiAppBar-root {
-    background-color: white;
-    border-bottom: 1px solid lightgray;
-    box-shadow: none;
+/* .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 10px 10px !important;
+} */
+.MuiOutlinedInput-input{
+  height: 0.4375em;
 }
-
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
-    padding: 10px 10px !important;
+.MuiOutlinedInput-root{
+  border-radius: 1.5px;
+}
+.MuiOutlinedInput-notchedOutline{
+  border: none;
+}
+.MuiInputBase-root-MuiOutlinedInput-root{
+  font-size: 14px;
+}
+/*for DatePicker*/
+.MuiCalendarPicker-root{
+  width: 324px;
+  min-height: 205px;
+} 
+.MuiPopper-root{
+  bottom: 2px;
+  right: 50px;
 }
