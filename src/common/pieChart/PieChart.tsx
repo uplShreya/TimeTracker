@@ -25,7 +25,7 @@ const PieChart1 = (props: any) => {
 
     return (
         <div className={styles.pie}>
-            <PieChart width={400} height={440}>
+            <PieChart width={440} height={440}>
                 <Pie
                     data={data}
                     cx={150}
