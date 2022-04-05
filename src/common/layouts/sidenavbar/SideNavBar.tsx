@@ -10,6 +10,7 @@ import Image from "next/image";
 import { sideNav } from "../../data";
 import { useRouter } from "next/router";
 import style from "../../../common/layouts/sidenavbar/SideNavBar.module.css";
+import { Tooltip } from "@mui/material";
 function SideNavBar() {
   const router = useRouter();
   const [active, setActive] = React.useState(0);
@@ -54,20 +55,27 @@ function SideNavBar() {
               <List>
                 <ListItem disablePadding>
                   <ListItemButton
+                    sx={{ borderLeft: `${item.color}` }}
                     className={`${active === index && style.selection}`}
                     onClick={() => {
                       redirection(item.name);
                     }}
                   >
-                    <ListItemIcon>
-                      <Image src={item.icon} height={22} width={28} />
-                    </ListItemIcon>
-                    <p style={{ fontSize: "16px", fontWeight: "400" }}>
+                    <Tooltip title={item.name} arrow placement="right">
+                      <ListItemIcon>
+                        <Image src={item.icon} height={22} width={28} />
+                      </ListItemIcon>
+                    </Tooltip>
+
+                    <p style={{ fontSize: "14px", fontWeight: "400" }}>
                       {item.name}
                     </p>
                   </ListItemButton>
                 </ListItem>
               </List>
+              {item.name == "CALENDER" || item.name == "REPORTS" ? (
+                <Divider />
+              ) : null}
             </nav>
           );
         })}
