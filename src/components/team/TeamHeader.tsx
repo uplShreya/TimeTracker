@@ -1,69 +1,29 @@
 import React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import TeamMembersTable from "./TeamMembersTable";
+import style from "../team/Team.module.css"
+import TeamMembersTable from "../team/TeamMembersTable"
+import TeamGroupTable from "./TeamGroupTable";
 
 function TeamHeader() {
-  interface TabPanelProps {
-    children?: React.ReactNode;
-    index: number;
-    value: number;
-  }
-  function TabPanel(props: TabPanelProps) {
-    const { children, value, index, ...other } = props;
-
-    return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`simple-tabpanel-${index}`}
-        aria-labelledby={`simple-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
-          <Box sx={{ p: 3 }}>
-            <Typography>{children}</Typography>
-          </Box>
-        )}
-      </div>
-    );
-  }
-
-  function a11yProps(index: number) {
-    return {
-      id: `simple-tab-${index}`,
-      "aria-controls": `simple-tabpanel-${index}`,
-    };
-  }
-
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
-  };
-
   return (
     <div>
-      <Box sx={{ width: "100%" }}>
-        <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            aria-label="basic tabs example"
-          >
-            <Tab label="Members" {...a11yProps(0)} />
-            <Tab label="Groups" {...a11yProps(1)} />
-          </Tabs>
-        </Box>
-        <TabPanel value={value} index={0}>
-          <TeamMembersTable/>
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          Hello
-        </TabPanel>
-      </Box>
+      <ul className={style.tabwrap}>
+        <li>
+          <input type="radio" id="tab-1" name="tab" checked />
+          <label htmlFor="tab-1">Members</label>
+          <div className={style.tabcontent}>
+            <TeamMembersTable/>
+            
+          </div>
+        </li>
+        <li>
+          <input type="radio" id="tab-2" name="tab" />
+          <label htmlFor="tab-2">Groups</label>
+          <div className={style.tabcontent}>
+            <TeamGroupTable/>
+            
+          </div>
+        </li>
+      </ul>
     </div>
   );
 }

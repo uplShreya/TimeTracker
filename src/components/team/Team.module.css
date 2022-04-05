@@ -1,6 +1,111 @@
-.dropdownandtextfield{
+.dropdownandtextfield {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding: 10px;
+}
+
+.tabwrap {
+  width: 100%;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  /* margin: 0 0 0 50px; */
+  position: relative;
+}
+
+.tabwrap input[type="radio"] {
+  position: absolute;
+  /* bottom: 300px;
+   */
+   visibility: hidden;
+}
+
+.tabwrap li {
+  float: left;
+  display: block;
+}
+
+.tabwrap label {
+  background: #C6D2D9;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 3px 3px 0 0;
+  margin: 0 10px 0 0px;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  
+}
+.tabwrap label:hover {
+    background: #fff;
+    border-bottom: 1px solid rgb(201, 200, 200);
+    
+}  
+
+.tabwrap .tabcontent {
+  background: #fff;
+  width: 100%;
+  border-radius: 0 3px 3px 3px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 20px;
+  display: none;
+}
+
+.tabwrap [id^="tab"]:checked + label {
+  background: #fff;
+}
+
+.tabwrap [id^="tab"]:checked ~ .tabcontent {
+  display: block;
+}
+/*Members Header*/
+.input{
+    height: 3em;
+    width: 25em;
+    border-radius: 2px;
+    border: 1px solid darkgray;
+}
+.memberheaderpart {
+  border: 1px solid #c6d2d9;
+  border-radius: 2px;
+  background-color: rgb(228, 234, 238);
+  height: 3em;
+  display: flex;
+  align-items: center;
+  padding-left: 1.7em;
+  color: #999;
+  font-size: 13px;
+}
+.group{
     display: flex;
-    justify-content: space-between;
-    width: 30%;
+    align-items: center;
+    height: 2em;
+    margin: 10px;
     padding: 10px;
+    /* border: 1px solid blue; */
+    background: #E1F5FE;
+    color: #02587f;
+}
+.role{
+    display: flex;
+    align-items: center;
+    height: 2em;
+    margin: 10px;
+    padding: 10px;
+    /* border: 1px solid blue; */
+    background: #03a9f4;
+    color: #fff;
+}
+.access{
+    display: flex;
+    align-items: center;
+    height: 2em;
+    margin: 10px;
+    padding: 10px;
+    /* border: 1px solid blue; */
+    background: #E1F5FE;
+    color: #02587f;
 }

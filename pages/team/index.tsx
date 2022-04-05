@@ -5,16 +5,9 @@ import Team from '../../src/container/team/Team';
 
 function index() {
   return (
-    <div
-    style={{padding: "10px",
-      height: "38em",
-      backgroundColor:" #f5fafa"
-  }}>
-        <TwoHalfLayout 
-      sideView={<SideNavBar />}
-      renderView={<Team />} 
-      />
-    </div>
+    <>
+        <Team />
+    </>
   )
 }
 
