@@ -30,8 +30,8 @@ function SideNavBar() {
       case "/dashBoard":
         setActive(0);
         break;
-      case "projects":
-        setActive(1);
+      case "/projects":
+        setActive(4);
         break;
       default:
         break;
