@@ -33,7 +33,6 @@ function SideNavBar() {
       case "/timetracker":
         setActive(0);
         break;
-
       case "/dashBoard":
         setActive(2);
         break;

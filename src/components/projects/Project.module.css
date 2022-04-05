@@ -1,5 +1,13 @@
 .input {
-  width: 35em;
+  width: 37em;
+}
+.input:hover{
+  border: 1px solid whitesmoke;
+}
+.projectheaderdottedborde{
+  border-right: 1px dotted #C6D2D9;
+  margin-top: 6px;
+  height: 2.5em;
 }
 .projectheaderleftright {
   display: flex;
@@ -39,8 +47,14 @@
 }
 .textfieldinputstyle {
   width: 22em;
-  
+  border: 1px solid #c6d2d9;
 }
+.textfieldinputstyle:hover{
+  border: 1px solid #919aa0;
+}
+
+
+
 .dropdownmenuflex {
   display: flex;
   flex-direction: row;
