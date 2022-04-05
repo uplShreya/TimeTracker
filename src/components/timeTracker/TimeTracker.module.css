@@ -1,0 +1,217 @@
+.header{
+    
+    border: 1px solid rgb(194, 206, 231);
+    margin: 0px 10px 0px 10px;
+    background-color: white;
+    height: 4em;
+    display: flex;
+    padding: 0 10px 0 10px;
+    box-shadow:2px 8px 15px #e2e1e1;
+}
+
+.textfield :hover{
+border: 0.5px solid #c4c6c8 !important;
+}
+
+.topheaderleft{
+    /* display: flex; */
+    width: 54%;
+}
+/* .imgdesign{
+    /* padding-top: 50px; 
+} */
+.liststyle{
+    list-style-type: none;
+    color: grey;
+    padding: 0;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+}
+.topheaderright{
+    display: flex;
+    width: 44%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.topheader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialogbox{
+    display: flex;
+}
+
+.headerinput{
+    width: 100%;
+}
+
+/* .body{
+    background-color:  #f5fafa;
+    height: 38em;
+} */
+.timer{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Arial;
+}
+.img{
+    padding-top: 4px;
+    cursor: pointer;
+}
+.img2{
+   padding-top: 5px;
+}
+.textcolor{
+    padding-left: 10px;
+    color: turquoise;
+    font-size: 16px;
+
+}
+.colorfortext{
+    color: firebrick;
+}
+.btn{
+    background-color: deepskyblue;
+    height: 40px;
+    width: 95px;
+    padding: 10px;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-family: Arial;
+    cursor: pointer;
+}
+/* TimeTracker Subheading Css */
+.subheadingheader{
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+    /* border: 1px solid lightgray; */
+    margin: 0px 10px 0px 10px;
+    /* background-color: lavender; */
+    height: 2.3em;
+    align-items: center;
+    padding-right:  10px ;
+}
+.totalnumber{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.weektotaltext{
+    font-size: 13px;
+    padding-top: 4px;
+    color: rgb(148, 147, 147);
+    font-family: Arial;
+
+}
+.subheadingtext{
+    font-family: Arial;
+    font-size: 24px;
+    /* line-height: 10px; */
+    font-weight: 400;
+}
+.weektext{
+    font-size: 15px;
+    font-family: Arial;
+}
+/* TimeTracker Table Header Css*/
+.tableheader{
+    border: 1px solid rgb(194, 206, 231);
+    margin: 0px 10px 0px 10px;
+    background-color: lavender;
+    height: 2.3em;
+    display: flex;
+    padding: 0 10px 0 10px;
+}
+.headingtop{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.numberandimg{
+    display: flex;
+    width: 14%;
+    align-items: center;
+    justify-content: space-between;
+}
+.image1{
+    margin-top: 2px;
+}
+.tabletext{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tableheadtext{
+    font-size: 13px;
+    font-family: Arial;
+    color: rgb(148, 147, 147);
+    padding: 5px;
+}
+/*TimeTracker Table Part Css*/
+
+.partheader{
+    border: 1px solid rgb(194, 206, 231);
+    margin: 0px 10px 0px 10px;
+    background-color: white;
+    height: 4.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    width: 47%;
+    padding-left: 5px;
+    align-items: center;
+}
+.right{
+    display: flex;
+    width: 52%;
+    align-items: center;
+    justify-content: space-around;
+}
+.border{
+    /* margin-top: 5px; */
+    border-right: 1px dotted rgb(194, 192, 192);
+    height: 2.5em;
+}
+.input{
+    width: 6em;
+    /* height: 5em; */
+}
+.input1{
+    width: 20em;
+}
+.Parttext{
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: 400;
+}
+.dropdownimg{
+    /* padding-left: 10px; */
+    cursor: pointer;
+}
+.dropdownwidth{
+    width: 10em;
+}
+/*Main Page*/
+.color1{
+    color: orange;
+}
+.stylewidth{
+    width: 18.5em;
+}
+.iconwidth{
+    width: 10em;
+}

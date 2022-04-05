@@ -22,7 +22,6 @@
     "@syncfusion/ej2-react-calendars": "^19.4.56",
     "next": "12.1.2",
     "react": "17.0.2",
-    "react-chartjs-2": "^4.0.1",
     "react-datepicker": "^4.7.0",
     "react-dom": "17.0.2",
     "react-week-picker": "^1.1.4",

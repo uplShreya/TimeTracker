@@ -26,3 +26,32 @@ a {
     border-bottom: 1px solid lightgray;
     box-shadow: none;
 }
+
+.MuiOutlinedInput-input {
+    height: 0.4375em;
+}
+
+.MuiOutlinedInput-root {
+    border-radius: 1.5px;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border: none;
+}
+
+.MuiInputBase-root-MuiOutlinedInput-root {
+    font-size: 14px;
+}
+
+
+/*for DatePicker*/
+
+.MuiCalendarPicker-root {
+    width: 324px;
+    min-height: 205px;
+}
+
+.MuiPopper-root {
+    bottom: 2px;
+    right: 50px;
+}

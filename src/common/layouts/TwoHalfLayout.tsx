@@ -181,7 +181,6 @@ function TwoHalfLayout(props: any) {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <div></div>
         {props.renderView}
       </Box>
 

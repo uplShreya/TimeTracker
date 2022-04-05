@@ -1,0 +1,11 @@
+.dialogbox{
+    display: flex;
+    align-items: center;
+}
+
+.textcolor{
+    padding-left: 10px;
+    color: rgb(37, 194, 241);
+    font-size: 18px;
+
+}
