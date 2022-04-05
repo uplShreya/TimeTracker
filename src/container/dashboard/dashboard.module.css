@@ -183,7 +183,7 @@
 
 .dashboard_first_component_first_LATESTACTIVITY {
     text-align: left;
-    width: 90%;
+    width: 116%;
     font-size: 13px;
     color: #999999;
     cursor: pointer;
@@ -191,7 +191,7 @@
 
 .dashboard_first_component_first_TOTALTRACKED {
     text-align: left;
-    width: 100%;
+    width: 64%;
     font-size: 13px;
     color: #999999;
     cursor: pointer;
@@ -207,7 +207,7 @@
     display: flex;
     align-items: center;
     height: 70px;
-    width: 40%;
+    width: 60%;
 }
 
 .teamMember_image {
@@ -225,7 +225,7 @@
 }
 
 .latestActivity {
-    width: 90%;
+    width: 180%;
     display: flex;
     justify-content: space-between;
     align-items: center;

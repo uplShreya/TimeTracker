@@ -74,10 +74,17 @@ const MixBarChart = () => {
             uvx: 10
         }
     ];
+
+    const [open,setOpen]=React.useState(false)
+    const click =()=>{
+        setOpen(!open)
+    }
+
     return (
         <div className={styles.deff}>
             <BarChart
-                width={1100}
+            onClick={click}
+                width={open ? 900 : 1100}
                 height={390}
                 data={data}
                 margin={{ top: 30, right: 15, left: 15, bottom: 30 }}>
