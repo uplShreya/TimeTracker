@@ -32,13 +32,13 @@ function TextFieldInput(props: any) {
 
   return (
     <div className={` flex flex-col ${props.extracls}`}>
-      <label className="h-8 font-medium text-[14px]">{props.label}</label>
+      <label>{props.label}</label>
       <TextField
         autoFocus={props.autoFocus}
         onChange={(e) => onChange(e)}
         disabled={props.disabled}
         id={props.id}
-        variant="outlined"
+        // variant="outlined"
         label={props.inputLabel}
         defaultValue={props.defaultValue}
         className={`textfieldclass ${

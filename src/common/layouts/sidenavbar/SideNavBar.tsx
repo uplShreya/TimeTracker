@@ -15,6 +15,9 @@ function SideNavBar() {
   const [active, setActive] = React.useState(0);
   const redirection = (name: any) => {
     switch (name) {
+      case "TIME TRACKER":
+        router.push("/timetracker");
+        break;
       case "DASHBOARD":
         router.push("/dashBoard");
         break;
@@ -27,6 +30,10 @@ function SideNavBar() {
   };
   React.useEffect(() => {
     switch (router.pathname) {
+      case "/timetracker":
+        setActive(0);
+        break;
+
       case "/dashBoard":
         setActive(2);
         break;

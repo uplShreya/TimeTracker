@@ -1,22 +1,22 @@
 import React from 'react'
-import style from "../timeTrackerSubHeading/TimeTrackerSubHeading.module.css";
+import style from "../timeTracker/TimeTracker.module.css";
 import text from "../../common/en_US.json";
 import Image from 'next/image';
 
 function TimeTrackerSubHeading() {
   return (
     <div style={{
-        marginTop:"2em"
+        height:"3em"
     }}>
-        <div className={style.header}>
+        <div className={style.subheadingheader}>
           <div className={style.weektext}>
             <p>{text.thisweek}</p>
           </div>
           <div className={style.totalnumber}>
-            <div>
+            <div className={style.weektotaltext}>
               <p>{text.weektotal} : </p>
               </div>
-              <div className={style.text}>
+              <div className={style.subheadingtext}>
               <p >00:00:00</p>
               </div>
           </div>
