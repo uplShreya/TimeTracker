@@ -7,11 +7,12 @@ import ProjectPage from "../../src/container/projectscontainer/ProjectPage";
 function index() {
   return (
     <div>
-      <TwoHalfLayout
+      {/* <TwoHalfLayout
         sideView={<SideNavBar />}
         headerView={<Header />}
         renderView={<ProjectPage />}
-      />
+      /> */}
+      <ProjectPage />
     </div>
   );
 }

@@ -91,7 +91,7 @@ const rows = [
 
 export default function ProjectTable() {
   return (
-    <div style={{ padding: "2em" }}>
+    <div style={{ padding: "2em 0 0 0" }}>
       <div
         style={{
           border: "1px solid #C6D2D9",

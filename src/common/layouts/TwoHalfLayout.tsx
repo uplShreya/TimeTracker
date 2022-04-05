@@ -97,6 +97,10 @@ function TwoHalfLayout(props: any) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
+  //   const click =()=>{
+  //     setOpen(!open)
+  // }
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };

@@ -23,7 +23,7 @@ function ProjectHeader() {
     { name: "UI/UX", value: "UI/UX" },
   ];
   return (
-    <div style={{ padding: "2em" }}>
+    <div>
       <div
         style={{
           fontSize: "25px",

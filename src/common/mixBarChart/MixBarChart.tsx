@@ -74,23 +74,25 @@ const MixBarChart = () => {
             uvx: 10
         }
     ];
+
+    const [open,setOpen]=React.useState(false)
+    const click =()=>{
+        setOpen(!open)
+    }
+
     return (
         <div className={styles.deff}>
             <BarChart
-                width={1200}
+            onClick={click}
+                width={open ? 900 : 1100}
                 height={390}
                 data={data}
-                margin={{
-                    top: 30,
-                    right: 30,
-                    left: 20,
-                    bottom: 5
-                }}>
-                <CartesianGrid strokeDasharray="1 1 1 1" />
-                <XAxis dataKey="name" />
+                margin={{ top: 30, right: 15, left: 15, bottom: 30 }}>
+                <CartesianGrid strokeDasharray="1" vertical={false}/>
+                <XAxis dataKey="name" tickCount={0}/>
                 <YAxis />
                 <Tooltip />
-                <Legend />
+                {/* <Legend /> */}
                 <Bar dataKey="pv" stackId="a" fill="#8884d8" />
                 <Bar dataKey="amt" stackId="a" fill="#82ca9d" />
                 <Bar dataKey="uv" stackId="a" fill="#ffc658" />

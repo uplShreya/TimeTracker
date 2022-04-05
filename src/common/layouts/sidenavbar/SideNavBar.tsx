@@ -28,7 +28,7 @@ function SideNavBar() {
   React.useEffect(() => {
     switch (router.pathname) {
       case "/dashBoard":
-        setActive(0);
+        setActive(2);
         break;
       case "/projects":
         setActive(4);
