@@ -55,7 +55,7 @@ function SideNavBar() {
               <List>
                 <ListItem disablePadding>
                   <ListItemButton
-                    sx={{ borderLeft: `${item.color}` }}
+                    sx={{ borderLeft: `4px solid ${item.color}` }}
                     className={`${active === index && style.selection}`}
                     onClick={() => {
                       redirection(item.name);

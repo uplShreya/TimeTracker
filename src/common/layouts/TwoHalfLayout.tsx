@@ -115,7 +115,7 @@ function TwoHalfLayout(props: any) {
       <AppBar position="fixed" open={open}>
         <Toolbar
           sx={{
-            ...(!open && { borderLeft: "0.2857rem solid #607D8B" }),
+            ...(!open && { borderLeft: "4px solid #607D8B" }),
           }}
         >
           <IconButton
