@@ -37,8 +37,8 @@ const DashBoard = () => {
                         <div className={styles.dropdown_OnlymeTeam}>
                             <CommonDropdown
                                 dropdown={true}
-                                firstName='Teame'
-                                firstvalue='Teame'
+                                firstName='Team'
+                                firstvalue='Team'
                                 secoundNmae='Only me'
                                 secoundvalue='Only me'
                             />
