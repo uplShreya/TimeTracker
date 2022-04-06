@@ -37,7 +37,7 @@ const CommonDate = (props: any) => {
             {props.date2 && <div className={styles.date2}>
                 <div className={styles.dateinput_fild}>
                     <Image src='/image/calendar.svg' width={20} height={30} className={styles.date2I_mage} />
-                    {/* <LocalizationProvider dateAdapter={AdapterDateFns} className={styles.data_fild}>
+                    <LocalizationProvider dateAdapter={AdapterDateFns} className={styles.data_fild}>
                     <DateRangePicker
                         label="Advanced keyboard"
                         value={value}
@@ -58,24 +58,7 @@ const CommonDate = (props: any) => {
                             </React.Fragment>
                         )}
                     />
-                </LocalizationProvider> */}
-                    <LocalizationProvider dateAdapter={AdapterDateFns}>
-                        <DateRangePicker
-                            startText="Check-in"
-                            endText="Check-out"
-                            value={value}
-                            onChange={(newValue) => {
-                                setValue(newValue);
-                            }}
-                            renderInput={(startProps, endProps) => (
-                                <React.Fragment>
-                                    <TextField {...startProps} sx={{ width: 100 }}/>
-                                    <Box sx={{ mx: 2 }}> - </Box>
-                                    <TextField {...endProps} />
-                                </React.Fragment>
-                            )}
-                        />
-                    </LocalizationProvider>
+                </LocalizationProvider>
                 </div>
             </div>}
         </div>
