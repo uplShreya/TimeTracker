@@ -38,7 +38,7 @@ function TeamGroupTable() {
       >
         <thead style={{ border: "1px solid #C6D2D9", height: "3em" }}>
           <tr>
-            <th style={{ width: "30%" }}>
+            <th style={{ width: "25%" }}>
               <div
                 style={{
                   fontSize: "13px",
@@ -52,7 +52,7 @@ function TeamGroupTable() {
                 NAME
               </div>
             </th>
-            <th style={{ width: "70%" }}>
+            <th style={{ width: "75%" }}>
               <div
                 style={{
                   fontSize: "13px",
@@ -80,7 +80,7 @@ function TeamGroupTable() {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  width: "43%",
+                  width: "36%",
                 }}
               >
                 <div

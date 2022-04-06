@@ -68,11 +68,12 @@ function TeamMembersTable() {
           secoundvalue='Billability'
           dropdownclass={style.dropdownstyle}/>
         </div>
-        <div >
+        <div style={{paddingLeft:"10px"}}>
         <input type="search" placeholder="Search by name or email" 
         style={{height:"3em",
       width:"20em",
     border:"1px solid darkgrey",
+    padding:"10px",
   borderRadius:"2px"}}
         />
         </div>
