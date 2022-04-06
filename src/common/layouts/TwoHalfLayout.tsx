@@ -21,7 +21,7 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 import Dashboard from "../../../pages/dashBoard";
 import { TextField } from "@mui/material";
-
+import {Hooks} from "../hooks/hooks";
 const drawerWidth = 240;
 
 const openedMixin = (theme: Theme): CSSObject => ({
@@ -95,19 +95,20 @@ const Drawer = styled(MuiDrawer, {
 
 function TwoHalfLayout(props: any) {
   const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
+  const { open, handleDrawerOpen, handleDrawerClose } = Hooks();
+  // const [open, setOpen] = React.useState(false);
 
-  //   const click =()=>{
-  //     setOpen(!open)
+  // const click = () => {
+  //   setOpen(!open)
   // }
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+  // const handleDrawerOpen = () => {
+  //   setOpen(true);
+  // };
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  // const handleDrawerClose = () => {
+  //   setOpen(false);
+  // };
 
   return (
     <Box sx={{ display: "flex" }}>
