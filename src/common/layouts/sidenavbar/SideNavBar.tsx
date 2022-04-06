@@ -25,6 +25,9 @@ function SideNavBar() {
       case "PROJECTS":
         router.push("/projects");
         break;
+        case "TEAM":
+        router.push("/team");
+        break;
       default:
         break;
     }
@@ -39,6 +42,9 @@ function SideNavBar() {
         break;
       case "/projects":
         setActive(4);
+        break;
+        case "/team":
+        setActive(5);
         break;
       default:
         break;
