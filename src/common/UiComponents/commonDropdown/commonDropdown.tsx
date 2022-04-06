@@ -30,9 +30,9 @@ const CommonDropdown = (props: any) => {
                                 <div>{props.firstName}</div>
                             </MenuItem>
                             <MenuItem value={props.firstvalue}>{props.firstName}</MenuItem>
-                            <MenuItem value={props.secoundvalue}>{props.secoundNmae}</MenuItem>
-                            <MenuItem value={props.thirdvalue}>{props.ThirdNmae}</MenuItem>
-                            <MenuItem value={props.fourthvalue}>{props.fourthNmae}</MenuItem>
+                            <MenuItem value={props.secoundvalue}>{props.secoundName}</MenuItem>
+                            <MenuItem value={props.thirdvalue}>{props.ThirdName}</MenuItem>
+                            <MenuItem value={props.fourthvalue}>{props.fourthName}</MenuItem>
                         </Select>
                     </FormControl>
                     {/* <select name="cars" id="cars" className={styles.dropDown}>

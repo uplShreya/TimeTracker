@@ -62,10 +62,13 @@ function TeamMembersTable() {
         <div>
           <CommonDropdown
           dropdown={true}
-          value='Show all'
-          firstvalue='Project'
-          secoundNmae='Billability'
-          secoundvalue='Billability'
+          firstName='Show all'
+          secoundName='Show Active'
+          secoundvalue='Show Active'
+          ThirdName='Show Inactive'
+          Thirdvalue='Show Inactive'
+          fourthName='Show Invited'
+          fourthvalue='Show Invited'
           dropdownclass={style.dropdownstyle}/>
         </div>
         <div style={{paddingLeft:"10px"}}>
