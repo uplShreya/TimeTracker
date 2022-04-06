@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
-import Dialogbox from '../../common/uiComponents/dialogbox/DialogBox'
+import Dialogbox from '../../common/UiComponents/dialogbox/DialogBox'
 import TextFieldInput from '../../common/formFields/TextFieldInput'
 // import styled from "styled-components";
 import style from "../timeTracker/TimeTracker.module.css"
 // import TimePicker from 'react-time-picker';
 // import Plusicon from "../../../public/image/plus-blue.svg";
 import text from "../../common/en_US.json";
-import TimeTrackerDropDown from '../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown';
+import TimeTrackerDropDown from '../../common/UiComponents/timetrackerdropdown/TimeTrackerDropDown';
 import { height } from '@mui/system';
 import TimeTrackerList from './TimeTrackerList';
 // import { blue } from '@mui/material/colors';

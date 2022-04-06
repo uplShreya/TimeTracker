@@ -1,6 +1,6 @@
 import React from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, Sector } from "recharts";
-import styles from '../UiComponent/ui.module.css'
+import styles from '../UiComponents/ui.module.css'
 const PieChart1 = (props: any) => {
     const data = [
         { name: "Group A", value: 400 },

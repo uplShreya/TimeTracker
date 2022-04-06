@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import TextFieldInput from "../../common/formFields/TextFieldInput";
-import Dropdownheader from "../../common/uiComponents/Dropdownheader";
+import Dropdownheader from "../../common/UiComponents/Dropdownheader";
 import style from "../../components/projects/Project.module.css";
 
 function ProjectHeader() {

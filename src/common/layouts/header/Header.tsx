@@ -2,7 +2,7 @@ import { Avatar } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import { deepPurple } from "@mui/material/colors";
-import Dropdownheader from "../../uiComponents/Dropdownheader";
+import Dropdownheader from "../../UiComponents/Dropdownheader";
 
 function Header() {
   return (
