@@ -1,8 +1,16 @@
 .input {
-  width: 37em;
+  width: 100%;
+}
+.textfieldprojectstyle{
+width:40em;
 }
 .input:hover{
   border: 1px solid whitesmoke;
+}
+.projectheaderbuttonoutside{
+  display: flex;
+  align-items: center; 
+  width: 7em;
 }
 .projectheaderdottedborde{
   border-right: 1px dotted #C6D2D9;
@@ -34,7 +42,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 57%;
+  width: 65%;
   padding-right: 12px;
 }
 .textfieldstyle {

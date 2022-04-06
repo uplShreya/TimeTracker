@@ -115,7 +115,8 @@ function ProjectHeader() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  paddingLeft: "20px",
+                  paddingLeft: "36px",
+                  width: "4em",
                 }}
               >
                 <Image src="/image/search.svg" height={55} width={20} />
@@ -125,22 +126,24 @@ function ProjectHeader() {
                   display: "flex",
                   alignItems: "center",
                 }}
-                className={style.textfieldhover}
               >
                 <TextFieldInput
                   type="search"
                   placeholder="Project name"
                   textnewclass={style.input}
+                  extracls={style.textfieldprojectstyle}
                 />
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div className={style.projectheaderbuttonoutside}>
                 <button
                   style={{
-                    width: "9em",
+                    width: "8em",
                     height: "70%",
                     color: "#fff",
+                    fontSize: "17px",
                     backgroundColor: "#03a9f4",
                     border: "1px solid #03a9f4",
+                    borderRadius: "3px",
                   }}
                 >
                   Apply Filter
