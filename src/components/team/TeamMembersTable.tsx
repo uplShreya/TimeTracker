@@ -1,5 +1,6 @@
 import { Table } from "@mui/material";
-import React from "react";
+import Image from "next/image";
+import React, { useState } from "react";
 import TextFieldInput from "../../common/formFields/TextFieldInput";
 import Dropdownheader from "../../common/uiComponents/Dropdownheader";
 // import TimeTrackerDropDown from '../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown'
@@ -25,6 +26,24 @@ function createData(
     
   ];
 function TeamMembersTable() {
+  // const[sortasc,setsortasc]=useState([]);
+  // function sortingAscImage () {
+  //   rows.sort ((a:any , b:any) => Number(a.name) - Number(b.name));
+  //   setsortasc(rows)
+//   const rows1 = [...rows].sort((a, b) => (a.name < b.name ? -1 : 1));
+
+//   const [sortField, setSortField] = useState("");
+//  const [order, setOrder] = useState("asc");
+
+//  const handleSortingChange = (accessor : any) => {
+//   const sortOrder =
+//   accessor === sortField && order === "asc" ? "desc" : "asc";
+//  setSortField(accessor);
+//  setOrder(sortOrder);
+//  handleSorting(accessor, sortOrder);
+
+ 
+
   return (
     <div
       style={{
@@ -42,7 +61,12 @@ function TeamMembersTable() {
           />
         </div>
         <div >
-        <input type="text" placeholder="Find Project or Client" />
+        <input type="search" placeholder="Search by name or email" 
+        style={{height:"3em",
+      width:"20em",
+    border:"1px solid darkgrey",
+  borderRadius:"2px"}}
+        />
         </div>
       </div>
 
@@ -62,6 +86,10 @@ function TeamMembersTable() {
         <thead style={{ border: "1px solid #C6D2D9", height: "3em" }}>
           <tr>
             <th style={{ width: "25%" }}>
+              <div style={{display:"flex",
+            width:"26%",
+            justifyContent:"space-between",
+            alignItems:"center"}}>
               <div
                 style={{
                   fontSize: "13px",
@@ -73,9 +101,19 @@ function TeamMembersTable() {
                 }}
               >
                 NAME
+                </div>
+                <div>
+                  <Image src="/image/sort.png" alt=""  height={12} width={12}
+                  // onClick={sortable ? () => handleSortingChange(accessor) : null}
+                  />
+                </div>
               </div>
             </th>
             <th style={{ width: "25%" }}>
+              <div style={{display:"flex",
+            width:"19%",
+            justifyContent:"space-between",
+            alignItems:"center"}}>
               <div
                 style={{
                   fontSize: "13px",
@@ -86,6 +124,12 @@ function TeamMembersTable() {
                 }}
               >
                 EMAIL
+              </div>
+              <div>
+                  <Image src="/image/sort.png" alt=""  height={12} width={12}
+                  // onClick={sortable ? () => handleSortingChange(accessor) : null}
+                  />
+                </div>
               </div>
             </th>
             <th style={{ width: "25%" }}>
@@ -102,6 +146,10 @@ function TeamMembersTable() {
               </div>
             </th>
             <th style={{ width: "25%" }}>
+              <div style={{display:"flex",
+            width:"21%",
+            justifyContent:"space-between",
+            alignItems:"center"}}>
               <div
                 style={{
                   fontSize: "13px",
@@ -113,15 +161,21 @@ function TeamMembersTable() {
               >
                GROUP
               </div>
+              <div>
+                  <Image src="/image/sort.png" alt=""  height={12} width={12}
+                  // onClick={sortable ? () => handleSortingChange(accessor) : null}
+                  />
+                </div>
+                </div>
             </th>
             
           </tr>
         </thead>
 
         {rows.map((row) => (
-          <tr style={{ border: "1px solid #C6D2D9", height: "4.5em" }}>
+          <tr style={{ border: "1px solid #C6D2D9", height: "3.5em" }}>
             <td>
-              <div style={{ paddingLeft: "1.5em" }}>
+              <div style={{ paddingLeft: "1.5em",fontSize:"14px" }}>
                 {row.name}
               </div>
             </td>
@@ -144,7 +198,8 @@ function TeamMembersTable() {
                   style={{
                     display: "flex",
                     alignItems: "center",
-                    paddingLeft:"10px"
+                    paddingLeft:"10px",
+                    fontSize:"14px",
                   }}
                 >
                   {row.email}
