@@ -38,7 +38,13 @@ function ProjectHeader() {
         <div>
           <div className={style.projectheaderleftright}>
             <div className={style.projectheaderleft}>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  paddingLeft: "1.5em",
+                }}
+              >
                 <p
                   style={{
                     color: "#8a8a8a",
@@ -113,11 +119,11 @@ function ProjectHeader() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  paddingLeft: "36px",
-                  width: "4em",
+                  paddingLeft: "1em",
+                  width: "5em",
                 }}
               >
-                <Image src="/image/search.svg" height={55} width={20} />
+                <Image src="/image/search.svg" height={55} width={22} />
               </div>
               <div
                 style={{

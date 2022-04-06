@@ -11,7 +11,7 @@ function Header() {
         <div
           style={{
             display: "flex",
-            width: "22em",
+            width: "24em",
             justifyContent: "space-between",
             float: "right",
           }}
@@ -19,7 +19,7 @@ function Header() {
           <div style={{ display: "flex", alignItems: "center" }}>
             <Dropdownheader
               value1="Project Workspace"
-              defaulvalue="WORKSPACES"
+              defaultvalue="WORKSPACES"
             />
           </div>
           <div
