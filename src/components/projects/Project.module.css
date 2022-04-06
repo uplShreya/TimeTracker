@@ -1,9 +1,25 @@
 .input {
-  width: 35em;
+  width: 100%;
+}
+.textfieldprojectstyle{
+width:30em;
+}
+.input:hover{
+  border: 1px solid whitesmoke;
+}
+.projectheaderbuttonoutside{
+  display: flex;
+  align-items: center; 
+  width: 7em;
+}
+.projectheaderdottedborde{
+  border-right: 1px dotted #C6D2D9;
+  margin-top: 6px;
+  height: 2.5em;
 }
 .projectheaderleftright {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   border: 1px solid #c6d2d9;
   background-color: white;
@@ -17,17 +33,14 @@
 }
 .projectheaderleft {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 42%;
-  padding-left: 21px;
 }
 .projectheaderright {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 57%;
-  padding-right: 12px;
 }
 .textfieldstyle {
   width: 24em;
@@ -39,8 +52,14 @@
 }
 .textfieldinputstyle {
   width: 22em;
-  
+  border: 1px solid #c6d2d9;
 }
+.textfieldinputstyle:hover{
+  border: 1px solid #919aa0;
+}
+
+
+
 .dropdownmenuflex {
   display: flex;
   flex-direction: row;
@@ -59,7 +78,6 @@
   height: 0.4286rem;
   vertical-align: middle;
   border-radius: 50%;
-  /* background-color: rgb(244, 67, 54); */
 }
 
 /* .hovereffect:hover {

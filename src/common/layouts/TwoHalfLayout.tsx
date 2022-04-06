@@ -114,7 +114,11 @@ function TwoHalfLayout(props: any) {
     <Box sx={{ display: "flex" }}>
       {/* <CssBaseline /> */}
       <AppBar position="fixed" open={open}>
-        <Toolbar>
+        <Toolbar
+          sx={{
+            ...(!open && { borderLeft: "4px solid #607D8B" }),
+          }}
+        >
           <IconButton
             // color="inherit"
             aria-label="open drawer"
@@ -144,6 +148,7 @@ function TwoHalfLayout(props: any) {
           </div>
         </Toolbar>
       </AppBar>
+
       <Drawer variant="permanent" open={open}>
         <DrawerHeader>
           <IconButton onClick={handleDrawerClose}>
