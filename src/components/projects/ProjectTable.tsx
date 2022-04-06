@@ -127,6 +127,7 @@ export default function ProjectTable() {
                   height: "2em",
                   display: "flex",
                   alignItems: "center",
+                  fontWeight: "400",
                 }}
               >
                 NAME
@@ -140,6 +141,7 @@ export default function ProjectTable() {
                   height: "2em",
                   display: "flex",
                   alignItems: "center",
+                  fontWeight: "400",
                 }}
               >
                 CLIENT
@@ -153,6 +155,7 @@ export default function ProjectTable() {
                   height: "2em",
                   display: "flex",
                   alignItems: "center",
+                  fontWeight: "400",
                 }}
               >
                 TRACKED
@@ -166,6 +169,7 @@ export default function ProjectTable() {
                   height: "2em",
                   display: "flex",
                   alignItems: "center",
+                  fontWeight: "400",
                 }}
               >
                 ACCESS
@@ -179,6 +183,7 @@ export default function ProjectTable() {
                   height: "2em",
                   display: "flex",
                   alignItems: "center",
+                  fontWeight: "400",
                 }}
               >
                 FAVORITES
@@ -192,6 +197,7 @@ export default function ProjectTable() {
                   height: "2em",
                   display: "flex",
                   alignItems: "center",
+                  fontWeight: "400",
                 }}
               >
                 none
