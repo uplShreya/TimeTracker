@@ -9,9 +9,9 @@
     box-shadow:2px 8px 15px #e2e1e1;
 }
 
-.textfield :hover{
+/* .textfield :hover{
 border: 0.5px solid #c4c6c8 !important;
-}
+} */
 
 .topheaderleft{
     /* display: flex; */
@@ -48,7 +48,9 @@ border: 0.5px solid #c4c6c8 !important;
 .headerinput{
     width: 100%;
 }
-
+.headerinput:hover{
+    border: 1px solid rgb(182, 180, 180);
+}
 /* .body{
     background-color:  #f5fafa;
     height: 38em;
@@ -190,8 +192,14 @@ border: 0.5px solid #c4c6c8 !important;
     width: 6em;
     /* height: 5em; */
 }
+.input:hover{
+    border: 1px solid darkgray;
+}
 .input1{
     width: 20em;
+}
+.input1:hover{
+    border: 1px solid darkgrey;
 }
 .Parttext{
     font-size: 16px;
