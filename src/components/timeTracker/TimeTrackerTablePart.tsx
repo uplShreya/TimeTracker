@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Calendar from "../../common/calendar/Calendar";
 import TextFieldInput from "../../common/formFields/TextFieldInput";
-import TimeTrackerDropDown from "../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown";
+import TimeTrackerDropDown from "../../common/UiComponents/timetrackerdropdown/TimeTrackerDropDown";
 import style from "../timeTracker/TimeTracker.module.css";
 // import DatePicker from "react-datepicker";
 

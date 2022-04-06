@@ -33,11 +33,11 @@ const CommonDate = (props: any) => {
                     />
                 </Stack>
             </div>}
-            
+
             {props.date2 && <div className={styles.date2}>
                 <div className={styles.dateinput_fild}>
-                <Image src='/image/calendar.svg' width={20} height={30} className={styles.date2I_mage} />
-                <LocalizationProvider dateAdapter={AdapterDateFns} className={styles.data_fild}>
+                    <Image src='/image/calendar.svg' width={20} height={30} className={styles.date2I_mage} />
+                    <LocalizationProvider dateAdapter={AdapterDateFns} className={styles.data_fild}>
                     <DateRangePicker
                         label="Advanced keyboard"
                         value={value}

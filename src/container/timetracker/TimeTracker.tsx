@@ -4,7 +4,7 @@ import style from "../../components/timeTracker/TimeTracker.module.css";
 import TimeTrackerSubHeading from "../../components/timeTracker/TimeTrackerSubHeading";
 import TimeTrackerTable from "../../components/timeTracker/TimeTrackerTableHeader";
 import TimeTrackerTablePart from "../../components/timeTracker/TimeTrackerTablePart";
-import TimeTrackerDropDown from "../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown";
+import TimeTrackerDropDown from "../../common/UiComponents/timetrackerdropdown/TimeTrackerDropDown";
 import plus from "../../../public/image/plus-blue.svg";
 import Calendar from "../../common/calendar/Calendar";
 import TimeTrackerList from "../../components/timeTracker/TimeTrackerList";

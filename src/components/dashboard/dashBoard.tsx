@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
-import CommonButton from '../../common/UiComponent/commonButton/commonButton'
-import CommonDate from '../../common/UiComponent/commonDatetime/commonDatetime'
-import CommonDropdown from '../../common/UiComponent/commonDropdown/commonDropdown'
+import CommonButton from '../../common/UiComponents/commonButton/commonButton'
+import CommonDate from '../../common/UiComponents/commonDatetime/commonDatetime'
+import CommonDropdown from '../../common/UiComponents/commonDropdown/commonDropdown'
 import styles from '../../container/dashboard/dashboard.module.css'
 import PushPinIcon from '@mui/icons-material/PushPin';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, PieChart, Pie, Cell, Sector } from "recharts";
@@ -37,8 +37,8 @@ const DashBoard = () => {
                         <div className={styles.dropdown_OnlymeTeam}>
                             <CommonDropdown
                                 dropdown={true}
-                                firstName='Team'
-                                firstvalue='Team'
+                                firstName='Teame'
+                                firstvalue='Teame'
                                 secoundNmae='Only me'
                                 secoundvalue='Only me'
                             />
@@ -81,63 +81,7 @@ const DashBoard = () => {
                             <PieChart1 />
                         </div>
                         <div className={styles.BarChartNoPadding}>
-                            {/* <BarChartNoPadding /> */}
-                            <div className={styles.totalTracked}>
-                                <div>
-                                    <BarChartNoPadding
-                                        data1={true}
-                                    />
-                                </div>
-                                <div style={{marginLeft: 10}}>00%</div>
-                            </div>
-                            <div className={styles.totalTracked}>
-                                <div>
-                                    <BarChartNoPadding
-                                        data2={true}
-                                    />
-                                </div>
-                                <div style={{marginLeft: 10}}>00%</div>
-                            </div>
-                            <div className={styles.totalTracked}>
-                                <div>
-                                    <BarChartNoPadding
-                                        data3={true}
-                                    />
-                                </div>
-                                <div style={{marginLeft: 10}}>00%</div>
-                            </div>
-                            <div className={styles.totalTracked}>
-                                <div>
-                                    <BarChartNoPadding
-                                        data4={true}
-                                    />
-                                </div>
-                                <div style={{marginLeft: 10}}>00%</div>
-                            </div>
-                            <div className={styles.totalTracked}>
-                                <div>
-                                    <BarChartNoPadding
-                                        data5={true}
-                                    />
-                                </div>
-                                <div style={{marginLeft: 10}}>00%</div>
-                            </div>
-                            <div className={styles.totalTracked}>
-                                <div>
-                                    <BarChartNoPadding
-                                        data6={true}
-                                    />
-                                </div>
-                                <div style={{marginLeft: 10}}>00%</div>
-                            </div>
-                            <div className={styles.totalTracked}>
-                                <div>
-                                    <BarChartNoPadding
-                                        data7={true}
-                                    />
-                                </div>
-                                <div style={{marginLeft: 10}}>00%</div>
-                            </div>
+                            <BarChartNoPadding />
                         </div>
                     </div>
                 </div>
@@ -150,99 +94,6 @@ const DashBoard = () => {
                         <div className={styles.dashboard_first_component_first_TEAMMEMBER}><p>TEAM MEMBER</p></div>
                         <div className={styles.dashboard_first_component_first_LATESTACTIVITY}><p>LATEST ACTIVITY</p></div>
                         <div className={styles.dashboard_first_component_first_TOTALTRACKED}><p>TOTAL TRACKED (THIS WEEK)</p></div>
-                    </div>
-                    <div className={styles.dashboard_third_component_secound}>
-                        <div className={styles.teamMember}>
-                            <div className={styles.teamMember_image}>RD</div>
-                            <p>Rajdwip Dey</p>
-                        </div>
-                        <div className={styles.divide}></div>
-                        <div className={styles.latestActivity}>
-                            <div className={styles.latestActivityfirst}>
-                                <h1>TimeTracker Design</h1>
-                                <h2>
-                                    <Image src='/image/Orange.png' width={10} height={10} />
-                                    <h1>TimeTracker -</h1>
-                                    <p>Misc (Internal)</p>
-                                </h2>
-                            </div>
-                            <div className={styles.timeinprogress}>
-                                <div className={styles.timeinprogress1}>00:00:00</div>
-                                {/* <RadioButtonCheckedIcon /> */}
-                                <Image src='/image/record.png' width={12} height={12} />
-                                <div className={styles.timeinprogress2}>In progress</div>
-                            </div>
-
-                        </div>
-                        <div className={styles.divide}></div>
-                        <div className={styles.totalTracked}>
-                            <div>00:00:00</div>
-                            <div>
-                                <BarchartNewI />
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.dashboard_third_component_secound}>
-                        <div className={styles.teamMember}>
-                            <div className={styles.teamMember_image}>RD</div>
-                            <p>Rajdwip Dey</p>
-                        </div>
-                        <div className={styles.divide}></div>
-                        <div className={styles.latestActivity}>
-                            <div className={styles.latestActivityfirst}>
-                                <h1>TimeTracker Design</h1>
-                                <h2>
-                                    <Image src='/image/Orange.png' width={10} height={10} />
-                                    <h1>TimeTracker -</h1>
-                                    <p>Misc (Internal)</p>
-                                </h2>
-                            </div>
-                            <div className={styles.timeinprogress}>
-                                <div className={styles.timeinprogress1}>00:00:00</div>
-                                {/* <RadioButtonCheckedIcon /> */}
-                                <Image src='/image/record.png' width={12} height={12} />
-                                <div className={styles.timeinprogress2}>In progress</div>
-                            </div>
-
-                        </div>
-                        <div className={styles.divide}></div>
-                        <div className={styles.totalTracked}>
-                            <div>00:00:00</div>
-                            <div>
-                                <BarchartNewI />
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.dashboard_third_component_secound}>
-                        <div className={styles.teamMember}>
-                            <div className={styles.teamMember_image}>RD</div>
-                            <p>Rajdwip Dey</p>
-                        </div>
-                        <div className={styles.divide}></div>
-                        <div className={styles.latestActivity}>
-                            <div className={styles.latestActivityfirst}>
-                                <h1>TimeTracker Design</h1>
-                                <h2>
-                                    <Image src='/image/Orange.png' width={10} height={10} />
-                                    <h1>TimeTracker -</h1>
-                                    <p>Misc (Internal)</p>
-                                </h2>
-                            </div>
-                            <div className={styles.timeinprogress}>
-                                <div className={styles.timeinprogress1}>00:00:00</div>
-                                {/* <RadioButtonCheckedIcon /> */}
-                                <Image src='/image/record.png' width={12} height={12} />
-                                <div className={styles.timeinprogress2}>In progress</div>
-                            </div>
-
-                        </div>
-                        <div className={styles.divide}></div>
-                        <div className={styles.totalTracked}>
-                            <div>00:00:00</div>
-                            <div>
-                                <BarchartNewI />
-                            </div>
-                        </div>
                     </div>
                     <div className={styles.dashboard_third_component_secound}>
                         <div className={styles.teamMember}>
