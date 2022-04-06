@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
-import styles from '../UiComponent/ui.module.css'
+import styles from '../UiComponents/ui.module.css'
 // import { Hooks } from '../hooks/hooks';
 const MixBarChart = () => {
     // const { open } = Hooks();
