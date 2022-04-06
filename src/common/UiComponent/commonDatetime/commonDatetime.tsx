@@ -69,7 +69,7 @@ const CommonDate = (props: any) => {
                             }}
                             renderInput={(startProps, endProps) => (
                                 <React.Fragment>
-                                    <TextField {...startProps} />
+                                    <TextField {...startProps} sx={{ width: 100 }}/>
                                     <Box sx={{ mx: 2 }}> - </Box>
                                     <TextField {...endProps} />
                                 </React.Fragment>
