@@ -1,11 +1,14 @@
 .dropDown {
-    width: 9em;
+    width: 8em;
     height: 45px;
-    padding: 5px;
+    /* padding: 5px; */
     border: 1px solid #999;
     cursor: pointer;
     background-color: #ffffff;
     outline: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .dropDown option {
@@ -48,6 +51,8 @@
 
 .deff {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .arrowForward {
