@@ -2,7 +2,8 @@ import { Table } from "@mui/material";
 import Image from "next/image";
 import React, { useState } from "react";
 import TextFieldInput from "../../common/formFields/TextFieldInput";
-import Dropdownheader from "../../common/uiComponents/Dropdownheader";
+// import Dropdownheader from "../../common/uiComponents/Dropdownheader";
+import CommonDropdown from "../../common/UiComponent/commonDropdown/commonDropdown"
 // import TimeTrackerDropDown from '../../common/uiComponents/timetrackerdropdown/TimeTrackerDropDown'
 import style from "../team/Team.module.css";
 function createData(
@@ -23,7 +24,13 @@ function createData(
       "Management",
       
     ),
-    
+    createData(
+      "Alolika",
+      "alolika.sen@utplco.com",
+      "",
+      "UI/UX",
+      
+    ),
   ];
 function TeamMembersTable() {
   // const[sortasc,setsortasc]=useState([]);
@@ -53,12 +60,13 @@ function TeamMembersTable() {
     >
       <div className={style.dropdownandtextfield}>
         <div>
-          <Dropdownheader
-            defaultvalue="Select"
-            // value1="Active"
-            value2="Archived"
-            value3="All"
-          />
+          <CommonDropdown
+          dropdown={true}
+          value='Show all'
+          firstvalue='Project'
+          secoundNmae='Billability'
+          secoundvalue='Billability'
+          dropdownclass={style.dropdownstyle}/>
         </div>
         <div >
         <input type="search" placeholder="Search by name or email" 
@@ -85,9 +93,9 @@ function TeamMembersTable() {
       >
         <thead style={{ border: "1px solid #C6D2D9", height: "3em" }}>
           <tr>
-            <th style={{ width: "25%" }}>
+            <th style={{ width: "18%" }}>
               <div style={{display:"flex",
-            width:"26%",
+            width:"36%",
             justifyContent:"space-between",
             alignItems:"center"}}>
               <div
@@ -109,9 +117,9 @@ function TeamMembersTable() {
                 </div>
               </div>
             </th>
-            <th style={{ width: "25%" }}>
+            <th style={{ width: "30%" }}>
               <div style={{display:"flex",
-            width:"19%",
+            width:"16%",
             justifyContent:"space-between",
             alignItems:"center"}}>
               <div
@@ -132,7 +140,7 @@ function TeamMembersTable() {
                 </div>
               </div>
             </th>
-            <th style={{ width: "25%" }}>
+            <th style={{ width: "20%" }}>
               <div
                 style={{
                   fontSize: "13px",
@@ -222,7 +230,7 @@ function TeamMembersTable() {
                   }}
                 ></div>
                 <div className={style.role} >
-                  {row.role}
+                  {row?.role}
                 </div>
               </div>
             </td>

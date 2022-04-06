@@ -1,8 +1,9 @@
 .dropdownandtextfield {
   display: flex;
   justify-content: space-between;
-  width: 33%;
+  width: 35%;
   padding: 10px;
+  height: 5em;
 }
 
 .tabwrap {
@@ -114,4 +115,12 @@
     /* border: 1px solid blue; */
     background: #E1F5FE;
     color: #02587f;
+}
+.dropdownstyle{
+  height: 2.5em;
+  justify-items: center;
+  border: 1px solid darkgrey;
+}
+.inputdesign{
+  font-size: 14px;
 }

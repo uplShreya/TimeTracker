@@ -13,7 +13,7 @@ const CommonDropdown = (props: any) => {
         <div>
 
             {props.dropdown &&
-                <div className={styles.dropDown}>
+                <div className={`{styles.dropDown} ${props.dropdownclass}`}>
 
                     <FormControl fullWidth sx={{ m: 1, minWidth: 110, height: 28, justifyContent: 'center' }}>
                         {/* <InputLabel id="demo-simple-select-label">Age</InputLabel> */}
@@ -27,10 +27,12 @@ const CommonDropdown = (props: any) => {
                             inputProps={{ 'aria-label': 'Without label' }}
                         >
                             <MenuItem value="">
-                                <em>{props.firstName}</em>
+                                <div>{props.firstName}</div>
                             </MenuItem>
                             <MenuItem value={props.firstvalue}>{props.firstName}</MenuItem>
                             <MenuItem value={props.secoundvalue}>{props.secoundNmae}</MenuItem>
+                            <MenuItem value={props.thirdvalue}>{props.ThirdNmae}</MenuItem>
+                            <MenuItem value={props.fourthvalue}>{props.fourthNmae}</MenuItem>
                         </Select>
                     </FormControl>
                     {/* <select name="cars" id="cars" className={styles.dropDown}>
