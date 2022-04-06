@@ -34,13 +34,11 @@ function ProjectHeader() {
       >
         <p>Projects</p>
       </div>
-      <div style={{ width: "100%" }}>
+      <div style={{}}>
         <div>
           <div className={style.projectheaderleftright}>
             <div className={style.projectheaderleft}>
-              <div
-                style={{ display: "flex", width: "10%", alignItems: "center" }}
-              >
+              <div style={{ display: "flex", alignItems: "center" }}>
                 <p
                   style={{
                     color: "#8a8a8a",
