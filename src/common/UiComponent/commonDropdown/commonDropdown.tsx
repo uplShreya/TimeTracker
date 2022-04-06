@@ -23,7 +23,12 @@ const CommonDropdown = (props: any) => {
                             value={age}
                             // label={props.firstvalue}
                             onChange={handleChange}
+                            displayEmpty
+                            inputProps={{ 'aria-label': 'Without label' }}
                         >
+                            <MenuItem value="">
+                                <em>{props.firstName}</em>
+                            </MenuItem>
                             <MenuItem value={props.firstvalue}>{props.firstName}</MenuItem>
                             <MenuItem value={props.secoundvalue}>{props.secoundNmae}</MenuItem>
                         </Select>
@@ -31,7 +36,23 @@ const CommonDropdown = (props: any) => {
                     {/* <select name="cars" id="cars" className={styles.dropDown}>
                         <option className={styles.dropDown_option} value={props.firstvalue}>{props.firstName} </option>
                         <option className={styles.dropDown_option} value={props.secoundvalue}>{props.secoundNmae}</option>
+                        
                     </select> */}
+                    {/* <FormControl sx={{ m: 1, minWidth: 110, height: 28, justifyContent: 'center', border: 'black' }}>
+                        <Select
+                            value={age}
+                            onChange={handleChange}
+                            displayEmpty
+                            inputProps={{ 'aria-label': 'Without label' }}
+                            sx={{border: 'black' }}
+                        >
+                            <MenuItem value={props.firstName}>
+                                <em>{props.firstName}</em>
+                            </MenuItem>
+                            <MenuItem value={props.firstvalue}>{props.firstName}</MenuItem>
+                            <MenuItem value={props.secoundvalue}>{props.secoundNmae}</MenuItem>
+                        </Select>
+                    </FormControl> */}
                 </div>}
 
         </div>
