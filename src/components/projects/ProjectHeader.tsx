@@ -51,13 +51,7 @@ function ProjectHeader() {
                   FILTER
                 </p>
               </div>
-              <div
-                style={{
-                  borderRight: "1px dotted gray",
-                  marginTop: "5px",
-                  height: "3em",
-                }}
-              ></div>
+              <div className={style.projectheaderdottedborde}></div>
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* <p style={{ color: "#595959" }}>Active</p> */}
                 <Dropdownheader
@@ -67,13 +61,8 @@ function ProjectHeader() {
                   value3="All"
                 />
               </div>
-              <div
-                style={{
-                  borderRight: "1px dotted gray",
-                  marginTop: "5px",
-                  height: "3em",
-                }}
-              ></div>
+              <div className={style.projectheaderdottedborde}></div>
+
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* <p style={{ color: "#595959" }}>Client</p> */}
                 <Dropdownheader
@@ -90,13 +79,8 @@ function ProjectHeader() {
                 />
               </div>
 
-              <div
-                style={{
-                  borderRight: "1px dotted gray",
-                  marginTop: "5px",
-                  height: "3em",
-                }}
-              ></div>
+              <div className={style.projectheaderdottedborde}></div>
+
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* <p style={{ color: "#595959" }}>Access</p> */}
                 <Dropdownheader
@@ -116,24 +100,13 @@ function ProjectHeader() {
                   f2="ACTIVE"
                 />
               </div>
-              <div
-                style={{
-                  borderRight: "1px dotted gray",
-                  marginTop: "5px",
-                  height: "3em",
-                }}
-              ></div>
+              <div className={style.projectheaderdottedborde}></div>
+
               <div style={{ display: "flex", alignItems: "center" }}>
                 {/* <p style={{ color: "#595959" }}>Billing</p> */}
                 <Dropdownheader defaultvalue="Billing" />
               </div>
-              <div
-                style={{
-                  borderRight: "1px dotted gray",
-                  marginTop: "5px",
-                  height: "3em",
-                }}
-              ></div>
+              <div className={style.projectheaderdottedborde}></div>
             </div>
             {/* left part end */}
             {/* <div style={{ width: "70%" }}> */}
@@ -142,7 +115,8 @@ function ProjectHeader() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  paddingLeft: "20px",
+                  paddingLeft: "36px",
+                  width: "4em",
                 }}
               >
                 <Image src="/image/search.svg" height={55} width={20} />
@@ -157,16 +131,19 @@ function ProjectHeader() {
                   type="search"
                   placeholder="Project name"
                   textnewclass={style.input}
+                  extracls={style.textfieldprojectstyle}
                 />
               </div>
-              <div style={{ display: "flex", alignItems: "center" }}>
+              <div className={style.projectheaderbuttonoutside}>
                 <button
                   style={{
-                    width: "9em",
+                    width: "8em",
                     height: "70%",
                     color: "#fff",
+                    fontSize: "17px",
                     backgroundColor: "#03a9f4",
                     border: "1px solid #03a9f4",
+                    borderRadius: "3px",
                   }}
                 >
                   Apply Filter
