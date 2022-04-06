@@ -119,11 +119,11 @@ function ProjectHeader() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  // paddingLeft: "36px",
-                  width: "4em",
+                  paddingLeft: "1em",
+                  width: "5em",
                 }}
               >
-                <Image src="/image/search.svg" height={55} width={20} />
+                <Image src="/image/search.svg" height={55} width={22} />
               </div>
               <div
                 style={{
