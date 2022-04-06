@@ -81,7 +81,27 @@ const DashBoard = () => {
                             <PieChart1 />
                         </div>
                         <div className={styles.BarChartNoPadding}>
-                            <BarChartNoPadding />
+                            <BarChartNoPadding 
+                            data1={true}
+                            />
+                             <BarChartNoPadding 
+                            data2={true}
+                            />
+                             <BarChartNoPadding 
+                            data3={true}
+                            />
+                             <BarChartNoPadding 
+                            data4={true}
+                            />
+                             <BarChartNoPadding 
+                            data5={true}
+                            />
+                             <BarChartNoPadding 
+                            data6={true}
+                            />
+                             <BarChartNoPadding 
+                            data7={true}
+                            />
                         </div>
                     </div>
                 </div>
