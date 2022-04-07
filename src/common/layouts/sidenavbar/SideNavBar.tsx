@@ -22,6 +22,9 @@ function SideNavBar() {
       case "DASHBOARD":
         router.push("/dashBoard");
         break;
+        case "REPORTS":
+          router.push("/reports");
+          break;
       case "PROJECTS":
         router.push("/projects");
         break;
@@ -40,6 +43,9 @@ function SideNavBar() {
       case "/dashBoard":
         setActive(2);
         break;
+        case "/reports":
+          setActive(3);
+          break;
       case "/projects":
         setActive(4);
         break;
