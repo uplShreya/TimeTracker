@@ -1,3 +1,15 @@
+.dropDown {
+    width: 8em;
+    height: 45px;
+    border: 1px solid #999;
+    cursor: pointer;
+    background-color: #ffffff;
+    outline: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
 .dashboard {
     display: flex;
     flex-direction: column;

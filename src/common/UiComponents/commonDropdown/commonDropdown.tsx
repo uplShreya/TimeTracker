@@ -26,10 +26,10 @@ const CommonDropdown = (props: any) => {
                             displayEmpty
                             inputProps={{ 'aria-label': 'Without label' }}
                         >
-                            <MenuItem value="">
+                            {/* <MenuItem value="">
                                 <div>{props.firstName}</div>
-                            </MenuItem>
-                            <MenuItem value={props.firstvalue}>{props.firstName}</MenuItem>
+                            </MenuItem> */}
+                            <MenuItem value="">{props.firstName}</MenuItem>
                             <MenuItem value={props.secoundvalue}>{props.secoundNmae}</MenuItem>
                             <MenuItem value={props.thirdvalue}>{props.ThirdNmae}</MenuItem>
                             <MenuItem value={props.fourthvalue}>{props.fourthNmae}</MenuItem>
