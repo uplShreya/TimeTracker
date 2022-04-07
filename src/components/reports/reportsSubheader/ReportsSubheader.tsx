@@ -20,8 +20,8 @@ const ReportsSubheader = () => {
     { name: "UI/UX", value: "UI/UX" },
   ];
   return (
-    <div>
-      <div>
+    
+     
         <div className={style.projectheaderleftright}>
           <div className={style.projectheaderleft}>
             <div style={{ display: "flex", alignItems: "center" }}>
@@ -173,8 +173,8 @@ const ReportsSubheader = () => {
             {/* </div> */}
           </div>
         </div>
-      </div>
-    </div>
+     
+    
   );
 };
 
