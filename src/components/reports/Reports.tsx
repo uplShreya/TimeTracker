@@ -98,7 +98,7 @@ const ReportsComponent = () => {
               <Tab>Shared</Tab>
             </TabsList>
 
-            <TabPanel value={1}>Summary</TabPanel>
+            <TabPanel value={1}>sum</TabPanel>
             <TabPanel value={2}>Second content</TabPanel>
             <TabPanel value={3}>Third content</TabPanel>
             <TabPanel value={4}>Fourth Content</TabPanel>
