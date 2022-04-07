@@ -81,10 +81,12 @@ const ReportsComponent = () => {
           <Tab>One</Tab>
           <Tab>Two</Tab>
           <Tab>Three</Tab>
+          <Tab>Four</Tab>
         </TabsList>
         <TabPanel value={0}>First content</TabPanel>
         <TabPanel value={1}>Second content</TabPanel>
         <TabPanel value={2}>Third content</TabPanel>
+        <TabPanel value={3}>Fourth Content</TabPanel>
       </TabsUnstyled>
     </div>
   );
