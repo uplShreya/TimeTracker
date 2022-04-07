@@ -53,7 +53,7 @@ const BarChartNoPadding = (props: any) => {
             >
                 <XAxis type="number" hide={true} />
                 <YAxis type="category" dataKey="name"  />
-                <Tooltip />
+                <Tooltip position={{ x: 350, y: -20 }}/>
                 {props.data1 && <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />}
                 
                 {props.data2 && <Bar dataKey="amt" fill="#82ca9d" background={{ fill: "#eee" }} />}

@@ -33,28 +33,15 @@ const CommonDropdown = (props: any) => {
                             <MenuItem value={props.secoundvalue}>{props.secoundNmae}</MenuItem>
                             <MenuItem value={props.thirdvalue}>{props.ThirdNmae}</MenuItem>
                             <MenuItem value={props.fourthvalue}>{props.fourthNmae}</MenuItem>
+                            <MenuItem value={props.fifthvalue}>{props.fifthNmae}</MenuItem>
+                            <MenuItem value={props.sixthvalue}>{props.sixthNmae}</MenuItem>
+                            <MenuItem value={props.seventhvalue}>{props.seventhNmae}</MenuItem>
+                            <MenuItem value={props.eighthvalue}>{props.eighthName}</MenuItem>
+                            <MenuItem value={props.ninthvalue}>{props.ninthNmae}</MenuItem>
+                            <MenuItem value={props.tenthvalue}>{props.tenthNmae}</MenuItem>
                         </Select>
                     </FormControl>
-                    {/* <select name="cars" id="cars" className={styles.dropDown}>
-                        <option className={styles.dropDown_option} value={props.firstvalue}>{props.firstName} </option>
-                        <option className={styles.dropDown_option} value={props.secoundvalue}>{props.secoundNmae}</option>
-                        
-                    </select> */}
-                    {/* <FormControl sx={{ m: 1, minWidth: 110, height: 28, justifyContent: 'center', border: 'black' }}>
-                        <Select
-                            value={age}
-                            onChange={handleChange}
-                            displayEmpty
-                            inputProps={{ 'aria-label': 'Without label' }}
-                            sx={{border: 'black' }}
-                        >
-                            <MenuItem value={props.firstName}>
-                                <em>{props.firstName}</em>
-                            </MenuItem>
-                            <MenuItem value={props.firstvalue}>{props.firstName}</MenuItem>
-                            <MenuItem value={props.secoundvalue}>{props.secoundNmae}</MenuItem>
-                        </Select>
-                    </FormControl> */}
+                    
                 </div>}
 
         </div>

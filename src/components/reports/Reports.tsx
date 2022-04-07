@@ -5,6 +5,7 @@ import TabsListUnstyled from "@mui/base/TabsListUnstyled";
 import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
+import ReportsSummary from "./reportsSummary/ReportsSummary";
 
 const ReportsComponent = () => {
   const blue = {
@@ -78,12 +79,12 @@ const ReportsComponent = () => {
     <div>
       <TabsUnstyled defaultValue={0}>
         <TabsList>
-          <Tab>One</Tab>
+          <Tab>Summary</Tab>
           <Tab>Two</Tab>
           <Tab>Three</Tab>
           <Tab>Four</Tab>
         </TabsList>
-        <TabPanel value={0}>First content</TabPanel>
+        <TabPanel value={0}><ReportsSummary /></TabPanel>
         <TabPanel value={1}>Second content</TabPanel>
         <TabPanel value={2}>Third content</TabPanel>
         <TabPanel value={3}>Fourth Content</TabPanel>
