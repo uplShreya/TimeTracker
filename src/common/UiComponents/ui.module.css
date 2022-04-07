@@ -1,7 +1,6 @@
-.dropDown {
+/* .dropDown {
     width: 8em;
     height: 45px;
-    /* padding: 5px; */
     border: 1px solid #999;
     cursor: pointer;
     background-color: #ffffff;
@@ -9,7 +8,7 @@
     justify-content: center;
     display: flex;
     align-items: center;
-}
+} */
 
 .dropDown option {
     padding: 20px 0;
@@ -41,7 +40,7 @@
 }
 
 .dateinput {
-    width: 18%;
+    width: 22%;
     height: 40px;
     display: flex;
     justify-content: space-around;

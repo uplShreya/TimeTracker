@@ -25,6 +25,7 @@ const DashBoard = () => {
                     <div className={styles.dropdown_Date_Button}>
                         <div className={styles.dropdown_BillabilityProject}>
                             <CommonDropdown
+                            dropdownclass={styles.dropDown}
                                 dropdown={true}
                                 firstName='Project'
                                 firstvalue='Project'
@@ -36,9 +37,10 @@ const DashBoard = () => {
                         </div>
                         <div className={styles.dropdown_OnlymeTeam}>
                             <CommonDropdown
+                            dropdownclass={styles.dropDown}
                                 dropdown={true}
-                                firstName='Teame'
-                                firstvalue='Teame'
+                                firstName='Team'
+                                firstvalue='Team'
                                 secoundNmae='Only me'
                                 secoundvalue='Only me'
                             />
