@@ -9,6 +9,7 @@ import styles from "../../components/reports/Reports.module.css";
 import CommonDate from "../../common/UiComponents/commonDatetime/commonDatetime";
 import CommonButton from "../../common/UiComponents/commonButton/commonButton";
 import styleD from "../../container/dashboard/dashboard.module.css";
+import ReportsSubheader from "./reportsSubheader/ReportsSubheader";
 
 const ReportsComponent = () => {
   const blue = {
@@ -74,7 +75,7 @@ const ReportsComponent = () => {
     height: 42px;
     // background-color: white;
     border-radius: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 50px;
     display: flex;
     // align-items: center;
     // justify-content: center;
@@ -82,34 +83,39 @@ const ReportsComponent = () => {
   `;
 
   return (
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <div>
-        <TabsUnstyled defaultValue={1}>
-          <TabsList>
-            <div className={styles.reporttext}>
-              <p>REPORTS</p>
+    <div>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div>
+          <TabsUnstyled defaultValue={1}>
+            <TabsList>
+              <div className={styles.reporttext}>
+                <p>REPORTS</p>
+              </div>
+
+              <Tab>Summary</Tab>
+              <Tab>Detailed</Tab>
+              <Tab>Weekly</Tab>
+              <Tab>Shared</Tab>
+            </TabsList>
+
+            <TabPanel value={1}>Summary</TabPanel>
+            <TabPanel value={2}>Second content</TabPanel>
+            <TabPanel value={3}>Third content</TabPanel>
+            <TabPanel value={4}>Fourth Content</TabPanel>
+          </TabsUnstyled>
+        </div>
+
+        <div>
+          <div className={styleD.Date_button_flex}>
+            <div className={styleD.Date}>
+              <CommonDate date2={true} />
             </div>
-            <Tab>Summary</Tab>
-            <Tab>Detailed</Tab>
-            <Tab>Weekly</Tab>
-            <Tab>Shared</Tab>
-          </TabsList>
-          <TabPanel value={1}>Summary</TabPanel>
-          <TabPanel value={2}>Second content</TabPanel>
-          <TabPanel value={3}>Third content</TabPanel>
-          <TabPanel value={4}>Fourth Content</TabPanel>
-        </TabsUnstyled>
-      </div>
-      <div>
-        <div className={styleD.Date_button_flex}>
-          <div className={styleD.Date}>
-            <CommonDate date2={true} />
-          </div>
-          <div className={styleD.button_ArrowBackward}>
-            <CommonButton button2={true} ArrowBackward={true} />
-          </div>
-          <div className={styleD.button_ArrowForward}>
-            <CommonButton button2={true} arrowForward={true} />
+            <div className={styleD.button_ArrowBackward}>
+              <CommonButton button2={true} ArrowBackward={true} />
+            </div>
+            <div className={styleD.button_ArrowForward}>
+              <CommonButton button2={true} arrowForward={true} />
+            </div>
           </div>
         </div>
       </div>
