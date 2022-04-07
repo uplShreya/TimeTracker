@@ -11,6 +11,7 @@ import CommonButton from "../../common/UiComponents/commonButton/commonButton";
 import styleD from "../../container/dashboard/dashboard.module.css";
 import ReportsSubheader from "./reportsSubheader/ReportsSubheader";
 import ReportsSummary from "./reportsSummary/ReportsSummary";
+import ReportsDetailed from "./reportsDetailed/ReportsDetailed";
 
 const ReportsComponent = () => {
   const blue = {
@@ -110,8 +111,12 @@ const ReportsComponent = () => {
             </div>
           </div>
         </div>
-        <TabPanel value={1}><ReportsSummary /></TabPanel>
-        <TabPanel value={2}>Second content</TabPanel>
+        <TabPanel value={1}>
+          <ReportsSummary />
+        </TabPanel>
+        <TabPanel value={2}>
+          <ReportsDetailed />
+        </TabPanel>
         <TabPanel value={3}>Third content</TabPanel>
         <TabPanel value={4}>Fourth Content</TabPanel>
       </TabsUnstyled>
