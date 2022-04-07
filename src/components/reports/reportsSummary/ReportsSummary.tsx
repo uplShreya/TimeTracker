@@ -4,11 +4,13 @@ import PieChart1 from '../../../common/pieChart/PieChart'
 import ReportsBarChart from '../../../common/reportsCharts/ReportsBarChart'
 import SwitchLabelPlacement from '../../../common/SwitchLabelPlacement/switchLabelPlacement'
 import CommonDropdown from '../../../common/UiComponents/commonDropdown/commonDropdown'
+import ReportsSubheader from '../reportsSubheader/ReportsSubheader'
 import Styles from './ReportsSummary.module.css'
 
 const ReportsSummary = () => {
   return (
     <>
+    <ReportsSubheader />
       <div className={Styles.ReportsSummary_main}>
         <div className={Styles.ReportsSummary_main_first}>
           <div className={Styles.ReportsSummary_Time}>

@@ -4,14 +4,9 @@ import ReportsSubheader from "../../components/reports/reportsSubheader/ReportsS
 
 const ReportsContainer = () => {
   return (
-    <div>
       <div>
         <ReportsComponent />
       </div>
-      <div>
-        <ReportsSubheader />
-      </div>
-    </div>
   );
 };
 
