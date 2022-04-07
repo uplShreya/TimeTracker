@@ -6,6 +6,9 @@ import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
 import styles from "../../components/reports/Reports.module.css";
+import CommonDate from "../../common/UiComponents/commonDatetime/commonDatetime";
+import CommonButton from "../../common/UiComponents/commonButton/commonButton";
+import styleD from "../../container/dashboard/dashboard.module.css";
 
 const ReportsComponent = () => {
   const blue = {
@@ -29,11 +32,13 @@ const ReportsComponent = () => {
     font-weight: 200;
     background-color: white;
     // width: 100%;
-    padding: 18px 16px 0px 20px;
+    padding: 0px 16px 0px 20px;
     // margin: 6px 6px;
     border: 1px solid #80808066;
     border-radius: 1px;
     display: flex;
+    align-items: center;
+
     // justify-content: center;
 
     &:hover {
@@ -66,6 +71,7 @@ const ReportsComponent = () => {
 
   const TabsList = styled(TabsListUnstyled)`
     min-width: 320px;
+    height: 42px;
     // background-color: white;
     border-radius: 8px;
     margin-bottom: 16px;
@@ -76,7 +82,7 @@ const ReportsComponent = () => {
   `;
 
   return (
-    <div>
+    <div style={{ display: "flex", justifyContent: "space-between" }}>
       <div>
         <TabsUnstyled defaultValue={1}>
           <TabsList>
@@ -93,6 +99,19 @@ const ReportsComponent = () => {
           <TabPanel value={3}>Third content</TabPanel>
           <TabPanel value={4}>Fourth Content</TabPanel>
         </TabsUnstyled>
+      </div>
+      <div>
+        <div className={styleD.Date_button_flex}>
+          <div className={styleD.Date}>
+            <CommonDate date2={true} />
+          </div>
+          <div className={styleD.button_ArrowBackward}>
+            <CommonButton button2={true} ArrowBackward={true} />
+          </div>
+          <div className={styleD.button_ArrowForward}>
+            <CommonButton button2={true} arrowForward={true} />
+          </div>
+        </div>
       </div>
     </div>
   );
