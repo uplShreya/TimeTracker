@@ -1,10 +1,11 @@
 import React from "react";
-import { styled } from "@mui/system";
+import { style, styled } from "@mui/system";
 import TabsUnstyled from "@mui/base/TabsUnstyled";
 import TabsListUnstyled from "@mui/base/TabsListUnstyled";
 import TabPanelUnstyled from "@mui/base/TabPanelUnstyled";
 import { buttonUnstyledClasses } from "@mui/base/ButtonUnstyled";
 import TabUnstyled, { tabUnstyledClasses } from "@mui/base/TabUnstyled";
+import styles from "../../components/reports/Reports.module.css";
 
 const ReportsComponent = () => {
   const blue = {
@@ -22,33 +23,33 @@ const ReportsComponent = () => {
 
   const Tab = styled(TabUnstyled)`
     font-family: IBM Plex Sans, sans-serif;
-    color: white;
+    color: #4d4a4a;
     cursor: pointer;
     font-size: 0.875rem;
-    font-weight: bold;
-    background-color: transparent;
-    width: 100%;
-    padding: 12px 16px;
-    margin: 6px 6px;
-    border: none;
-    border-radius: 5px;
+    font-weight: 200;
+    background-color: white;
+    // width: 100%;
+    padding: 18px 16px 0px 20px;
+    // margin: 6px 6px;
+    border: 1px solid #80808066;
+    border-radius: 1px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
 
     &:hover {
-      background-color: ${blue[400]};
+      background-color: #80808066;
     }
 
     &:focus {
-      color: #fff;
-      border-radius: 3px;
-      outline: 2px solid ${blue[200]};
-      outline-offset: 2px;
+      // color: #fff;
+      // border-radius: 3px;
+      // outline: 2px solid lightgray;
+      // outline-offset: 2px;
     }
 
     &.${tabUnstyledClasses.selected} {
-      background-color: ${blue[50]};
-      color: ${blue[600]};
+      background-color: lightgray;
+      color: black;
     }
 
     &.${buttonUnstyledClasses.disabled} {
@@ -65,29 +66,34 @@ const ReportsComponent = () => {
 
   const TabsList = styled(TabsListUnstyled)`
     min-width: 320px;
-    background-color: ${blue[500]};
+    // background-color: white;
     border-radius: 8px;
     margin-bottom: 16px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: space-between;
+    // align-items: center;
+    // justify-content: center;
+    // align-content: space-between;
   `;
 
   return (
     <div>
-      <TabsUnstyled defaultValue={0}>
-        <TabsList>
-          <Tab>One</Tab>
-          <Tab>Two</Tab>
-          <Tab>Three</Tab>
-          <Tab>Four</Tab>
-        </TabsList>
-        <TabPanel value={0}>First content</TabPanel>
-        <TabPanel value={1}>Second content</TabPanel>
-        <TabPanel value={2}>Third content</TabPanel>
-        <TabPanel value={3}>Fourth Content</TabPanel>
-      </TabsUnstyled>
+      <div>
+        <TabsUnstyled defaultValue={1}>
+          <TabsList>
+            <div className={styles.reporttext}>
+              <p>REPORTS</p>
+            </div>
+            <Tab>Summary</Tab>
+            <Tab>Detailed</Tab>
+            <Tab>Weekly</Tab>
+            <Tab>Shared</Tab>
+          </TabsList>
+          <TabPanel value={1}>Summary</TabPanel>
+          <TabPanel value={2}>Second content</TabPanel>
+          <TabPanel value={3}>Third content</TabPanel>
+          <TabPanel value={4}>Fourth Content</TabPanel>
+        </TabsUnstyled>
+      </div>
     </div>
   );
 };
