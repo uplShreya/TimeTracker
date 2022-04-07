@@ -10,6 +10,7 @@ import CommonDate from "../../common/UiComponents/commonDatetime/commonDatetime"
 import CommonButton from "../../common/UiComponents/commonButton/commonButton";
 import styleD from "../../container/dashboard/dashboard.module.css";
 import ReportsSubheader from "./reportsSubheader/ReportsSubheader";
+import ReportsDetailed from "./reportsDetailed/ReportsDetailed";
 
 const ReportsComponent = () => {
   const blue = {
@@ -99,7 +100,9 @@ const ReportsComponent = () => {
             </TabsList>
 
             <TabPanel value={1}>sum</TabPanel>
-            <TabPanel value={2}>Second content</TabPanel>
+            <TabPanel value={2}>
+              <ReportsDetailed />
+            </TabPanel>
             <TabPanel value={3}>Third content</TabPanel>
             <TabPanel value={4}>Fourth Content</TabPanel>
           </TabsUnstyled>
