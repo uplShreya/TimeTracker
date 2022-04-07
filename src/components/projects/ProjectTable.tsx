@@ -121,44 +121,92 @@ export default function ProjectTable() {
             <th style={{ width: "39em" }}>
               <div
                 style={{
-                  fontSize: "13px",
-                  paddingLeft: "1.6em",
-                  color: "#999",
-                  height: "2em",
                   display: "flex",
-                  alignItems: "center",
-                  fontWeight: "400",
+                  justifyContent: "space-between",
+                  width: "5em",
                 }}
               >
-                NAME
+                <div
+                  style={{
+                    fontSize: "13px",
+                    paddingLeft: "1.6em",
+                    color: "#999",
+                    height: "2em",
+                    display: "flex",
+                    alignItems: "center",
+                    fontWeight: "400",
+                  }}
+                >
+                  NAME
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <Image src="/image/sort.png" height={13} width={12} />
+                </div>
               </div>
             </th>
             <th style={{ width: "33em" }}>
               <div
                 style={{
-                  fontSize: "13px",
-                  color: "#999",
-                  height: "2em",
                   display: "flex",
-                  alignItems: "center",
-                  fontWeight: "400",
+                  justifyContent: "space-between",
+                  width: "4em",
                 }}
               >
-                CLIENT
+                <div
+                  style={{
+                    fontSize: "13px",
+                    color: "#999",
+                    height: "2em",
+                    display: "flex",
+                    alignItems: "center",
+                    fontWeight: "400",
+                  }}
+                >
+                  CLIENT
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <Image src="/image/sort.png" height={13} width={12} />
+                </div>
               </div>
             </th>
             <th style={{ width: "29em" }}>
               <div
                 style={{
-                  fontSize: "13px",
-                  color: "#999",
-                  height: "2em",
                   display: "flex",
-                  alignItems: "center",
-                  fontWeight: "400",
+                  justifyContent: "space-between",
+                  width: "5em",
                 }}
               >
-                TRACKED
+                <div
+                  style={{
+                    fontSize: "13px",
+                    color: "#999",
+                    height: "2em",
+                    display: "flex",
+                    alignItems: "center",
+                    fontWeight: "400",
+                  }}
+                >
+                  TRACKED
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                >
+                  <Image src="/image/sort.png" height={13} width={12} />
+                </div>
               </div>
             </th>
             <th style={{ width: "29em" }}>
