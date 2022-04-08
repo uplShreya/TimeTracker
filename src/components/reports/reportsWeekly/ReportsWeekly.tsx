@@ -9,6 +9,7 @@ import Dropdownheader from "../../../common/UiComponents/Dropdownheader";
 import ReportsSubheader from "../reportsSubheader/ReportsSubheader";
 import style from "../reportsWeekly/ReportsWeekly.module.css";
 function createData(
+  number: number,
   color: string,
   project: string,
   monday: any,
@@ -21,6 +22,7 @@ function createData(
   total: any
 ) {
   return {
+    number,
     color,
     project,
     monday,
@@ -36,6 +38,7 @@ function createData(
 
 const rows = [
   createData(
+    6,
     "#a3e8f7",
     "Project",
     "00:00:00",
@@ -223,6 +226,16 @@ const ReportsWeekly = () => {
         >
           <thead style={{ border: "1px solid #C6D2D9", height: "3em" }}>
             <tr>
+              <th>
+                <div className={style.iconstyle}>
+                    <Image
+                      src="/image/chevron-down.svg"
+                      alt="icon"
+                      height={15}
+                      width={15}
+                    />
+                  </div>
+              </th>
               <th style={{ width: "36%" }}>
                 <div
                   style={{
@@ -233,14 +246,6 @@ const ReportsWeekly = () => {
                     paddingLeft: "10px",
                   }}
                 >
-                  <div className={style.iconstyle}>
-                    <Image
-                      src="/image/chevron-down.svg"
-                      alt="icon"
-                      height={15}
-                      width={15}
-                    />
-                  </div>
                   <div
                     style={{
                       fontSize: "15px",
@@ -378,14 +383,26 @@ const ReportsWeekly = () => {
           {rows.map((row) => (
             <tr style={{ border: "1px solid #C6D2D9", height: "3.5em" }}>
               <td>
-              <div style={{ paddingLeft: "1.5em" }}>
                 <div
-                  style={{ backgroundColor: `${row.color}` }}
-                  className={style.border}
-                ></div>
-                {row.project}
-              </div>
-            </td>
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "39%",
+                  }}
+                >
+                  <div className={style.borderstyle}></div>
+                  <div className={style.numberstyle}>{row.number}</div>
+                </div>
+              </td>
+              <td>
+                <div style={{ paddingLeft: "1.5em" }}>
+                  <div
+                    style={{ backgroundColor: `${row.color}` }}
+                    className={style.border}
+                  ></div>
+                  {row.project}
+                </div>
+              </td>
               <td>
                 <div
                   style={{
