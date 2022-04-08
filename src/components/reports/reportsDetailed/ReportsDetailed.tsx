@@ -103,7 +103,14 @@ const ReportsDetailed = () => {
               fontSize: "13px",
             }}
           >
-            <p>Projects</p>
+            <p>Total:</p>
+            <div>
+              <p
+                style={{ fontSize: "20px", color: "black", paddingLeft: "5px" }}
+              >
+                678:25:47
+              </p>
+            </div>
           </div>
 
           <Table
