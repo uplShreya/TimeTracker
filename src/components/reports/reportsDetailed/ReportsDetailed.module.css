@@ -1,0 +1,21 @@
+.reportsdetailedbutton{ 
+    border:1px solid #c6d2d9;
+    display: flex;
+    align-items: center;
+    width: 9em;
+    height: 3em;
+    background-color: white;
+    border-radius: 4px;
+    }
+    
+    .reportdetailedtimebutton{
+text-transform: unset;  
+color: gray; 
+padding-left: 1.2em; }
+
+.reportsdetailedbutton:hover{
+    background-color:rgb(230, 223, 223);
+    cursor: pointer;
+    color: rgb(81, 80, 80);
+    
+}

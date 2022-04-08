@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ReportsSubheader from "../reportsSubheader/ReportsSubheader";
 import Table from "@mui/material/Table";
 import Image from "next/image";
-// import style from "../../components/projects/Project.module.css";
+import styles from "../../reports/reportsDetailed/ReportsDetailed.module.css";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import { Button } from "@mui/material";
+import { style } from "@mui/system";
 
 const ReportsDetailed = () => {
   function createData(
@@ -84,11 +86,27 @@ const ReportsDetailed = () => {
     ),
   ];
 
+  const [open, setOpen] = React.useState(true);
+  const active = () => {
+    setOpen(!open);
+  };
+
   return (
     <div>
       <ReportsSubheader />
+
+      <div onClick={active} className={styles.reportsdetailedbutton}>
+        <Button className={styles.reportdetailedtimebutton}>Time Audit</Button>
+        <Image src="/image/chevron-down.svg" height={13} width={12} />
+      </div>
+      {!open && (
+        <div style={{ padding: "2.2em 0 0 0" }}>
+          <ReportsSubheader />
+        </div>
+      )}
+
       <div>
-        <div style={{ padding: "2em 0 0 0" }}>
+        <div style={{ padding: "1.5em 0 0 0" }}>
           <div
             style={{
               border: "1px solid #C6D2D9",
