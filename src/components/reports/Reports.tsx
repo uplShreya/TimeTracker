@@ -118,7 +118,9 @@ const ReportsComponent = () => {
         <TabPanel value={2}>
           <ReportsDetailed />
         </TabPanel>
-        <TabPanel value={3}><ReportsWeekly/></TabPanel>
+        <TabPanel value={3}>
+          <ReportsWeekly />
+        </TabPanel>
         <TabPanel value={4}>Fourth Content</TabPanel>
       </TabsUnstyled>
     </>
