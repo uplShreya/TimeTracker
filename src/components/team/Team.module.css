@@ -1,6 +1,6 @@
 .dropdownandtextfield {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 35%;
   padding: 10px;
   height: 5em;
