@@ -266,8 +266,8 @@ const ReportsWeekly = () => {
               <Dropdownheader
                 defaultvalue="Project"
                 // value1="Active"
-                value2="Archived"
-                value3="All"
+                value2="User"
+                dropdowntextfieldinputstyle={style.style}
               />
             </div>
           </div>
