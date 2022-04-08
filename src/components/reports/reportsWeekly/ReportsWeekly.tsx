@@ -1,8 +1,9 @@
 import React from 'react'
+import ReportsSubheader from '../reportsSubheader/ReportsSubheader'
 
 const ReportsWeekly = () => {
   return (
-    <div>ReportsWeekly</div>
+    <div><ReportsSubheader/></div>
   )
 }
 
