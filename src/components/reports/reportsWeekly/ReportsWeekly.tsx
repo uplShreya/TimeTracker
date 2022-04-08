@@ -8,14 +8,14 @@ import ReportsSubheader from "../reportsSubheader/ReportsSubheader";
 import style from "../reportsWeekly/ReportsWeekly.module.css";
 function createData(
   project: string,
-  monday: number,
-  tuesday: number,
-  wednesday: number,
-  thursday: number,
-  friday: number,
-  saturday: number,
-  sunday: number,
-  total: number
+  monday: any,
+  tuesday: any,
+  wednesday: any,
+  thursday: any,
+  friday: any,
+  saturday: any,
+  sunday: any,
+  total: any,
 ) {
   return {
     project,
@@ -32,15 +32,15 @@ function createData(
 
 const rows = [
   createData(
-    "Project Name",
-    "00:00:00",
-    "00:00:00",
-    "00:00:00",
-    "00:00:00",
-    "00:00:00",
-    "-",
-    "-",
-    "00:00:00"
+  'Project', 
+  "00:00:00", 
+  "00:00:00", 
+  "00:00:00", 
+  "00:00:00",
+  "00:00:00",
+  "-",
+  "-",
+  "00:00:00",
   ),
 ];
 
