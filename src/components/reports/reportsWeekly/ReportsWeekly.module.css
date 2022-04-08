@@ -1,0 +1,70 @@
+.weeklyheaderpart{
+    border: 1px solid #c6d2d9;
+  border-radius: 2px;
+  background-color: rgb(228, 234, 238);
+  height: 3em;
+  display: flex;
+  align-items: center;
+  padding-left: 1.7em;
+  color: #999;
+  font-size: 13px;
+}
+.totaltext{
+    display: flex;
+    width: 10em;
+    align-items: center;
+    justify-content: space-between;
+}
+.textstyle{
+    font-size: 20px;
+    color: black;
+    font-family: Arial;
+}
+.leftpart{
+    display: flex;
+    width: 58%;
+}
+.rightpart{
+    display: flex;
+    width: 42%;
+    justify-content: space-between;
+}
+.img{
+    display: flex;
+    align-items: center;
+}
+.textanddropdown{
+    display: flex;
+    align-items: center;
+}
+.switchbuttontext{
+    display: flex;
+    align-items: center;
+}
+.numberstyle{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.borderstyle{
+    border-left: 1px dotted #C6D2D9;
+    margin-top: 5px;
+    height: 2.8em;
+}
+.iconstyle{
+    display: flex;
+    background: #E1F5FE;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    padding-left: 5px;
+}
+.border {
+    display: inline-block;
+    margin-right: 0.7143rem;
+    width: 0.4286rem;
+    height: 0.4286rem;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
