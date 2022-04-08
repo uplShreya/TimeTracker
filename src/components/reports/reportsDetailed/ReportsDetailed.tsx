@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import ReportsSubheader from "../reportsSubheader/ReportsSubheader";
 import Table from "@mui/material/Table";
 import Image from "next/image";
-// import style from "../../components/projects/Project.module.css";
+import styles from "../../reports/reportsDetailed/ReportsDetailed.module.css";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
+import { Button } from "@mui/material";
+import { style } from "@mui/system";
+import ReportsDetailedTimeAudit from "./ReportsDetailedTimeAudit";
 
 const ReportsDetailed = () => {
   function createData(
@@ -84,11 +87,28 @@ const ReportsDetailed = () => {
     ),
   ];
 
+  const [open, setOpen] = React.useState(true);
+  const active = () => {
+    setOpen(!open);
+  };
+
   return (
     <div>
       <ReportsSubheader />
+
+      <div onClick={active} className={styles.reportsdetailedbutton}>
+        <Button className={styles.reportdetailedtimebutton}>Time Audit</Button>
+        <Image src="/image/chevron-down.svg" height={13} width={12} />
+      </div>
+      {!open && (
+        <div style={{ padding: "2.2em 0 0 0" }}>
+          {/* <ReportsSubheader /> */}
+          <ReportsDetailedTimeAudit />
+        </div>
+      )}
+
       <div>
-        <div style={{ padding: "2em 0 0 0" }}>
+        <div style={{ padding: "1.5em 0 0 0" }}>
           <div
             style={{
               border: "1px solid #C6D2D9",
@@ -127,7 +147,7 @@ const ReportsDetailed = () => {
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
-                      width: "5.5em",
+                      width: "8.5em",
                     }}
                   >
                     <div
@@ -141,7 +161,7 @@ const ReportsDetailed = () => {
                         fontWeight: "400",
                       }}
                     >
-                      NAME
+                      TIME ENTRY
                     </div>
                     <div
                       style={{
@@ -158,7 +178,7 @@ const ReportsDetailed = () => {
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
-                      width: "4.5em",
+                      width: "5.4em",
                     }}
                   >
                     <div
@@ -171,7 +191,7 @@ const ReportsDetailed = () => {
                         fontWeight: "400",
                       }}
                     >
-                      CLIENT
+                      AMOUNT
                     </div>
                     <div
                       style={{
@@ -201,7 +221,7 @@ const ReportsDetailed = () => {
                         fontWeight: "400",
                       }}
                     >
-                      TRACKED
+                      USER
                     </div>
                     <div
                       style={{
@@ -224,7 +244,7 @@ const ReportsDetailed = () => {
                       fontWeight: "400",
                     }}
                   >
-                    ACCESS
+                    TIME
                   </div>
                 </th>
                 <th style={{ width: "36em" }}>
@@ -238,7 +258,7 @@ const ReportsDetailed = () => {
                       fontWeight: "400",
                     }}
                   >
-                    FAVORITES
+                    DURATION
                   </div>
                 </th>
                 <th style={{ width: "7em" }}>
