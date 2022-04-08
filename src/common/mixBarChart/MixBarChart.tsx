@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import styles from '../UiComponents/ui.module.css'
 // import { Hooks } from '../hooks/hooks';
 const MixBarChart = () => {
@@ -24,7 +24,8 @@ const MixBarChart = () => {
     // }
 
     return (
-        <div className={styles.deff}>
+        <div className={styles.deff} style={{ width: "99%", height: 400}}>
+           <ResponsiveContainer>
             <BarChart
                 // onClick={click}
                 // width={open ? 900 : 1100}
@@ -45,6 +46,7 @@ const MixBarChart = () => {
                 <Bar dataKey="man" stackId="a" fill="#7F4E52" />
                 <Bar dataKey="uvx" stackId="a" fill="#FF0000" />
             </BarChart>
+            </ResponsiveContainer>
         </div>
     )
 }

@@ -12,6 +12,7 @@ import styleD from "../../container/dashboard/dashboard.module.css";
 import ReportsSubheader from "./reportsSubheader/ReportsSubheader";
 import ReportsSummary from "./reportsSummary/ReportsSummary";
 import ReportsDetailed from "./reportsDetailed/ReportsDetailed";
+import ReportsShared from "./reportsShared/ReportsShared";
 
 const ReportsComponent = () => {
   const blue = {
@@ -118,7 +119,9 @@ const ReportsComponent = () => {
           <ReportsDetailed />
         </TabPanel>
         <TabPanel value={3}>Third content</TabPanel>
-        <TabPanel value={4}>Fourth Content</TabPanel>
+        <TabPanel value={4}>
+        <ReportsShared />
+        </TabPanel>
       </TabsUnstyled>
     </>
   );
