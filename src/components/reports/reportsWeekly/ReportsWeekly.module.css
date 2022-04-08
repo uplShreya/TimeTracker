@@ -45,7 +45,13 @@
     display: flex;
     align-items: center;
     font-size: 14px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
+}
+.numberstylefortotal{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-right: 5px; 
 }
 .borderstyle{
     border-left: 1px dotted #C6D2D9;
@@ -59,6 +65,7 @@
     height: 25px;
     align-items: center;
     padding-left: 5px;
+    margin-left: 10px;
 }
 .border {
     display: inline-block;
@@ -67,4 +74,33 @@
     height: 0.4286rem;
     vertical-align: middle;
     border-radius: 50%;
+  }
+  .numberstyle1{
+    display: flex;
+    color: #02587f;
+    background: #E1F5FE;
+    /* width: 6px; */
+    height: 26px;
+    align-items: center;
+    margin-left: 10px;
+    padding: 10px;
+  }
+  .tableheaderdata{
+        font-size: 13px;
+        color: #999;
+        height: 2em;
+        font-weight: 500;
+        font-family: arial;
+        display: flex;
+        align-items: center;
+        text-align: right;
+  }
+  .tableheaderdatatotal{
+    font-size: 13px;
+    color: #999;
+    height: 2em;
+    font-weight: 500;
+    font-family: arial;
+    text-align: right;
+    padding: 5px 5px 0px 0px;
   }
