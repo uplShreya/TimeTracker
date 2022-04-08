@@ -181,8 +181,8 @@ function TeamMembersTable() {
           </tr>
         </thead>
 
-        {rows.map((row) => (
-          <tr style={{ border: "1px solid #C6D2D9", height: "3.5em" }}>
+        {rows.map((row: any) => (
+          <tr key={row} style={{ border: "1px solid #C6D2D9", height: "3.5em" }}>
             <td>
               <div style={{ paddingLeft: "1.5em",fontSize:"14px" }}>
                 {row.name}
