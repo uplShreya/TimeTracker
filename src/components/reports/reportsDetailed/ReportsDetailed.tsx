@@ -98,7 +98,7 @@ const ReportsDetailed = () => {
 
       <div onClick={active} className={styles.reportsdetailedbutton}>
         <Button className={styles.reportdetailedtimebutton}>Time Audit</Button>
-        <Image src="/image/chevron-down.svg" height={13} width={12} />
+        <Image src="/image/chevron-down.svg" alt="chevron-down" height={13} width={12} />
       </div>
       {!open && (
         <div style={{ padding: "2.2em 0 0 0" }}>
@@ -169,7 +169,7 @@ const ReportsDetailed = () => {
                         alignItems: "center",
                       }}
                     >
-                      <Image src="/image/sort.png" height={13} width={12} />
+                      <Image src="/image/sort.png" alt="sort" height={13} width={12} />
                     </div>
                   </div>
                 </th>
@@ -199,7 +199,7 @@ const ReportsDetailed = () => {
                         alignItems: "center",
                       }}
                     >
-                      <Image src="/image/sort.png" height={13} width={12} />
+                      <Image src="/image/sort.png" alt="sort2" height={13} width={12} />
                     </div>
                   </div>
                 </th>
@@ -229,7 +229,7 @@ const ReportsDetailed = () => {
                         alignItems: "center",
                       }}
                     >
-                      <Image src="/image/sort.png" height={13} width={12} />
+                      <Image src="/image/sort.png" alt="sort3" height={13} width={12} />
                     </div>
                   </div>
                 </th>
@@ -284,7 +284,7 @@ const ReportsDetailed = () => {
                   <div style={{ paddingLeft: "1.5em" }}>
                     <div
                       style={{ backgroundColor: `${row.color}` }}
-                      // className={style.border}
+                    // className={style.border}
                     ></div>
                     {row.name}
                   </div>
@@ -407,9 +407,10 @@ const ReportsDetailed = () => {
                     ></div>
                     <div
                       style={{ display: "flex", alignItems: "center" }}
-                      // className={style.hovereffect}
+                    // className={style.hovereffect}
                     >
                       <Image
+                        alt="favoritesnormal"
                         src="/image/favoritesnormal.svg"
                         height={25}
                         width={20}

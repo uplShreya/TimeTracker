@@ -127,7 +127,7 @@ const DashBoard = () => {
                             <div className={styles.latestActivityfirst}>
                                 <h1>TimeTracker Design</h1>
                                 <h2>
-                                    <Image src='/image/Orange.png' width={10} height={10} />
+                                    <Image src='/image/Orange.png' alt='Orange' width={10} height={10} />
                                     <h1>TimeTracker -</h1>
                                     <p>Misc (Internal)</p>
                                 </h2>
@@ -135,7 +135,7 @@ const DashBoard = () => {
                             <div className={styles.timeinprogress}>
                                 <div className={styles.timeinprogress1}>00:00:00</div>
                                 {/* <RadioButtonCheckedIcon /> */}
-                                <Image src='/image/record.png' width={12} height={12} />
+                                <Image src='/image/record.png' alt='record' width={12} height={12} />
                                 <div className={styles.timeinprogress2}>In progress</div>
                             </div>
 

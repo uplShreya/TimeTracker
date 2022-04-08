@@ -145,7 +145,7 @@ export default function ProjectTable() {
                     alignItems: "center",
                   }}
                 >
-                  <Image src="/image/sort.png" height={13} width={12} />
+                  <Image src="/image/sort.png" alt="sort" height={13} width={12} />
                 </div>
               </div>
             </th>
@@ -175,7 +175,7 @@ export default function ProjectTable() {
                     alignItems: "center",
                   }}
                 >
-                  <Image src="/image/sort.png" height={13} width={12} />
+                  <Image src="/image/sort.png" alt="sort2" height={13} width={12} />
                 </div>
               </div>
             </th>
@@ -205,7 +205,7 @@ export default function ProjectTable() {
                     alignItems: "center",
                   }}
                 >
-                  <Image src="/image/sort.png" height={13} width={12} />
+                  <Image src="/image/sort.png" alt="sort3" height={13} width={12} />
                 </div>
               </div>
             </th>
@@ -386,6 +386,7 @@ export default function ProjectTable() {
                   className={style.hovereffect}
                 >
                   <Image
+                    alt="favoritesnormal"
                     src="/image/favoritesnormal.svg"
                     height={25}
                     width={20}

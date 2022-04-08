@@ -123,7 +123,7 @@ function ProjectHeader() {
                   width: "5em",
                 }}
               >
-                <Image src="/image/search.svg" height={55} width={22} />
+                <Image src="/image/search.svg" alt="search" height={55} width={22} />
               </div>
               <div
                 style={{

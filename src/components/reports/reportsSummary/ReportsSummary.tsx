@@ -31,10 +31,10 @@ const ReportsSummary = () => {
               />
             </div>
             <div className={Styles.ReportsSummary_Dropdown_Print_Share_Switch_secound}>
-              <Image src="/image/print.svg" height={20} width={20} />
+              <Image src="/image/print.svg" alt='print' height={20} width={20} />
             </div>
             <div className={Styles.ReportsSummary_Dropdown_Print_Share_Switch_third}>
-              <Image src="/image/share.svg" height={22} width={22} />
+              <Image src="/image/share.svg" alt='share' height={22} width={22} />
             </div>
             <div className={Styles.ReportsSummary_Dropdown_Print_Share_Switch_fourth}>
               <SwitchLabelPlacement Switch_end={true} label="Rounding" value="Rounding" disabled />
