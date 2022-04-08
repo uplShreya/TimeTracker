@@ -1,12 +1,15 @@
-import SwitchUnstyled, { switchUnstyledClasses } from '@mui/base/SwitchUnstyled';
+import SwitchUnstyled, {
+  switchUnstyledClasses,
+} from "@mui/base/SwitchUnstyled";
 import { Switch, Table } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import { styled } from '@mui/system';
+import { styled } from "@mui/system";
 import Dropdownheader from "../../../common/UiComponents/Dropdownheader";
 import ReportsSubheader from "../reportsSubheader/ReportsSubheader";
 import style from "../reportsWeekly/ReportsWeekly.module.css";
 function createData(
+  color: string,
   project: string,
   monday: any,
   tuesday: any,
@@ -15,9 +18,10 @@ function createData(
   friday: any,
   saturday: any,
   sunday: any,
-  total: any,
+  total: any
 ) {
   return {
+    color,
     project,
     monday,
     tuesday,
@@ -32,29 +36,30 @@ function createData(
 
 const rows = [
   createData(
-  'Project', 
-  "00:00:00", 
-  "00:00:00", 
-  "00:00:00", 
-  "00:00:00",
-  "00:00:00",
-  "-",
-  "-",
-  "00:00:00",
+    "#a3e8f7",
+    "Project",
+    "00:00:00",
+    "00:00:00",
+    "00:00:00",
+    "00:00:00",
+    "00:00:00",
+    "-",
+    "-",
+    "00:00:00"
   ),
 ];
 
 const blue = {
-  500: '#007FFF',
+  500: "#007FFF",
 };
 
 const grey = {
-  400: '#BFC7CF',
-  500: '#AAB4BE',
-  600: '#6F7E8C',
+  400: "#BFC7CF",
+  500: "#AAB4BE",
+  600: "#6F7E8C",
 };
 
-const Root = styled('span')(
+const Root = styled("span")(
   ({ theme }) => `
   font-size: 0;
   position: relative;
@@ -70,7 +75,7 @@ const Root = styled('span')(
   }
 
   & .${switchUnstyledClasses.track} {
-    background: ${theme.palette.mode === 'dark' ? grey[600] : grey[400]};
+    background: ${theme.palette.mode === "dark" ? grey[600] : grey[400]};
     border-radius: 10px;
     display: block;
     height: 100%;
@@ -118,10 +123,10 @@ const Root = styled('span')(
     z-index: 1;
     margin: 0;
   }
-  `,
+  `
 );
 const ReportsWeekly = () => {
-  const label = { componentsProps: { input: { 'aria-label': 'Demo switch' } } };
+  const label = { componentsProps: { input: { "aria-label": "Demo switch" } } };
   return (
     <div>
       <ReportsSubheader />
@@ -186,7 +191,7 @@ const ReportsWeekly = () => {
             }}
           ></div>
           <div className={style.switchbuttontext}>
-          <SwitchUnstyled component={Root} {...label}  />
+            <SwitchUnstyled component={Root} {...label} />
             <p>Rounded</p>
           </div>
           <div
@@ -225,11 +230,16 @@ const ReportsWeekly = () => {
                     width: "6.5em",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    paddingLeft:"10px"
+                    paddingLeft: "10px",
                   }}
                 >
                   <div className={style.iconstyle}>
-                    <Image src="/image/chevron-down.svg" alt="icon" height={15} width={15} />
+                    <Image
+                      src="/image/chevron-down.svg"
+                      alt="icon"
+                      height={15}
+                      width={15}
+                    />
                   </div>
                   <div
                     style={{
@@ -368,10 +378,14 @@ const ReportsWeekly = () => {
           {rows.map((row) => (
             <tr style={{ border: "1px solid #C6D2D9", height: "3.5em" }}>
               <td>
-                <div style={{ paddingLeft: "1.5em", fontSize: "14px" }}>
-                  {row.project}
-                </div>
-              </td>
+              <div style={{ paddingLeft: "1.5em" }}>
+                <div
+                  style={{ backgroundColor: `${row.color}` }}
+                  className={style.border}
+                ></div>
+                {row.project}
+              </div>
+            </td>
               <td>
                 <div
                   style={{
