@@ -3,41 +3,7 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 import styles from '../../container/dashboard/dashboard.module.css'
 const BarChartNoPadding = (props: any) => {
     const data = [
-        {
-            name: "Page A",
-            uv: 20,
-            pv: 5,
-            amt: 22,
-            jv: 5,
-            dur: 18,
-            man: 25,
-            uvx: 10
-        },
-        // {
-        //     name: "Page B",
-        //     pv: 5,
-        // },
-        // {
-        //     name: "Page C",
-        //     amt: 22,
-        // },
-        // {
-        //     name: "Page D",
-        //     jv: 5,
-        // },
-        // {
-        //     name: "Page E",
-        //     dur: 18,
-        // },
-        // {
-        //     name: "Page F",
-        //     man: 25,
-        // },
-        // {
-        //     name: "Page G",
-        //     uvx: 10
-        // },
-
+        { name: "Page A", uv: 20, pv: 5, amt: 22, jv: 5, dur: 18, man: 25, uvx: 10 }
     ];
     return (
         <div>
@@ -52,10 +18,10 @@ const BarChartNoPadding = (props: any) => {
 
             >
                 <XAxis type="number" hide={true} />
-                <YAxis type="category" dataKey="name"  />
-                <Tooltip position={{ x: 350, y: -20 }}/>
+                <YAxis type="category" dataKey="name" />
+                <Tooltip position={{ x: 350, y: -20 }} />
                 {props.data1 && <Bar dataKey="pv" fill="#8884d8" background={{ fill: "#eee" }} />}
-                
+
                 {props.data2 && <Bar dataKey="amt" fill="#82ca9d" background={{ fill: "#eee" }} />}
 
                 {props.data3 && <Bar dataKey="uv" fill="#ffc658" background={{ fill: "#eee" }} />}

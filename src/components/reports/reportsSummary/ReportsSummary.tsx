@@ -10,7 +10,7 @@ import Styles from './ReportsSummary.module.css'
 const ReportsSummary = () => {
   return (
     <>
-    <ReportsSubheader />
+      <ReportsSubheader />
       <div className={Styles.ReportsSummary_main}>
         <div className={Styles.ReportsSummary_main_first}>
           <div className={Styles.ReportsSummary_Time}>
@@ -72,23 +72,23 @@ const ReportsSummary = () => {
           </div>
           <div className={Styles.Groupby_Dropdown}>
             <CommonDropdown
-             dropdown={true}
-             dropdownclass={Styles.dropDown}
-             firstName="(None)"
-             secoundNmae="Project"
-             secoundvalue="Project"
-             ThirdNmae="Task"
-             thirdvalue="Task"
-             fourthNmae="Client"
-             fourthvalue="Client"
-             fifthNmae="User"
-             fifthvalue="User"
-             sixthNmae="Group"
-             sixthvalue="Group"
-             seventhNmae="Tag"
-             seventhvalue="Tag"
-             eighthName="Description"
-             eighthvalue="Description"
+              dropdown={true}
+              dropdownclass={Styles.dropDown}
+              firstName="(None)"
+              secoundNmae="Project"
+              secoundvalue="Project"
+              ThirdNmae="Task"
+              thirdvalue="Task"
+              fourthNmae="Client"
+              fourthvalue="Client"
+              fifthNmae="User"
+              fifthvalue="User"
+              sixthNmae="Group"
+              sixthvalue="Group"
+              seventhNmae="Tag"
+              seventhvalue="Tag"
+              eighthName="Description"
+              eighthvalue="Description"
             />
           </div>
         </div>
@@ -103,6 +103,11 @@ const ReportsSummary = () => {
                 <p>DURATION</p>
                 <div><Image src="/image/sort.png" alt="" height={12} width={12} /></div>
               </div>
+            </div>
+            <div className={Styles.Groupby_main_body_first_details}>
+              <div>65</div>
+              <h1></h1>
+              <h3> PictPlay -<p>Steve Dollens</p></h3>
             </div>
           </div>
           <div className={Styles.Groupby_main_body_secound}>

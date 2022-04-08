@@ -1,0 +1,20 @@
+.Shared_blank_text h2 {
+    color: #333;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1.4286rem!important;
+    line-height: 1.5;
+    margin-bottom: 1.07145rem;
+    font-family: inherit;
+    text-align: center;
+}
+
+.Shared_blank_text p {
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 1.07145rem;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
