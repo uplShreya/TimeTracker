@@ -6,6 +6,7 @@ import styles from "../../reports/reportsDetailed/ReportsDetailed.module.css";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import { Button } from "@mui/material";
 import { style } from "@mui/system";
+import ReportsDetailedTimeAudit from "./ReportsDetailedTimeAudit";
 
 const ReportsDetailed = () => {
   function createData(
@@ -101,7 +102,8 @@ const ReportsDetailed = () => {
       </div>
       {!open && (
         <div style={{ padding: "2.2em 0 0 0" }}>
-          <ReportsSubheader />
+          {/* <ReportsSubheader /> */}
+          <ReportsDetailedTimeAudit />
         </div>
       )}
 
@@ -145,7 +147,7 @@ const ReportsDetailed = () => {
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
-                      width: "5.5em",
+                      width: "8.5em",
                     }}
                   >
                     <div
@@ -159,7 +161,7 @@ const ReportsDetailed = () => {
                         fontWeight: "400",
                       }}
                     >
-                      NAME
+                      TIME ENTRY
                     </div>
                     <div
                       style={{
@@ -176,7 +178,7 @@ const ReportsDetailed = () => {
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
-                      width: "4.5em",
+                      width: "5.4em",
                     }}
                   >
                     <div
@@ -189,7 +191,7 @@ const ReportsDetailed = () => {
                         fontWeight: "400",
                       }}
                     >
-                      CLIENT
+                      AMOUNT
                     </div>
                     <div
                       style={{
@@ -219,7 +221,7 @@ const ReportsDetailed = () => {
                         fontWeight: "400",
                       }}
                     >
-                      TRACKED
+                      USER
                     </div>
                     <div
                       style={{
@@ -242,7 +244,7 @@ const ReportsDetailed = () => {
                       fontWeight: "400",
                     }}
                   >
-                    ACCESS
+                    TIME
                   </div>
                 </th>
                 <th style={{ width: "36em" }}>
@@ -256,7 +258,7 @@ const ReportsDetailed = () => {
                       fontWeight: "400",
                     }}
                   >
-                    FAVORITES
+                    DURATION
                   </div>
                 </th>
                 <th style={{ width: "7em" }}>

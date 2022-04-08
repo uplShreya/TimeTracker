@@ -19,3 +19,20 @@ padding-left: 1.2em; }
     color: rgb(81, 80, 80);
     
 }
+.reportdetailauditoverall{
+    display: flex;
+    width: 100%;
+    border: 1px solid #c6d2d9;
+    background-color: white;
+    margin-bottom: 1.5em;
+    padding: 8px;
+}
+.reportdetaileddottedborder{
+    border-right: 1px dotted #C6D2D9;
+    margin-top: 6px;
+    height: 2.5em;
+  }
+  .reportsDetailedshowingtext{
+      padding-left: 1em;
+      color:gray
+  }
