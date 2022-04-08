@@ -36,15 +36,11 @@ const ReportsComponent = () => {
     font-size: 0.875rem;
     font-weight: 200;
     background-color: white;
-    // width: 100%;
     padding: 0px 16px 0px 20px;
-    // margin: 6px 6px;
     border: 1px solid #80808066;
     border-radius: 1px;
     display: flex;
     align-items: center;
-
-    // justify-content: center;
 
     &:hover {
       background-color: #80808066;
@@ -77,13 +73,9 @@ const ReportsComponent = () => {
   const TabsList = styled(TabsListUnstyled)`
     min-width: 320px;
     height: 42px;
-    // background-color: white;
     border-radius: 8px;
     margin-bottom: 50px;
     display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // align-content: space-between;
   `;
 
   return (
@@ -122,7 +114,9 @@ const ReportsComponent = () => {
         <TabPanel value={3}>
           <ReportsWeekly />
         </TabPanel>
-        <TabPanel value={4}><ReportsShared /></TabPanel>
+        <TabPanel value={4}>
+          <ReportsShared />
+        </TabPanel>
       </TabsUnstyled>
     </>
   );

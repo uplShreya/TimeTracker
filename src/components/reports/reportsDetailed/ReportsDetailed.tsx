@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import SwitchUnstyled, {
+  switchUnstyledClasses,
+} from "@mui/base/SwitchUnstyled";
+import { styled } from "@mui/system";
+
 import ReportsSubheader from "../reportsSubheader/ReportsSubheader";
 import Table from "@mui/material/Table";
 import Image from "next/image";
@@ -7,6 +12,7 @@ import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
 import { Button } from "@mui/material";
 import { style } from "@mui/system";
 import ReportsDetailedTimeAudit from "./ReportsDetailedTimeAudit";
+import Dropdownheader from "../../../common/UiComponents/Dropdownheader";
 
 const ReportsDetailed = () => {
   function createData(
@@ -16,9 +22,10 @@ const ReportsDetailed = () => {
     access: string,
     favorites: string,
     color: string,
-    icon: any
+    icon: any,
+    todo: string
   ) {
-    return { name, client, tracked, access, favorites, color, icon };
+    return { name, client, tracked, access, favorites, color, icon, todo };
   }
 
   const rows = [
@@ -29,7 +36,8 @@ const ReportsDetailed = () => {
       "_",
       "Public",
       "#a3e8f7",
-      StarBorderOutlinedIcon
+      StarBorderOutlinedIcon,
+      "15 minutes meeting"
     ),
     createData(
       "Break",
@@ -38,7 +46,8 @@ const ReportsDetailed = () => {
       "_ ",
       "Public",
       "red",
-      StarBorderOutlinedIcon
+      StarBorderOutlinedIcon,
+      "adding data in dropdown"
     ),
     createData(
       "Learning & Development",
@@ -47,7 +56,8 @@ const ReportsDetailed = () => {
       "_",
       "Public",
       "blue",
-      StarBorderOutlinedIcon
+      StarBorderOutlinedIcon,
+      "Air Break"
     ),
     createData(
       "Menzie.net",
@@ -56,7 +66,8 @@ const ReportsDetailed = () => {
       " _",
       "Public",
       "#1c914b",
-      StarBorderOutlinedIcon
+      StarBorderOutlinedIcon,
+      "Album double sharing issue"
     ),
     createData(
       "Misc(internal)",
@@ -65,7 +76,8 @@ const ReportsDetailed = () => {
       "_",
       "Public",
       "#34cfeb",
-      StarBorderOutlinedIcon
+      StarBorderOutlinedIcon,
+      ""
     ),
     createData(
       "MySitePower",
@@ -74,7 +86,8 @@ const ReportsDetailed = () => {
       "_",
       "Private",
       "#f72ad4",
-      StarBorderOutlinedIcon
+      StarBorderOutlinedIcon,
+      ""
     ),
     createData(
       "OpeningBell",
@@ -83,9 +96,91 @@ const ReportsDetailed = () => {
       "_",
       "Private",
       "green",
-      StarBorderOutlinedIcon
+      StarBorderOutlinedIcon,
+      ""
     ),
   ];
+
+  // switching
+
+  const label = { componentsProps: { input: { "aria-label": "Demo switch" } } };
+
+  const blue = {
+    500: "#007FFF",
+  };
+
+  const grey = {
+    400: "#BFC7CF",
+    500: "#AAB4BE",
+    600: "#6F7E8C",
+  };
+
+  const Root = styled("span")(
+    ({ theme }) => `
+  font-size: 0;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 10px;
+  cursor: pointer;
+
+  &.${switchUnstyledClasses.disabled} {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  & .${switchUnstyledClasses.track} {
+    background: ${theme.palette.mode === "dark" ? grey[600] : grey[400]};
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  & .${switchUnstyledClasses.thumb} {
+    display: block;
+    width: 14px;
+    height: 14px;
+    top: 3px;
+    left: 3px;
+    border-radius: 16px;
+    background-color: #fff;
+    position: relative;
+    transition: all 200ms ease;
+  }
+
+  &.${switchUnstyledClasses.focusVisible} .${switchUnstyledClasses.thumb} {
+    background-color: ${grey[500]};
+    box-shadow: 0 0 1px 8px rgba(0, 0, 0, 0.25);
+  }
+
+  &.${switchUnstyledClasses.checked} {
+    .${switchUnstyledClasses.thumb} {
+      left: 22px;
+      top: 3px;
+      background-color: #fff;
+    }
+
+    .${switchUnstyledClasses.track} {
+      background: ${blue[500]};
+    }
+  }
+
+  & .${switchUnstyledClasses.input} {
+    cursor: inherit;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    margin: 0;
+  }
+  `
+  );
 
   const [open, setOpen] = React.useState(true);
   const active = () => {
@@ -102,14 +197,13 @@ const ReportsDetailed = () => {
       </div>
       {!open && (
         <div style={{ padding: "2.2em 0 0 0" }}>
-          {/* <ReportsSubheader /> */}
           <ReportsDetailedTimeAudit />
         </div>
       )}
 
       <div>
         <div style={{ padding: "1.5em 0 0 0" }}>
-          <div
+          {/* <div
             style={{
               border: "1px solid #C6D2D9",
               borderRadius: "2px",
@@ -131,6 +225,80 @@ const ReportsDetailed = () => {
                 678:25:47
               </p>
             </div>
+          </div> */}
+
+          <div className={styles.weeklyheaderpart}>
+            <div className={styles.leftpart}>
+              <div className={styles.totaltext}>
+                <p style={{ paddingTop: "15px" }}>Total : </p>
+                <p className={styles.textstyle}>886:27:50</p>
+              </div>
+            </div>
+            <div className={styles.rightpart}>
+              <div
+                style={{
+                  borderLeft: "1px dotted #C6D2D9",
+                  marginTop: "5px",
+                  height: "2.5em",
+                }}
+              ></div>
+              <div>
+                <Dropdownheader
+                  defaultvalue="Export"
+                  // value1="Active"
+                  value2="Archived"
+                  value3="All"
+                />
+              </div>
+              <div
+                style={{
+                  borderLeft: "1px dotted #C6D2D9",
+                  marginTop: "5px",
+                  height: "2.5em",
+                }}
+              ></div>
+              <div className={styles.img}>
+                <Image
+                  src="/image/print.svg"
+                  alt="printicon"
+                  height={20}
+                  width={20}
+                />
+              </div>
+              <div
+                style={{
+                  borderLeft: "1px dotted #C6D2D9",
+                  marginTop: "5px",
+                  height: "2.5em",
+                }}
+              ></div>
+              <div className={styles.img}>
+                <Image
+                  src="/image/share.svg"
+                  alt="printicon"
+                  height={20}
+                  width={20}
+                />
+              </div>
+              <div
+                style={{
+                  borderLeft: "1px dotted #C6D2D9",
+                  marginTop: "5px",
+                  height: "2.5em",
+                }}
+              ></div>
+              <div className={styles.switchbuttontext}>
+                <SwitchUnstyled component={Root} {...label} />
+                <p>Rounded</p>
+              </div>
+              <div
+                style={{
+                  borderLeft: "1px dotted #C6D2D9",
+                  marginTop: "5px",
+                  height: "2.5em",
+                }}
+              ></div>
+            </div>
           </div>
 
           <Table
@@ -142,7 +310,7 @@ const ReportsDetailed = () => {
           >
             <thead style={{ border: "1px solid #C6D2D9", height: "3em" }}>
               <tr>
-                <th style={{ width: "39em" }}>
+                <th style={{ width: "150em" }}>
                   <div
                     style={{
                       display: "flex",
@@ -193,14 +361,6 @@ const ReportsDetailed = () => {
                     >
                       AMOUNT
                     </div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Image src="/image/sort.png" height={13} width={12} />
-                    </div>
                   </div>
                 </th>
                 <th style={{ width: "29em" }}>
@@ -208,7 +368,7 @@ const ReportsDetailed = () => {
                     style={{
                       display: "flex",
                       justifyContent: "space-between",
-                      width: "5.5em",
+                      width: "5em",
                     }}
                   >
                     <div
@@ -236,29 +396,61 @@ const ReportsDetailed = () => {
                 <th style={{ width: "29em" }}>
                   <div
                     style={{
-                      fontSize: "13px",
-                      color: "#999",
-                      height: "2em",
                       display: "flex",
-                      alignItems: "center",
-                      fontWeight: "400",
+                      justifyContent: "space-between",
+                      width: "4em",
                     }}
                   >
-                    TIME
+                    <div
+                      style={{
+                        fontSize: "13px",
+                        color: "#999",
+                        height: "2em",
+                        display: "flex",
+                        alignItems: "center",
+                        fontWeight: "400",
+                      }}
+                    >
+                      TIME
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image src="/image/sort.png" height={13} width={12} />
+                    </div>
                   </div>
                 </th>
                 <th style={{ width: "36em" }}>
                   <div
                     style={{
-                      fontSize: "13px",
-                      color: "#999",
-                      height: "2em",
                       display: "flex",
-                      alignItems: "center",
-                      fontWeight: "400",
+                      justifyContent: "space-between",
+                      width: "6.3em",
                     }}
                   >
-                    DURATION
+                    <div
+                      style={{
+                        fontSize: "13px",
+                        color: "#999",
+                        height: "2em",
+                        display: "flex",
+                        alignItems: "center",
+                        fontWeight: "400",
+                      }}
+                    >
+                      DURATION
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Image src="/image/sort.png" height={13} width={12} />
+                    </div>
                   </div>
                 </th>
                 <th style={{ width: "7em" }}>
@@ -279,14 +471,46 @@ const ReportsDetailed = () => {
             </thead>
 
             {rows.map((row: any) => (
-              <tr key={row} style={{ border: "1px solid #C6D2D9", height: "4.5em" }}>
+              <tr
+                key={row}
+                style={{ border: "1px solid #C6D2D9", height: "4.5em" }}
+              >
                 <td>
-                  <div style={{ paddingLeft: "1.5em" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      width: "34em",
+                      alignItems: "center",
+                    }}
+                  >
+                    <div style={{ paddingLeft: "1.5em" }}>
+                      <div className={styles.reportsdetailedtodo}>
+                        {row.todo}
+                      </div>
+                    </div>
                     <div
-                      style={{ backgroundColor: `${row.color}` }}
-                      // className={style.border}
-                    ></div>
-                    {row.name}
+                      style={{
+                        width: "10em",
+                        display: "flex",
+                        alignItems: "center",
+                      }}
+                    >
+                      <div
+                        style={{
+                          backgroundColor: `${row.color}`,
+                        }}
+                        className={styles.border}
+                      ></div>
+                      <div
+                        style={{
+                          color: `${row.color}`,
+                        }}
+                      >
+                        {row.name}
+                      </div>
+                    </div>
+                    <div>- {row.client}</div>
                   </div>
                 </td>
                 <td>
@@ -310,7 +534,7 @@ const ReportsDetailed = () => {
                         alignItems: "center",
                       }}
                     >
-                      {row.client}
+                      {/* {row.client} */}
                     </div>
                   </div>
                 </td>

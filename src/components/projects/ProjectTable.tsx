@@ -1,14 +1,7 @@
 import * as React from "react";
 import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import style from "../../components/projects/Project.module.css";
 import StarBorderOutlinedIcon from "@mui/icons-material/StarBorderOutlined";
-import { route } from "next/dist/server/router";
 import Image from "next/image";
 
 function createData(
@@ -255,7 +248,10 @@ export default function ProjectTable() {
         </thead>
 
         {rows.map((row: any) => (
-          <tr key={row} style={{ border: "1px solid #C6D2D9", height: "4.5em" }}>
+          <tr
+            key={row}
+            style={{ border: "1px solid #C6D2D9", height: "4.5em" }}
+          >
             <td>
               <div style={{ paddingLeft: "1.5em" }}>
                 <div
