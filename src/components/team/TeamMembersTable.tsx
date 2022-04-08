@@ -24,13 +24,7 @@ function createData(
       "Management",
       
     ),
-    createData(
-      "Alolika",
-      "alolika.sen@utplco.com",
-      "",
-      "UI/UX",
-      
-    ),
+
   ];
 function TeamMembersTable() {
   // const[sortasc,setsortasc]=useState([]);

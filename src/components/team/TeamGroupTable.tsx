@@ -1,4 +1,5 @@
 import { Table } from '@mui/material';
+import Image from 'next/image';
 import React from 'react'
 import style from '../team/Team.module.css'
 
@@ -16,6 +17,26 @@ function createData(
       "Backend",
       "Basanti Akhuli, Bhaskar Bonu, Sukanta Majhi",      
     ),
+    createData(
+      "Device Team",
+      "Amartya Chakraborty, Joyita Seal, Rahul Chakraborty, Soumen Samanta, Subham Das, Suman Kamilya",      
+    ),
+    createData(
+      "Frontend",
+      "Ayan Sinha, Basanti Akhuli, Niladri Barui, Nupur Saha, Rajdwip Dey, Shreya Saha, Vikash Tiwary",      
+    ),
+    createData(
+      "Management",
+      "Abhijit Roy, Ankita Kumari, Biswarup Siddhanta, Sourav, Sushmita",      
+    ),
+    createData(
+      "Testing",
+      "Samapti Akhuli",      
+    ),
+    createData(
+      "UI/UX",
+      "Alolika , Amit Roy",      
+    ),
     
   ];
 function TeamGroupTable() {
@@ -23,7 +44,7 @@ function TeamGroupTable() {
     <div
     style={{
         backgroundColor: "white",
-        height: "30em",
+        height: "32.5em",
       }}>
           <div className={style.memberheaderpart}>
           <p>Groups</p>
@@ -38,11 +59,12 @@ function TeamGroupTable() {
       >
         <thead style={{ border: "1px solid #C6D2D9", height: "3em" }}>
           <tr>
-            <th style={{ width: "18%" }}>
+            <th style={{ width: "20em" }}>
               <div
                 style={{
                   fontSize: "13px",
                   paddingLeft: "1.6em",
+                  fontWeight:"500",
                   color: "#999",
                   height: "2em",
                   display: "flex",
@@ -50,12 +72,18 @@ function TeamGroupTable() {
                 }}
               >
                 NAME
+                <div>
+                  <Image src="/image/sort.png" alt=""  height={12} width={12}
+                  // onClick={sortable ? () => handleSortingChange(accessor) : null}
+                  />
+                </div>
               </div>
             </th>
-            <th style={{ width: "82%" }}>
+            <th style={{ width: "40em" }}>
               <div
                 style={{
                   fontSize: "13px",
+                  fontWeight:"500",
                   color: "#999",
                   height: "2em",
                   display: "flex",
@@ -71,7 +99,9 @@ function TeamGroupTable() {
         {rows.map((row: any) => (
           <tr key={row} style={{ border: "1px solid #C6D2D9", height: "4.5em" }}>
             <td>
-              <div style={{ paddingLeft: "1.5em" }}>
+              <div style={{ paddingLeft: "1.5em",
+            fontSize:"14px",
+            color:"#666"}}>
                 {row.name}
               </div>
             </td>
@@ -79,6 +109,7 @@ function TeamGroupTable() {
               <div
                 style={{
                   display: "flex",
+                  alignItems:"center"
                 }}
               >
                 <div
