@@ -53,6 +53,9 @@
     font-size: 14px;
     padding-right: 5px; 
 }
+.style{
+    font-size: 14px;
+}
 .borderstyle{
     border-left: 1px dotted #C6D2D9;
     margin-top: 5px;
