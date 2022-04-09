@@ -8,6 +8,7 @@ import TimeTrackerDropDown from "../../common/UiComponents/timetrackerdropdown/T
 import plus from "../../../public/image/plus-blue.svg";
 import Calendar from "../../common/calendar/Calendar";
 import TimeTrackerList from "../../components/timeTracker/TimeTrackerList";
+import Demo from "../../components/timeTracker/demo/Demo";
 
 function TimeTracker() {
   return (
@@ -21,6 +22,7 @@ function TimeTracker() {
       {/* <Calendar/> */}
 
       {/* <TimeTrackerList />  */}
+      <Demo/>
     </div>
   );
 }
