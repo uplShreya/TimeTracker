@@ -101,7 +101,17 @@ function TimeTrackerHeader() {
         <button className={style.btn}>Start</button>
       </div>
       </div>
-      
+      <div>
+      <div
+        >
+        <Image src="/image/clock-blue.svg" alt="icon" width={12} height={12} />
+        </div>
+        <div
+        >
+        <Image src="/image/list-blue.svg" alt="icon" width={15} height={15}
+         />    
+        </div>
+      </div>
       </div>
     </div>
     </div>
