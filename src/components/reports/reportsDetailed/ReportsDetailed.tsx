@@ -18,21 +18,21 @@ const ReportsDetailed = () => {
   function createData(
     name: string,
     client: string,
-    tracked: number,
+    user: string,
     access: string,
     favorites: string,
     color: string,
     icon: any,
     todo: string
   ) {
-    return { name, client, tracked, access, favorites, color, icon, todo };
+    return { name, client, user, access, favorites, color, icon, todo };
   }
 
   const rows = [
     createData(
       "Automation",
       "Abhijit Roy",
-      0.17,
+      "sourav",
       "_",
       "Public",
       "#a3e8f7",
@@ -42,7 +42,7 @@ const ReportsDetailed = () => {
     createData(
       "Break",
       "Abhijit Roy",
-      9.0,
+      "vikash tiwary",
       "_ ",
       "Public",
       "red",
@@ -52,7 +52,7 @@ const ReportsDetailed = () => {
     createData(
       "Learning & Development",
       "Abhijit Roy",
-      372.79,
+      "samapti akhuli",
       "_",
       "Public",
       "blue",
@@ -62,7 +62,7 @@ const ReportsDetailed = () => {
     createData(
       "Menzie.net",
       "Marc",
-      0.25,
+      "basanti akhuli",
       " _",
       "Public",
       "#1c914b",
@@ -72,32 +72,32 @@ const ReportsDetailed = () => {
     createData(
       "Misc(internal)",
       "Abhijit Roy",
-      110.92,
+      "soumen samanta",
       "_",
       "Public",
       "#34cfeb",
       StarBorderOutlinedIcon,
-      ""
+      "Album Double Sharing issue"
     ),
     createData(
       "MySitePower",
       "Steve Dollens",
-      71.44,
+      "soumen samanta",
       "_",
       "Private",
       "#f72ad4",
       StarBorderOutlinedIcon,
-      ""
+      "album search grid view"
     ),
     createData(
-      "OpeningBell",
-      "Mahitech",
-      43.8,
+      "PictPlay",
+      "Steve Dollens",
+      "Niladri barui",
       "_",
       "Private",
       "green",
       StarBorderOutlinedIcon,
-      ""
+      "album search list view"
     ),
   ];
 
@@ -553,14 +553,8 @@ const ReportsDetailed = () => {
                         height: "3em",
                       }}
                     ></div>
-                    <div
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        textAlign: "left",
-                      }}
-                    >
-                      {row.tracked}
+                    <div className={styles.reportdetaileduserstyle}>
+                      {row.user}
                     </div>
                   </div>
                 </td>
