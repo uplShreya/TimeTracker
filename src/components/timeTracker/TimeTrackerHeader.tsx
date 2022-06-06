@@ -26,17 +26,8 @@ function TimeTrackerHeader() {
     { name: "Development", value: "Development" },
     { name: "Discussion", value: "Discussion" },
   ];
-  const[click , setclick]= useState(false)
-const select=() =>{
-setclick(!click)
-console.log(setclick ,"Click")
-}
 
-const[clockclick , setclockclick]=useState(true)
-const selectclock=()=>{
-  setclockclick(!open)
-  console.log(setclockclick , "click is working")
-}
+
 
   // const [value, onChange] = useState('10:00');
   return (
@@ -112,11 +103,11 @@ const selectclock=()=>{
       </div>
       <div>
       <div
-        onClick={selectclock}>
+        >
         <Image src="/image/clock-blue.svg" alt="icon" width={12} height={12} />
         </div>
         <div
-        onClick={select}>
+        >
         <Image src="/image/list-blue.svg" alt="icon" width={15} height={15}
          />    
         </div>
